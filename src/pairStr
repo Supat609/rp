@@ -1,0 +1,14 @@
+package src;
+
+public class pair {
+	String syscallname;
+	String syscallvalue;
+	
+	pair(String n, String v) {
+		syscallname = n;
+		syscallvalue = v;
+	}
+	
+	pair() {
+	}
+}

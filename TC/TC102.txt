@@ -1,0 +1,1437 @@
+[00] init: flags = 00ffff00, cwd = "/root/Tests", chroot = "", argv = "scribe_init ./TC102 . aa.txt", envp = "MANPATH=/usr/local/share/m..."
+[01] rdtsc = 000e482142719f0b
+[01] rdtsc = 000e482142725e36
+[01] rdtsc = 000e48214272637b
+[01] rdtsc = 000e4821427268dc
+[01] rdtsc = 000e482142726cc3
+[01] rdtsc = 000e4821427270e2
+[01] rdtsc = 000e4821427275b2
+[01] rdtsc = 000e482142727a7a
+[01] rdtsc = 000e482142727e61
+[01] rdtsc = 000e4821427283ab
+[01] rdtsc = 000e482142728804
+[01] rdtsc = 000e48214272a29c
+[01] brk(0) = 0x804b000
+[01]     regs: eip: 0073:b7ff3e04, eflags: 00000296, eax: 0000002d, ebx: 00000000, ecx: b7ffefc0, edx: 00000000 esi: 08048034, edi: 0000000a, ebp: bffff788, esp: bffff5e4 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 0, desc = none
+[01] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb7fdd000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffff45c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 1, desc = none
+[01] access(0xb7ff7d4f, 4) = -2 ENOENT (No such file or directory)
+[01]     regs: eip: 0073:b7ff5cd1, eflags: 00000246, eax: 00000021, ebx: b7ff7d4f, ecx: 00000004, edx: b7ffefc0 esi: b7ff7d4f, edi: b7fffbfc, ebp: bffff5e8, esp: bffff50c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: input string, ptr = 0xb7ff7d4f, size = 18, "/etc/ld.so.preload"
+[01]     --fence(0)--
+[01]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 2, serial = 0, desc = none
+[01] rdtsc = 000e4821428009ad
+[01] open(0xb7ff802f, 80000) = 3
+[01]     regs: eip: 0073:b7ff5ba4, eflags: 00000296, eax: 00000005, ebx: b7ff802f, ecx: 00080000, edx: 00000000 esi: b7fff87c, edi: b7fffae8, ebp: 00000001, esp: bfffef88 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: input string, ptr = 0xb7ff802f, size = 16, "/etc/ld.so.cache"
+[01]     --fence(0)--
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 2, serial = 0, desc = none
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 1, desc = none
+[01] fstat64(3, 0xbfffefc0) = 0
+[01]     regs: eip: 0073:b7ff5b2d, eflags: 00000296, eax: 000000c5, ebx: 00000003, ecx: bfffefc0, edx: b7ffefc0 esi: b7fff87c, edi: 00000003, ebp: 00000001, esp: bfffef88 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = files_struct, access = read, id = 3, serial = 2, desc = none
+[01]     resource lock, type = file, access = write, id = 4, serial = 0, desc = /etc/ld.so.cache
+[01]       resource lock, type = inode, access = read, id = 5, serial = 0, desc = none
+[01]     data: non-det output, ptr = 0xbfffefc0, size = 96, 00000803 00000000 00000000 0070056e 000081a4 00000001 00000000 00000000 00000000 00000000 000000...
+[01]     --fence(0)--
+[01] mmap_pgoff(0, 335ab, 1, 2, 3, 0) = 0xb7fa9000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 000335ab, edx: 00000001 esi: 00000002, edi: 00000003, ebp: 00000000, esp: bfffef7c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 2, desc = none
+[01] close(3) = 0
+[01]     regs: eip: 0073:b7ff5bdd, eflags: 00000287, eax: 00000006, ebx: 00000003, ecx: 000335ab, edx: b7ffefc0 esi: b7fff87c, edi: 00000003, ebp: 00000001, esp: bfffef8c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 3, desc = none
+[01] open(0xb7fd7fcc, 80000) = 3
+[01]     regs: eip: 0073:b7ff5ba4, eflags: 00000246, eax: 00000005, ebx: b7fd7fcc, ecx: 00080000, edx: 00000000 esi: 00000008, edi: b7fffae8, ebp: bffff0a8, esp: bffff048 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: input string, ptr = 0xb7fd7fcc, size = 14, "/lib/libc.so.6"
+[01]     --fence(0)--
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 4, desc = none
+[01]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 7, serial = 0, desc = none
+[01]     resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 5, desc = none
+[01] read(3, 0xbffff104, 512) = 512
+[01]     regs: eip: 0073:b7ff5c14, eflags: 00000282, eax: 00000003, ebx: 00000003, ecx: bffff104, edx: 00000200 esi: 00000008, edi: bffff104, ebp: bffff0a8, esp: bffff048 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = files_struct, access = read, id = 3, serial = 6, desc = none
+[01]     resource lock, type = file, access = write, id = 8, serial = 0, desc = /lib/libc-2.16.so
+[01]       resource lock, type = inode, access = read, id = 9, serial = 0, desc = none
+[01]         data: output, ptr = 0xbffff104, size = 512, 464c457f 00010101 00000000 00000000 00030003 00000001 0001cd00 00000034 001a4038 00000000 002000...
+[01]         --fence(0)--
+[01] fstat64(3, 0xbffff020) = 0
+[01]     regs: eip: 0073:b7ff5b2d, eflags: 00000296, eax: 000000c5, ebx: 00000003, ecx: bffff020, edx: b7ffefc0 esi: 08048448, edi: b7fffae8, ebp: bffff0a8, esp: bfffef78 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = files_struct, access = read, id = 3, serial = 6, desc = none
+[01]     resource lock, type = file, access = write, id = 8, serial = 1, desc = /lib/libc-2.16.so
+[01]       resource lock, type = inode, access = read, id = 9, serial = 0, desc = none
+[01]     data: non-det output, ptr = 0xbffff020, size = 96, 00000803 00000000 00000000 0080036a 000081ed 00000001 00000000 00000000 00000000 00000000 000000...
+[01]     --fence(0)--
+[01] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0) = 0xb7e02000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 001a6b1c, edx: 00000005 esi: 00000802, edi: 00000003, ebp: 00000000, esp: bfffee4c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 3, desc = none
+[01] mmap_pgoff(0xb7fa3000, 3000, 3, 2066, 3, 417) = 0xb7fa3000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000212, eax: 000000c0, ebx: b7fa3000, ecx: 00003000, edx: 00000003 esi: 00000812, edi: 00000003, ebp: 000001a1, esp: bfffee4c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 4, desc = none
+[01] mmap_pgoff(0xb7fa6000, 2b1c, 3, 50, -1, 0) = 0xb7fa6000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000256, eax: 000000c0, ebx: b7fa6000, ecx: 00002b1c, edx: 00000003 esi: 00000032, edi: ffffffff, ebp: 00000000, esp: bfffee4c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 5, desc = none
+[01] close(3) = 0
+[01]     regs: eip: 0073:b7ff5bdd, eflags: 00000286, eax: 00000006, ebx: 00000003, ecx: 00000000, edx: b7ffefc0 esi: b7fa4df4, edi: b7fdd3d0, ebp: bffff0a8, esp: bfffef7c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = files_struct, access = write, id = 3, serial = 8, desc = none
+[01] rdtsc = 000e48214286a7ff
+[01] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb7e01000
+[01]     regs: eip: 0073:b7ff5d83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffff45c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 6, desc = none
+[01] set_thread_area() = 0
+[01]     regs: eip: 0073:b7fdef09, eflags: 00000286, eax: 000000f3, ebx: bffff4f0, ecx: b7ffefc0, edx: b7e016c0 esi: 00000040, edi: 00000000, ebp: bffff5e8, esp: bffff4e0 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: input, ptr = 0xbffff4f0, size = 16, ffffffff b7e016c0 000fffff 00000051
+[01]     --fence(0)--
+[01]     data: output, ptr = 0xbffff4f0, size = 4, 00000006
+[01]     --fence(1)--
+[01] rdtsc = 000e4821428787d5
+[01] mprotect(0xb7fa3000, 2000, 1) = 0
+[01]     regs: eip: 0073:b7ff5e04, eflags: 00000206, eax: 0000007d, ebx: b7fa3000, ecx: 00002000, edx: 00000001 esi: b7fdd3d0, edi: b7fdd3d0, ebp: bffff508, esp: bffff408 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 7, desc = none
+[01] mprotect(0x8049000, 1000, 1) = 0
+[01]     regs: eip: 0073:b7ff5e04, eflags: 00000206, eax: 0000007d, ebx: 08049000, ecx: 00001000, edx: 00000001 esi: b7fff900, edi: b7fff900, ebp: bffff508, esp: bffff408 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 8, desc = none
+[01] rdtsc = 000e4821428c0e34
+[01] rdtsc = 000e4821428c2373
+[01] mprotect(0xb7ffe000, 1000, 1) = 0
+[01]     regs: eip: 0073:b7ff5e04, eflags: 00000206, eax: 0000007d, ebx: b7ffe000, ecx: 00001000, edx: 00000001 esi: b7fff51c, edi: b7fff51c, ebp: bffff508, esp: bffff408 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 9, desc = none
+[01] rdtsc = 000e4821428c7790
+[01] munmap(0xb7fa9000, 335ab) = 0
+[01]     regs: eip: 0073:b7ff5dc1, eflags: 00000283, eax: 0000005b, ebx: b7fa9000, ecx: 000335ab, edx: b7ffefc0 esi: 00000000, edi: 00000001, ebp: bffff5e8, esp: bffff4ec ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = write, id = 0, serial = 10, desc = none
+[01] rdtsc = 000e4821428cfc75
+[01] clone() = 2
+[01]     regs: eip: 0073:ffffe424, eflags: 00000286, eax: 00000078, ebx: 01200011, ecx: 00000000, edx: 00000000 esi: 00000000, edi: b7e01728, ebp: bffff5d8, esp: bffff580 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = mmap, access = read, id = 0, serial = 11, desc = none
+[01]     data: internal, ptr = (nil), size = 4, 00000002
+[01]     resource lock, type = pid, access = write, id = 10, serial = 0, desc = none
+[02] data: output, ptr = 0xb7e01728, size = 4, 00000002
+[02] rdtsc = 000e48214609f3d3
+[02] execve() = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000000b, ebx: bffff85b, ecx: bffff6b8, edx: bffff6c8 esi: bffff6c8, edi: b7fa5000, ebp: bffff5b8, esp: bffff544 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xbffff85b, size = 7, "./TC102"
+[02]     --fence(0)--
+[02]     resource lock, type = pid, access = read, id = 10, serial = 1, desc = none
+[02]       resource lock, type = inode, access = read, id = 11, serial = 0, desc = none
+[02]       data: input, ptr = 0xbffff6b8, size = 4, bffff85b
+[02]       --fence(1)--
+[02]       data: input, ptr = 0xbffff6bc, size = 4, bffff863
+[02]       --fence(2)--
+[02]       data: input, ptr = 0xbffff6c0, size = 4, bffff865
+[02]       --fence(3)--
+[02]       data: input, ptr = 0xbffff6c4, size = 4, 00000000
+[02]       --fence(4)--
+[02]       data: input, ptr = 0xbffff6c8, size = 4, bffff86c
+[02]       --fence(5)--
+[02]       data: input, ptr = 0xbffff6cc, size = 4, bffff88a
+[02]       --fence(6)--
+[02]       data: input, ptr = 0xbffff6d0, size = 4, bffff89f
+[02]       --fence(7)--
+[02]       data: input, ptr = 0xbffff6d4, size = 4, bffff8c4
+[02]       --fence(8)--
+[02]       data: input, ptr = 0xbffff6d8, size = 4, bffff8da
+[02]       --fence(9)--
+[02]       data: input, ptr = 0xbffff6dc, size = 4, bffff8fc
+[02]       --fence(10)--
+[02]       data: input, ptr = 0xbffff6e0, size = 4, bffff908
+[02]       --fence(11)--
+[02]       data: input, ptr = 0xbffff6e4, size = 4, bffff915
+[02]       --fence(12)--
+[02]       data: input, ptr = 0xbffff6e8, size = 4, bffff91f
+[02]       --fence(13)--
+[02]       data: input, ptr = 0xbffff6ec, size = 4, bffff938
+[02]       --fence(14)--
+[02]       data: input, ptr = 0xbffff6f0, size = 4, bffff9a8
+[02]       --fence(15)--
+[02]       data: input, ptr = 0xbffff6f4, size = 4, bffff9b9
+[02]       --fence(16)--
+[02]       data: input, ptr = 0xbffff6f8, size = 4, bffff9eb
+[02]       --fence(17)--
+[02]       data: input, ptr = 0xbffff6fc, size = 4, bffff9fc
+[02]       --fence(18)--
+[02]       data: input, ptr = 0xbffff700, size = 4, bffffa0c
+[02]       --fence(19)--
+[02]       data: input, ptr = 0xbffff704, size = 4, bffffa1b
+[02]       --fence(20)--
+[02]       data: input, ptr = 0xbffff708, size = 4, bffffa69
+[02]       --fence(21)--
+[02]       data: input, ptr = 0xbffff70c, size = 4, bffffa71
+[02]       --fence(22)--
+[02]       data: input, ptr = 0xbffff710, size = 4, bffffb7f
+[02]       --fence(23)--
+[02]       data: input, ptr = 0xbffff714, size = 4, bffffb8b
+[02]       --fence(24)--
+[02]       data: input, ptr = 0xbffff718, size = 4, bffffbc1
+[02]       --fence(25)--
+[02]       data: input, ptr = 0xbffff71c, size = 4, bffffbd2
+[02]       --fence(26)--
+[02]       data: input, ptr = 0xbffff720, size = 4, bffffc64
+[02]       --fence(27)--
+[02]       data: input, ptr = 0xbffff724, size = 4, bffffc74
+[02]       --fence(28)--
+[02]       data: input, ptr = 0xbffff728, size = 4, bffffc8c
+[02]       --fence(29)--
+[02]       data: input, ptr = 0xbffff72c, size = 4, bffffc97
+[02]       --fence(30)--
+[02]       data: input, ptr = 0xbffff730, size = 4, bffffcbc
+[02]       --fence(31)--
+[02]       data: input, ptr = 0xbffff734, size = 4, bffffd56
+[02]       --fence(32)--
+[02]       data: input, ptr = 0xbffff738, size = 4, bffffd76
+[02]       --fence(33)--
+[02]       data: input, ptr = 0xbffff73c, size = 4, bffffd9e
+[02]       --fence(34)--
+[02]       data: input, ptr = 0xbffff740, size = 4, bffffda9
+[02]       --fence(35)--
+[02]       data: input, ptr = 0xbffff744, size = 4, bffffe10
+[02]       --fence(36)--
+[02]       data: input, ptr = 0xbffff748, size = 4, bffffe23
+[02]       --fence(37)--
+[02]       data: input, ptr = 0xbffff74c, size = 4, bffffe35
+[02]       --fence(38)--
+[02]       data: input, ptr = 0xbffff750, size = 4, bffffe69
+[02]       --fence(39)--
+[02]       data: input, ptr = 0xbffff754, size = 4, bffffe82
+[02]       --fence(40)--
+[02]       data: input, ptr = 0xbffff758, size = 4, bffffe95
+[02]       --fence(41)--
+[02]       data: input, ptr = 0xbffff75c, size = 4, bffffea2
+[02]       --fence(42)--
+[02]       data: input, ptr = 0xbffff760, size = 4, bffffeb4
+[02]       --fence(43)--
+[02]       data: input, ptr = 0xbffff764, size = 4, bfffff51
+[02]       --fence(44)--
+[02]       data: input, ptr = 0xbffff768, size = 4, bfffff8a
+[02]       --fence(45)--
+[02]       data: input, ptr = 0xbffff76c, size = 4, bfffff9a
+[02]       --fence(46)--
+[02]       data: input, ptr = 0xbffff770, size = 4, bfffffae
+[02]       --fence(47)--
+[02]       data: input, ptr = 0xbffff774, size = 4, bfffffbb
+[02]       --fence(48)--
+[02]       data: input, ptr = 0xbffff778, size = 4, bfffffcf
+[02]       --fence(49)--
+[02]       data: input, ptr = 0xbffff77c, size = 4, 00000000
+[02]       --fence(50)--
+[02]       --fence(51)--
+[02]       --fence(52)--
+[02]       data: input, ptr = 0xbffff778, size = 4, bfffffcf
+[02]       --fence(53)--
+[02]       --fence(54)--
+[02]       data: input, ptr = 0xbfffffcf, size = 24, "OPENGL_PROFILE=xorg-x11\0"
+[02]       --fence(55)--
+[02]       data: input, ptr = 0xbffff774, size = 4, bfffffbb
+[02]       --fence(56)--
+[02]       --fence(57)--
+[02]       data: input, ptr = 0xbfffffbb, size = 20, "PAGER=/usr/bin/less\0"
+[02]       --fence(58)--
+[02]       data: input, ptr = 0xbffff770, size = 4, bfffffae
+[02]       --fence(59)--
+[02]       --fence(60)--
+[02]       data: input, ptr = 0xbfffffae, size = 13, "LS_COLORS=rs\0"
+[02]       --fence(61)--
+[02]       data: input, ptr = 0xbffff76c, size = 4, bfffff9a
+[02]       --fence(62)--
+[02]       --fence(63)--
+[02]       data: input, ptr = 0xbfffff9a, size = 20, "MAIL=/var/mail/root\0"
+[02]       --fence(64)--
+[02]       data: input, ptr = 0xbffff768, size = 4, bfffff8a
+[02]       --fence(65)--
+[02]       --fence(66)--
+[02]       data: input, ptr = 0xbfffff8a, size = 16, "PWD=/root/Tests\0"
+[02]       --fence(67)--
+[02]       data: input, ptr = 0xbffff764, size = 4, bfffff51
+[02]       --fence(68)--
+[02]       --fence(69)--
+[02]       data: input, ptr = 0xbfffff51, size = 57, "XDG_DATA_DIRS=/usr/local/share:/usr/share:/usr/share/gdm\0"
+[02]       --fence(70)--
+[02]       data: input, ptr = 0xbffff760, size = 4, bffffeb4
+[02]       --fence(71)--
+[02]       --fence(72)--
+[02]       data: input, ptr = 0xbffffeb4, size = 157, "CONFIG_PROTECT=/usr/share/gnupg/qualified.txt /usr/share/config /usr/share/openvpn/easy-rsa /u..."
+[02]       --fence(73)--
+[02]       data: input, ptr = 0xbffff75c, size = 4, bffffea2
+[02]       --fence(74)--
+[02]       --fence(75)--
+[02]       data: input, ptr = 0xbffffea2, size = 18, "R_HOME=/usr/lib/R\0"
+[02]       --fence(76)--
+[02]       data: input, ptr = 0xbffff758, size = 4, bffffe95
+[02]       --fence(77)--
+[02]       --fence(78)--
+[02]       data: input, ptr = 0xbffffe95, size = 13, "OLDPWD=/root\0"
+[02]       --fence(79)--
+[02]       data: input, ptr = 0xbffff754, size = 4, bffffe82
+[02]       --fence(80)--
+[02]       --fence(81)--
+[02]       data: input, ptr = 0xbffffe82, size = 19, "SSH_TTY=/dev/pts/0\0"
+[02]       --fence(82)--
+[02]       data: input, ptr = 0xbffff750, size = 4, bffffe69
+[02]       --fence(83)--
+[02]       --fence(84)--
+[02]       data: input, ptr = 0xbffffe69, size = 25, "XDG_CONFIG_DIRS=/etc/xdg\0"
+[02]       --fence(85)--
+[02]       data: input, ptr = 0xbffff74c, size = 4, bffffe35
+[02]       --fence(86)--
+[02]       --fence(87)--
+[02]       data: input, ptr = 0xbffffe35, size = 52, "SSH_CONNECTION=108.167.10.65 57672 129.93.164.30 22\0"
+[02]       --fence(88)--
+[02]       data: input, ptr = 0xbffff748, size = 4, bffffe23
+[02]       --fence(89)--
+[02]       --fence(90)--
+[02]       data: input, ptr = 0xbffffe23, size = 18, "_=/usr/bin/record\0"
+[02]       --fence(91)--
+[02]       data: input, ptr = 0xbffff744, size = 4, bffffe10
+[02]       --fence(92)--
+[02]       --fence(93)--
+[02]       data: input, ptr = 0xbffffe10, size = 19, "RUBYOPT=-rauto_gem\0"
+[02]       --fence(94)--
+[02]       data: input, ptr = 0xbffff740, size = 4, bffffda9
+[02]       --fence(95)--
+[02]       --fence(96)--
+[02]       data: input, ptr = 0xbffffda9, size = 103, "PRELINK_PATH_MASK=/usr/lib/klibc:/usr/lib/libfreebl3.so:/usr/lib/libnssdbm3.so:/usr/lib/libsof..."
+[02]       --fence(97)--
+[02]       data: input, ptr = 0xbffff73c, size = 4, bffffd9e
+[02]       --fence(98)--
+[02]       --fence(99)--
+[02]       data: input, ptr = 0xbffffd9e, size = 11, "GCC_SPECS=\0"
+[02]       --fence(100)--
+[02]       data: input, ptr = 0xbffff738, size = 4, bffffd76
+[02]       --fence(101)--
+[02]       --fence(102)--
+[02]       data: input, ptr = 0xbffffd76, size = 40, "BLENDER_SYSTEM_PLUGINS=/usr/lib/plugins\0"
+[02]       --fence(103)--
+[02]       data: input, ptr = 0xbffff734, size = 4, bffffd56
+[02]       --fence(104)--
+[02]       --fence(105)--
+[02]       data: input, ptr = 0xbffffd56, size = 32, "PYTHONPATH=/usr/lib/portage/pym\0"
+[02]       --fence(106)--
+[02]       data: input, ptr = 0xbffff730, size = 4, bffffcbc
+[02]       --fence(107)--
+[02]       --fence(108)--
+[02]       data: input, ptr = 0xbffffcbc, size = 154, "INFOPATH=/usr/share/info:/usr/share/gcc-data/i686-pc-linux-gnu/4.6.3/info:/usr/share/binutils-..."
+[02]       --fence(109)--
+[02]       data: input, ptr = 0xbffff72c, size = 4, bffffc97
+[02]       --fence(110)--
+[02]       --fence(111)--
+[02]       data: input, ptr = 0xbffffc97, size = 37, "QT_PLUGIN_PATH=/usr/lib/kde4/plugins\0"
+[02]       --fence(112)--
+[02]       data: input, ptr = 0xbffff728, size = 4, bffffc8c
+[02]       --fence(113)--
+[02]       --fence(114)--
+[02]       data: input, ptr = 0xbffffc8c, size = 11, "HOME=/root\0"
+[02]       --fence(115)--
+[02]       data: input, ptr = 0xbffff724, size = 4, bffffc74
+[02]       --fence(116)--
+[02]       --fence(117)--
+[02]       data: input, ptr = 0xbffffc74, size = 24, "GSETTINGS_BACKEND=dconf\0"
+[02]       --fence(118)--
+[02]       data: input, ptr = 0xbffff720, size = 4, bffffc64
+[02]       --fence(119)--
+[02]       --fence(120)--
+[02]       data: input, ptr = 0xbffffc64, size = 16, "DISTCC_VERBOSE=\0"
+[02]       --fence(121)--
+[02]       data: input, ptr = 0xbffff71c, size = 4, bffffbd2
+[02]       --fence(122)--
+[02]       --fence(123)--
+[02]       data: input, ptr = 0xbffffbd2, size = 146, "MANPATH=/usr/local/share/man:/usr/share/man:/usr/share/gcc-data/i686-pc-linux-gnu/4.6.3/man:/u..."
+[02]       --fence(124)--
+[02]       data: input, ptr = 0xbffff718, size = 4, bffffbc1
+[02]       --fence(125)--
+[02]       --fence(126)--
+[02]       data: input, ptr = 0xbffffbc1, size = 17, "EDITOR=/bin/nano\0"
+[02]       --fence(127)--
+[02]       data: input, ptr = 0xbffff714, size = 4, bffffb8b
+[02]       --fence(128)--
+[02]       --fence(129)--
+[02]       data: input, ptr = 0xbffffb8b, size = 54, "BLENDER_SYSTEM_DATAFILES=/usr/share/blender/datafiles\0"
+[02]       --fence(130)--
+[02]       data: input, ptr = 0xbffff710, size = 4, bffffb7f
+[02]       --fence(131)--
+[02]       --fence(132)--
+[02]       data: input, ptr = 0xbffffb7f, size = 12, "DISTCC_LOG=\0"
+[02]       --fence(133)--
+[02]       data: input, ptr = 0xbffff70c, size = 4, bffffa71
+[02]       --fence(134)--
+[02]       --fence(135)--
+[02]       data: input, ptr = 0xbffffa71, size = 270, "CONFIG_PROTECT_MASK=/etc/gentoo-release /etc/sandbox.d /etc/fonts/fonts.conf ${EPREFIX}/etc/gc..."
+[02]       --fence(136)--
+[02]       data: input, ptr = 0xbffff708, size = 4, bffffa69
+[02]       --fence(137)--
+[02]       --fence(138)--
+[02]       data: input, ptr = 0xbffffa69, size = 8, "SHLVL=1\0"
+[02]       --fence(139)--
+[02]       data: input, ptr = 0xbffff704, size = 4, bffffa1b
+[02]       --fence(140)--
+[02]       --fence(141)--
+[02]       data: input, ptr = 0xbffffa1b, size = 78, "XDG_SESSION_COOKIE=27307b531fdfad4c12aae49f001710fe-1377638694.898817-9207292\0"
+[02]       --fence(142)--
+[02]       data: input, ptr = 0xbffff700, size = 4, bffffa0c
+[02]       --fence(143)--
+[02]       --fence(144)--
+[02]       data: input, ptr = 0xbffffa0c, size = 15, "XSESSION=KDE-4\0"
+[02]       --fence(145)--
+[02]       data: input, ptr = 0xbffff6fc, size = 4, bffff9fc
+[02]       --fence(146)--
+[02]       --fence(147)--
+[02]       data: input, ptr = 0xbffff9fc, size = 16, "SHELL=/bin/bash\0"
+[02]       --fence(148)--
+[02]       data: input, ptr = 0xbffff6f8, size = 4, bffff9eb
+[02]       --fence(149)--
+[02]       --fence(150)--
+[02]       data: input, ptr = 0xbffff9eb, size = 17, "TERM=xterm-color\0"
+[02]       --fence(151)--
+[02]       data: input, ptr = 0xbffff6f4, size = 4, bffff9b9
+[02]       --fence(152)--
+[02]       --fence(153)--
+[02]       data: input, ptr = 0xbffff9b9, size = 50, "BLENDER_SYSTEM_SCRIPTS=/usr/share/blender/scripts\0"
+[02]       --fence(154)--
+[02]       data: input, ptr = 0xbffff6f0, size = 4, bffff9a8
+[02]       --fence(155)--
+[02]       --fence(156)--
+[02]       data: input, ptr = 0xbffff9a8, size = 17, "LANG=en_US.UTF-8\0"
+[02]       --fence(157)--
+[02]       data: input, ptr = 0xbffff6ec, size = 4, bffff938
+[02]       --fence(158)--
+[02]       --fence(159)--
+[02]       data: input, ptr = 0xbffff938, size = 112, "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/i686-pc-linux-..."
+[02]       --fence(160)--
+[02]       data: input, ptr = 0xbffff6e8, size = 4, bffff91f
+[02]       --fence(161)--
+[02]       --fence(162)--
+[02]       data: input, ptr = 0xbffff91f, size = 25, "QT_GRAPHICSSYSTEM=raster\0"
+[02]       --fence(163)--
+[02]       data: input, ptr = 0xbffff6e4, size = 4, bffff915
+[02]       --fence(164)--
+[02]       --fence(165)--
+[02]       data: input, ptr = 0xbffff915, size = 10, "USER=root\0"
+[02]       --fence(166)--
+[02]       data: input, ptr = 0xbffff6e0, size = 4, bffff908
+[02]       --fence(167)--
+[02]       --fence(168)--
+[02]       data: input, ptr = 0xbffff908, size = 13, "LOGNAME=root\0"
+[02]       --fence(169)--
+[02]       data: input, ptr = 0xbffff6dc, size = 4, bffff8fc
+[02]       --fence(170)--
+[02]       --fence(171)--
+[02]       data: input, ptr = 0xbffff8fc, size = 12, "CVS_RSH=ssh\0"
+[02]       --fence(172)--
+[02]       data: input, ptr = 0xbffff6d8, size = 4, bffff8da
+[02]       --fence(173)--
+[02]       --fence(174)--
+[02]       data: input, ptr = 0xbffff8da, size = 34, "SSH_CLIENT=108.167.10.65 57672 22\0"
+[02]       --fence(175)--
+[02]       data: input, ptr = 0xbffff6d4, size = 4, bffff8c4
+[02]       --fence(176)--
+[02]       --fence(177)--
+[02]       data: input, ptr = 0xbffff8c4, size = 22, "LESSOPEN=|lesspipe %s\0"
+[02]       --fence(178)--
+[02]       data: input, ptr = 0xbffff6d0, size = 4, bffff89f
+[02]       --fence(179)--
+[02]       --fence(180)--
+[02]       data: input, ptr = 0xbffff89f, size = 37, "GUILE_LOAD_PATH=/usr/share/guile/1.8\0"
+[02]       --fence(181)--
+[02]       data: input, ptr = 0xbffff6cc, size = 4, bffff88a
+[02]       --fence(182)--
+[02]       --fence(183)--
+[02]       data: input, ptr = 0xbffff88a, size = 21, "LESS=-R -M --shift 5\0"
+[02]       --fence(184)--
+[02]       data: input, ptr = 0xbffff6c8, size = 4, bffff86c
+[02]       --fence(185)--
+[02]       --fence(186)--
+[02]       data: input, ptr = 0xbffff86c, size = 30, "DCCC_PATH=/usr/lib/distcc/bin\0"
+[02]       --fence(187)--
+[02]       data: input, ptr = 0xbffff6c0, size = 4, bffff865
+[02]       --fence(188)--
+[02]       --fence(189)--
+[02]       data: input, ptr = 0xbffff865, size = 7, "aa.txt\0"
+[02]       --fence(190)--
+[02]       data: input, ptr = 0xbffff6bc, size = 4, bffff863
+[02]       --fence(191)--
+[02]       --fence(192)--
+[02]       data: input, ptr = 0xbffff863, size = 2, 2e00
+[02]       --fence(193)--
+[02]       data: input, ptr = 0xbffff6b8, size = 4, bffff85b
+[02]       --fence(194)--
+[02]       --fence(195)--
+[02]       data: input, ptr = 0xbffff85b, size = 8, "./TC102\0"
+[02]       --fence(196)--
+[02]       data: internal, ptr = (nil), size = 4, bffb1000
+[02]       --fence(197)--
+[02]       --fence(198)--
+[02]       resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[02]       resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[02]       resource lock, type = inode, access = read, id = 12, serial = 0, desc = none
+[02]       resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[02]       --fence(199)--
+[02]       --fence(200)--
+[02]       resource lock, type = futex, access = write, id = 13, serial = 0, desc = none
+[02]       --fence(201)--
+[02]       data: internal, ptr = (nil), size = 4, 00006000
+[02]       --fence(202)--
+[02]       data: internal, ptr = (nil), size = 4, 0005a000
+[02]       data: internal, ptr = (nil), size = 4, bffb0000
+[02]       --fence(203)--
+[02]       --fence(204)--
+[02]       --fence(205)--
+[02]     data: internal, ptr = (nil), size = 4, bffae450
+[02]     --fence(206)--
+[02]     data: non-det output, ptr = 0xbffae43b, size = 16, c4a09a7d 66cae4dd 74c5de3c 1f0fb56d
+[02]     --fence(207)--
+[02]     --fence(208)--
+[02]     --fence(209)--
+[02]     --fence(210)--
+[02]     --fence(211)--
+[02]     --fence(212)--
+[02]     --fence(213)--
+[02]     --fence(214)--
+[02]     --fence(215)--
+[02]     --fence(216)--
+[02]     --fence(217)--
+[02]     --fence(218)--
+[02]     --fence(219)--
+[02]     --fence(220)--
+[02]     --fence(221)--
+[02]     --fence(222)--
+[02]     --fence(223)--
+[02]     --fence(224)--
+[02]     --fence(225)--
+[02]     --fence(226)--
+[02]     --fence(227)--
+[02]     --fence(228)--
+[02]     --fence(229)--
+[02]     --fence(230)--
+[02]     --fence(231)--
+[02]     --fence(232)--
+[02]     --fence(233)--
+[02]     --fence(234)--
+[02]     --fence(235)--
+[02]     --fence(236)--
+[02]     --fence(237)--
+[02]     --fence(238)--
+[02]     --fence(239)--
+[02]     --fence(240)--
+[02]     --fence(241)--
+[02]     --fence(242)--
+[02]     --fence(243)--
+[02]     --fence(244)--
+[02]     --fence(245)--
+[02]     --fence(246)--
+[02]     --fence(247)--
+[02]     --fence(248)--
+[02]     --fence(249)--
+[02]     --fence(250)--
+[02]     --fence(251)--
+[02]     --fence(252)--
+[02]     --fence(253)--
+[02]     --fence(254)--
+[02]     --fence(255)--
+[02]     --fence(256)--
+[02]     --fence(257)--
+[02]     --fence(258)--
+[02]     --fence(259)--
+[02]     --fence(260)--
+[02]     --fence(261)--
+[02]     --fence(262)--
+[02]     --fence(263)--
+[02]     --fence(264)--
+[02]     --fence(265)--
+[02]     --fence(266)--
+[02]     --fence(267)--
+[02]     --fence(268)--
+[02]     --fence(269)--
+[02]     --fence(270)--
+[02]     --fence(271)--
+[02]     --fence(272)--
+[02]     --fence(273)--
+[02]     --fence(274)--
+[02]     --fence(275)--
+[02]     --fence(276)--
+[02]     --fence(277)--
+[02]     --fence(278)--
+[02]     --fence(279)--
+[02]     --fence(280)--
+[02]     --fence(281)--
+[02]     --fence(282)--
+[02]     --fence(283)--
+[02]     --fence(284)--
+[02]     --fence(285)--
+[02]     --fence(286)--
+[02]     --fence(287)--
+[02]     --fence(288)--
+[02]     --fence(289)--
+[02]     --fence(290)--
+[02]     --fence(291)--
+[02]     --fence(292)--
+[02]     --fence(293)--
+[02]     --fence(294)--
+[02]     --fence(295)--
+[02]     --fence(296)--
+[02]     --fence(297)--
+[02]     --fence(298)--
+[02]     --fence(299)--
+[02]     --fence(300)--
+[02]     --fence(301)--
+[02]     --fence(302)--
+[02]     --fence(303)--
+[02]     --fence(304)--
+[02]     --fence(305)--
+[02]     --fence(306)--
+[02]     --fence(307)--
+[02] rdtsc = 000e482142b0aef7
+[02] rdtsc = 000e482142b0f047
+[02] rdtsc = 000e482142b0f464
+[02] rdtsc = 000e482142b0f846
+[02] rdtsc = 000e482142b0fbf5
+[02] rdtsc = 000e482142b10395
+[02] rdtsc = 000e482142b10744
+[02] rdtsc = 000e482142b10bed
+[02] rdtsc = 000e482142b10f9d
+[02] rdtsc = 000e482142b11400
+[02] rdtsc = 000e482142b117af
+[02] rdtsc = 000e482142b12b05
+[02] brk(0) = 0x804b000
+[02]     regs: eip: 0073:b779ae04, eflags: 00000296, eax: 0000002d, ebx: 00000000, ecx: b77a5fc0, edx: 00000000 esi: 08048034, edi: 0000000a, ebp: bffae394, esp: bffae1f4 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 0, desc = none
+[02] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb7784000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffae06c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 1, desc = none
+[02] access(0xb779ed4f, 4) = -2 ENOENT (No such file or directory)
+[02]     regs: eip: 0073:b779ccd1, eflags: 00000246, eax: 00000021, ebx: b779ed4f, ecx: 00000004, edx: b77a5fc0 esi: b779ed4f, edi: b77a6bfc, ebp: bffae1f8, esp: bffae11c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xb779ed4f, size = 18, "/etc/ld.so.preload"
+[02]     --fence(0)--
+[02]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 2, serial = 0, desc = none
+[02] rdtsc = 000e482142b35d6b
+[02] open(0xb779f02f, 80000) = 3
+[02]     regs: eip: 0073:b779cba4, eflags: 00000296, eax: 00000005, ebx: b779f02f, ecx: 00080000, edx: 00000000 esi: b77a687c, edi: b77a6ae8, ebp: 00000001, esp: bffadb98 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xb779f02f, size = 16, "/etc/ld.so.cache"
+[02]     --fence(0)--
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 2, serial = 0, desc = none
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 1, desc = none
+[02] fstat64(3, 0xbffadbd0) = 0
+[02]     regs: eip: 0073:b779cb2d, eflags: 00000296, eax: 000000c5, ebx: 00000003, ecx: bffadbd0, edx: b77a5fc0 esi: b77a687c, edi: 00000003, ebp: 00000001, esp: bffadb98 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 2, desc = none
+[02]     resource lock, type = file, access = write, id = 16, serial = 0, desc = /etc/ld.so.cache
+[02]       resource lock, type = inode, access = read, id = 5, serial = 0, desc = none
+[02]     data: non-det output, ptr = 0xbffadbd0, size = 96, 00000803 00000000 00000000 0070056e 000081a4 00000001 00000000 00000000 00000000 00000000 000000...
+[02]     --fence(0)--
+[02] mmap_pgoff(0, 335ab, 1, 2, 3, 0) = 0xb7750000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 000335ab, edx: 00000001 esi: 00000002, edi: 00000003, ebp: 00000000, esp: bffadb8c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 2, desc = none
+[02] close(3) = 0
+[02]     regs: eip: 0073:b779cbdd, eflags: 00000287, eax: 00000006, ebx: 00000003, ecx: 000335ab, edx: b77a5fc0 esi: b77a687c, edi: 00000003, ebp: 00000001, esp: bffadb9c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 3, desc = none
+[02] open(0xb777efcc, 80000) = 3
+[02]     regs: eip: 0073:b779cba4, eflags: 00000246, eax: 00000005, ebx: b777efcc, ecx: 00080000, edx: 00000000 esi: 00000008, edi: b77a6ae8, ebp: bffadcb8, esp: bffadc58 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xb777efcc, size = 14, "/lib/libc.so.6"
+[02]     --fence(0)--
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 4, desc = none
+[02]     resource lock, type = inode, access = read, id = 1, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 7, serial = 0, desc = none
+[02]     resource lock, type = inode, access = read, id = 6, serial = 0, desc = none
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 5, desc = none
+[02] read(3, 0xbffadd14, 512) = 512
+[02]     regs: eip: 0073:b779cc14, eflags: 00000286, eax: 00000003, ebx: 00000003, ecx: bffadd14, edx: 00000200 esi: 00000008, edi: bffadd14, ebp: bffadcb8, esp: bffadc58 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 6, desc = none
+[02]     resource lock, type = file, access = write, id = 17, serial = 0, desc = /lib/libc-2.16.so
+[02]       resource lock, type = inode, access = read, id = 9, serial = 0, desc = none
+[02]         data: output, ptr = 0xbffadd14, size = 512, 464c457f 00010101 00000000 00000000 00030003 00000001 0001cd00 00000034 001a4038 00000000 002000...
+[02]         --fence(0)--
+[02] fstat64(3, 0xbffadc30) = 0
+[02]     regs: eip: 0073:b779cb2d, eflags: 00000296, eax: 000000c5, ebx: 00000003, ecx: bffadc30, edx: b77a5fc0 esi: 08048344, edi: b77a6ae8, ebp: bffadcb8, esp: bffadb88 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 6, desc = none
+[02]     resource lock, type = file, access = write, id = 17, serial = 1, desc = /lib/libc-2.16.so
+[02]       resource lock, type = inode, access = read, id = 9, serial = 0, desc = none
+[02]     data: non-det output, ptr = 0xbffadc30, size = 96, 00000803 00000000 00000000 0080036a 000081ed 00000001 00000000 00000000 00000000 00000000 000000...
+[02]     --fence(0)--
+[02] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0) = 0xb75a9000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 001a6b1c, edx: 00000005 esi: 00000802, edi: 00000003, ebp: 00000000, esp: bffada5c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 3, desc = none
+[02] mmap_pgoff(0xb774a000, 3000, 3, 2066, 3, 417) = 0xb774a000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000212, eax: 000000c0, ebx: b774a000, ecx: 00003000, edx: 00000003 esi: 00000812, edi: 00000003, ebp: 000001a1, esp: bffada5c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 4, desc = none
+[02] mmap_pgoff(0xb774d000, 2b1c, 3, 50, -1, 0) = 0xb774d000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000256, eax: 000000c0, ebx: b774d000, ecx: 00002b1c, edx: 00000003 esi: 00000032, edi: ffffffff, ebp: 00000000, esp: bffada5c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 5, desc = none
+[02] close(3) = 0
+[02]     regs: eip: 0073:b779cbdd, eflags: 00000286, eax: 00000006, ebx: 00000003, ecx: 00000000, edx: b77a5fc0 esi: b774bdf4, edi: b77843d0, ebp: bffadcb8, esp: bffadb8c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 8, desc = none
+[02] rdtsc = 000e482142b8c3db
+[02] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb75a8000
+[02]     regs: eip: 0073:b779cd83, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffae06c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 6, desc = none
+[02] set_thread_area() = 0
+[02]     regs: eip: 0073:b7785f09, eflags: 00000286, eax: 000000f3, ebx: bffae100, ecx: b77a5fc0, edx: b75a86c0 esi: 00000040, edi: 00000000, ebp: bffae1f8, esp: bffae0f0 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input, ptr = 0xbffae100, size = 16, ffffffff b75a86c0 000fffff 00000051
+[02]     --fence(0)--
+[02]     data: output, ptr = 0xbffae100, size = 4, 00000006
+[02]     --fence(1)--
+[02] rdtsc = 000e482142b995ee
+[02] mprotect(0xb774a000, 2000, 1) = 0
+[02]     regs: eip: 0073:b779ce04, eflags: 00000206, eax: 0000007d, ebx: b774a000, ecx: 00002000, edx: 00000001 esi: b77843d0, edi: b77843d0, ebp: bffae118, esp: bffae018 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 7, desc = none
+[02] mprotect(0x8049000, 1000, 1) = 0
+[02]     regs: eip: 0073:b779ce04, eflags: 00000206, eax: 0000007d, ebx: 08049000, ecx: 00001000, edx: 00000001 esi: b77a6900, edi: b77a6900, ebp: bffae118, esp: bffae018 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 8, desc = none
+[02] rdtsc = 000e482142bd76fb
+[02] rdtsc = 000e482142bd89ff
+[02] mprotect(0xb77a5000, 1000, 1) = 0
+[02]     regs: eip: 0073:b779ce04, eflags: 00000206, eax: 0000007d, ebx: b77a5000, ecx: 00001000, edx: 00000001 esi: b77a651c, edi: b77a651c, ebp: bffae118, esp: bffae018 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 9, desc = none
+[02] rdtsc = 000e482142bddb1f
+[02] munmap(0xb7750000, 335ab) = 0
+[02]     regs: eip: 0073:b779cdc1, eflags: 00000283, eax: 0000005b, ebx: b7750000, ecx: 000335ab, edx: b77a5fc0 esi: 00000000, edi: 00000001, ebp: bffae1f8, esp: bffae0fc ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 10, desc = none
+[02] rdtsc = 000e482142be5d17
+[02] openat(-100, 0xbffaf870, 98800, 0) = 3
+[02]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 00000127, ebx: ffffff9c, ecx: bffaf870, edx: 00098800 esi: 00000000, edi: b774c000, ebp: bffae158, esp: bffae110 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xbffaf870, size = 1, "."
+[02]     --fence(0)--
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 9, desc = none
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 10, desc = none
+[02] fcntl64(3, 1, 0) = 1
+[02]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 000000dd, ebx: 00000003, ecx: 00000001, edx: 00000000 esi: 00000003, edi: b774c000, ebp: 00000001, esp: bffae0f0 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02] brk(0) = 0x804b000
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000002d, ebx: 00000000, ecx: b774c000, edx: 00000000 esi: ffffffff, edi: 00029000, ebp: b774de30, esp: bffadf94 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 11, desc = none
+[02] brk(0x8074000) = 0x8074000
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000002d, ebx: 08074000, ecx: b774c000, edx: 08074000 esi: 0804b000, edi: 08074000, ebp: b774de30, esp: bffadf94 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 12, desc = none
+[02] getdents(3, 0x804b020, 8000) = 1088
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000008d, ebx: 00000003, ecx: 0804b020, edx: 00008000 esi: 0804b020, edi: b774c000, ebp: bffae228, esp: bffae110 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 18, serial = 0, desc = /root/Tests
+[02]       resource lock, type = inode, access = read, id = 11, serial = 0, desc = none
+[02]         data: non-det output, ptr = 0x804b020, size = 4, 00720451
+[02]         --fence(0)--
+[02]         data: output, ptr = 0x804b028, size = 2, 1000
+[02]         --fence(1)--
+[02]         data: output, ptr = 0x804b02a, size = 4, "R2.c"
+[02]         --fence(2)--
+[02]         data: output, ptr = 0x804b02e, size = 1, 00
+[02]         --fence(3)--
+[02]         data: output, ptr = 0x804b02f, size = 1, 08
+[02]         --fence(4)--
+[02]         data: output, ptr = 0x804b024, size = 4, "aAY\x04"
+[02]         --fence(5)--
+[02]         data: non-det output, ptr = 0x804b030, size = 4, 00720439
+[02]         --fence(6)--
+[02]         data: output, ptr = 0x804b038, size = 2, 1400
+[02]         --fence(7)--
+[02]         data: output, ptr = 0x804b03a, size = 7, "TC105.c"
+[02]         --fence(8)--
+[02]         data: output, ptr = 0x804b041, size = 1, 00
+[02]         --fence(9)--
+[02]         data: output, ptr = 0x804b043, size = 1, 08
+[02]         --fence(10)--
+[02]         data: output, ptr = 0x804b034, size = 4, 084cda74
+[02]         --fence(11)--
+[02]         data: non-det output, ptr = 0x804b044, size = 4, 00720457
+[02]         --fence(12)--
+[02]         data: output, ptr = 0x804b04c, size = 2, 1400
+[02]         --fence(13)--
+[02]         data: output, ptr = 0x804b04e, size = 5, "f.txt"
+[02]         --fence(14)--
+[02]         data: output, ptr = 0x804b053, size = 1, 00
+[02]         --fence(15)--
+[02]         data: output, ptr = 0x804b057, size = 1, 08
+[02]         --fence(16)--
+[02]         data: output, ptr = 0x804b048, size = 4, 09980a1a
+[02]         --fence(17)--
+[02]         data: non-det output, ptr = 0x804b058, size = 4, 0072046a
+[02]         --fence(18)--
+[02]         data: output, ptr = 0x804b060, size = 2, 1800
+[02]         --fence(19)--
+[02]         data: output, ptr = 0x804b062, size = 9, "TC102.log"
+[02]         --fence(20)--
+[02]         data: output, ptr = 0x804b06b, size = 1, 00
+[02]         --fence(21)--
+[02]         data: output, ptr = 0x804b06f, size = 1, 08
+[02]         --fence(22)--
+[02]         data: output, ptr = 0x804b05c, size = 4, 0a6c0cce
+[02]         --fence(23)--
+[02]         data: non-det output, ptr = 0x804b070, size = 4, 00720461
+[02]         --fence(24)--
+[02]         data: output, ptr = 0x804b078, size = 2, 1400
+[02]         --fence(25)--
+[02]         data: output, ptr = 0x804b07a, size = 8, "bash.txt"
+[02]         --fence(26)--
+[02]         data: output, ptr = 0x804b082, size = 1, 00
+[02]         --fence(27)--
+[02]         data: output, ptr = 0x804b083, size = 1, 08
+[02]         --fence(28)--
+[02]         data: output, ptr = 0x804b074, size = 4, 0c62ac2b
+[02]         --fence(29)--
+[02]         data: non-det output, ptr = 0x804b084, size = 4, 0072043c
+[02]         --fence(30)--
+[02]         data: output, ptr = 0x804b08c, size = 2, 1400
+[02]         --fence(31)--
+[02]         data: output, ptr = 0x804b08e, size = 7, "TC108.c"
+[02]         --fence(32)--
+[02]         data: output, ptr = 0x804b095, size = 1, 00
+[02]         --fence(33)--
+[02]         data: output, ptr = 0x804b097, size = 1, 08
+[02]         --fence(34)--
+[02]         data: output, ptr = 0x804b088, size = 4, 0ca3f971
+[02]         --fence(35)--
+[02]         data: non-det output, ptr = 0x804b098, size = 4, 00720446
+[02]         --fence(36)--
+[02]         data: output, ptr = 0x804b0a0, size = 2, 1400
+[02]         --fence(37)--
+[02]         data: output, ptr = 0x804b0a2, size = 5, "2.txt"
+[02]         --fence(38)--
+[02]         data: output, ptr = 0x804b0a7, size = 1, 00
+[02]         --fence(39)--
+[02]         data: output, ptr = 0x804b0ab, size = 1, 08
+[02]         --fence(40)--
+[02]         data: output, ptr = 0x804b09c, size = 4, 0cff5866
+[02]         --fence(41)--
+[02]         data: non-det output, ptr = 0x804b0ac, size = 4, 00720445
+[02]         --fence(42)--
+[02]         data: output, ptr = 0x804b0b4, size = 2, 1400
+[02]         --fence(43)--
+[02]         data: output, ptr = 0x804b0b6, size = 5, "1.txt"
+[02]         --fence(44)--
+[02]         data: output, ptr = 0x804b0bb, size = 1, 00
+[02]         --fence(45)--
+[02]         data: output, ptr = 0x804b0bf, size = 1, 08
+[02]         --fence(46)--
+[02]         data: output, ptr = 0x804b0b0, size = 4, 111104d1
+[02]         --fence(47)--
+[02]         data: non-det output, ptr = 0x804b0c0, size = 4, 0072044b
+[02]         --fence(48)--
+[02]         data: output, ptr = 0x804b0c8, size = 2, 1400
+[02]         --fence(49)--
+[02]         data: output, ptr = 0x804b0ca, size = 6, "t1.txt"
+[02]         --fence(50)--
+[02]         data: output, ptr = 0x804b0d0, size = 1, 00
+[02]         --fence(51)--
+[02]         data: output, ptr = 0x804b0d3, size = 1, 08
+[02]         --fence(52)--
+[02]         data: output, ptr = 0x804b0c4, size = 4, 17e32f62
+[02]         --fence(53)--
+[02]         data: non-det output, ptr = 0x804b0d4, size = 4, 00720447
+[02]         --fence(54)--
+[02]         data: output, ptr = 0x804b0dc, size = 2, 1400
+[02]         --fence(55)--
+[02]         data: output, ptr = 0x804b0de, size = 5, "m.txt"
+[02]         --fence(56)--
+[02]         data: output, ptr = 0x804b0e3, size = 1, 00
+[02]         --fence(57)--
+[02]         data: output, ptr = 0x804b0e7, size = 1, 08
+[02]         --fence(58)--
+[02]         data: output, ptr = 0x804b0d8, size = 4, 19b380f8
+[02]         --fence(59)--
+[02]         data: non-det output, ptr = 0x804b0e8, size = 4, 00720449
+[02]         --fence(60)--
+[02]         data: output, ptr = 0x804b0f0, size = 2, 1800
+[02]         --fence(61)--
+[02]         data: output, ptr = 0x804b0f2, size = 9, "TC103.log"
+[02]         --fence(62)--
+[02]         data: output, ptr = 0x804b0fb, size = 1, 00
+[02]         --fence(63)--
+[02]         data: output, ptr = 0x804b0ff, size = 1, 08
+[02]         --fence(64)--
+[02]         data: output, ptr = 0x804b0ec, size = 4, 1a7f2060
+[02]         --fence(65)--
+[02]         data: non-det output, ptr = 0x804b100, size = 4, 0072044d
+[02]         --fence(66)--
+[02]         data: output, ptr = 0x804b108, size = 2, 1000
+[02]         --fence(67)--
+[02]         data: output, ptr = 0x804b10a, size = 4, "R1.c"
+[02]         --fence(68)--
+[02]         data: output, ptr = 0x804b10e, size = 1, 00
+[02]         --fence(69)--
+[02]         data: output, ptr = 0x804b10f, size = 1, 08
+[02]         --fence(70)--
+[02]         data: output, ptr = 0x804b104, size = 4, 1dc7369c
+[02]         --fence(71)--
+[02]         data: non-det output, ptr = 0x804b110, size = 4, 00720441
+[02]         --fence(72)--
+[02]         data: output, ptr = 0x804b118, size = 2, 1400
+[02]         --fence(73)--
+[02]         data: output, ptr = 0x804b11a, size = 5, "b.txt"
+[02]         --fence(74)--
+[02]         data: output, ptr = 0x804b11f, size = 1, 00
+[02]         --fence(75)--
+[02]         data: output, ptr = 0x804b123, size = 1, 08
+[02]         --fence(76)--
+[02]         data: output, ptr = 0x804b114, size = 4, 2ca60c06
+[02]         --fence(77)--
+[02]         data: non-det output, ptr = 0x804b124, size = 4, 0072046b
+[02]         --fence(78)--
+[02]         data: output, ptr = 0x804b12c, size = 2, 1400
+[02]         --fence(79)--
+[02]         data: output, ptr = 0x804b12e, size = 6, "aa.txt"
+[02]         --fence(80)--
+[02]         data: output, ptr = 0x804b134, size = 1, 00
+[02]         --fence(81)--
+[02]         data: output, ptr = 0x804b137, size = 1, 08
+[02]         --fence(82)--
+[02]         data: output, ptr = 0x804b128, size = 4, "vL\x1f-"
+[02]         --fence(83)--
+[02]         data: non-det output, ptr = 0x804b138, size = 4, 0072044f
+[02]         --fence(84)--
+[02]         data: output, ptr = 0x804b140, size = 2, 1400
+[02]         --fence(85)--
+[02]         data: output, ptr = 0x804b142, size = 6, "S1.txt"
+[02]         --fence(86)--
+[02]         data: output, ptr = 0x804b148, size = 1, 00
+[02]         --fence(87)--
+[02]         data: output, ptr = 0x804b14b, size = 1, 08
+[02]         --fence(88)--
+[02]         data: output, ptr = 0x804b13c, size = 4, 2dd10f33
+[02]         --fence(89)--
+[02]         data: non-det output, ptr = 0x804b14c, size = 4, 0072043e
+[02]         --fence(90)--
+[02]         data: output, ptr = 0x804b154, size = 2, 1000
+[02]         --fence(91)--
+[02]         data: output, ptr = 0x804b156, size = 1, "."
+[02]         --fence(92)--
+[02]         data: output, ptr = 0x804b157, size = 1, 00
+[02]         --fence(93)--
+[02]         data: output, ptr = 0x804b15b, size = 1, 04
+[02]         --fence(94)--
+[02]         data: output, ptr = 0x804b150, size = 4, "\x17?E0"
+[02]         --fence(95)--
+[02]         data: non-det output, ptr = 0x804b15c, size = 4, 0072043d
+[02]         --fence(96)--
+[02]         data: output, ptr = 0x804b164, size = 2, 1400
+[02]         --fence(97)--
+[02]         data: output, ptr = 0x804b166, size = 8, "mirror.c"
+[02]         --fence(98)--
+[02]         data: output, ptr = 0x804b16e, size = 1, 00
+[02]         --fence(99)--
+[02]         data: output, ptr = 0x804b16f, size = 1, 08
+[02]         --fence(100)--
+[02]         data: output, ptr = 0x804b160, size = 4, 320ddb3c
+[02]         --fence(101)--
+[02]         data: non-det output, ptr = 0x804b170, size = 4, 00720442
+[02]         --fence(102)--
+[02]         data: output, ptr = 0x804b178, size = 2, 1800
+[02]         --fence(103)--
+[02]         data: output, ptr = 0x804b17a, size = 9, "TC101.log"
+[02]         --fence(104)--
+[02]         data: output, ptr = 0x804b183, size = 1, 00
+[02]         --fence(105)--
+[02]         data: output, ptr = 0x804b187, size = 1, 08
+[02]         --fence(106)--
+[02]         data: output, ptr = 0x804b174, size = 4, "\x88G<2"
+[02]         --fence(107)--
+[02]         data: non-det output, ptr = 0x804b188, size = 4, 0072046c
+[02]         --fence(108)--
+[02]         data: output, ptr = 0x804b190, size = 2, 1400
+[02]         --fence(109)--
+[02]         data: output, ptr = 0x804b192, size = 5, "TC102"
+[02]         --fence(110)--
+[02]         data: output, ptr = 0x804b197, size = 1, 00
+[02]         --fence(111)--
+[02]         data: output, ptr = 0x804b19b, size = 1, 08
+[02]         --fence(112)--
+[02]         data: output, ptr = 0x804b18c, size = 4, 33d679f3
+[02]         --fence(113)--
+[02]         data: non-det output, ptr = 0x804b19c, size = 4, 00720453
+[02]         --fence(114)--
+[02]         data: output, ptr = 0x804b1a4, size = 2, 1400
+[02]         --fence(115)--
+[02]         data: output, ptr = 0x804b1a6, size = 6, "R2.log"
+[02]         --fence(116)--
+[02]         data: output, ptr = 0x804b1ac, size = 1, 00
+[02]         --fence(117)--
+[02]         data: output, ptr = 0x804b1af, size = 1, 08
+[02]         --fence(118)--
+[02]         data: output, ptr = 0x804b1a0, size = 4, 34cfffae
+[02]         --fence(119)--
+[02]         data: non-det output, ptr = 0x804b1b0, size = 4, 00720465
+[02]         --fence(120)--
+[02]         data: output, ptr = 0x804b1b8, size = 2, 1800
+[02]         --fence(121)--
+[02]         data: output, ptr = 0x804b1ba, size = 9, "TC104.log"
+[02]         --fence(122)--
+[02]         data: output, ptr = 0x804b1c3, size = 1, 00
+[02]         --fence(123)--
+[02]         data: output, ptr = 0x804b1c7, size = 1, 08
+[02]         --fence(124)--
+[02]         data: output, ptr = 0x804b1b4, size = 4, "L&\xcb6"
+[02]         --fence(125)--
+[02]         data: non-det output, ptr = 0x804b1c8, size = 4, 00720434
+[02]         --fence(126)--
+[02]         data: output, ptr = 0x804b1d0, size = 2, 1400
+[02]         --fence(127)--
+[02]         data: output, ptr = 0x804b1d2, size = 7, "TC101.c"
+[02]         --fence(128)--
+[02]         data: output, ptr = 0x804b1d9, size = 1, 00
+[02]         --fence(129)--
+[02]         data: output, ptr = 0x804b1db, size = 1, 08
+[02]         --fence(130)--
+[02]         data: output, ptr = 0x804b1cc, size = 4, 39c8d4ef
+[02]         --fence(131)--
+[02]         data: non-det output, ptr = 0x804b1dc, size = 4, 0072045b
+[02]         --fence(132)--
+[02]         data: output, ptr = 0x804b1e4, size = 2, 1400
+[02]         --fence(133)--
+[02]         data: output, ptr = 0x804b1e6, size = 6, "R3.txt"
+[02]         --fence(134)--
+[02]         data: output, ptr = 0x804b1ec, size = 1, 00
+[02]         --fence(135)--
+[02]         data: output, ptr = 0x804b1ef, size = 1, 08
+[02]         --fence(136)--
+[02]         data: output, ptr = 0x804b1e0, size = 4, 42b6b790
+[02]         --fence(137)--
+[02]         data: non-det output, ptr = 0x804b1f0, size = 4, 0072044c
+[02]         --fence(138)--
+[02]         data: output, ptr = 0x804b1f8, size = 2, 1400
+[02]         --fence(139)--
+[02]         data: output, ptr = 0x804b1fa, size = 6, "t2.txt"
+[02]         --fence(140)--
+[02]         data: output, ptr = 0x804b200, size = 1, 00
+[02]         --fence(141)--
+[02]         data: output, ptr = 0x804b203, size = 1, 08
+[02]         --fence(142)--
+[02]         data: output, ptr = 0x804b1f4, size = 4, 45a1b1b1
+[02]         --fence(143)--
+[02]         data: non-det output, ptr = 0x804b204, size = 4, 0072043f
+[02]         --fence(144)--
+[02]         data: output, ptr = 0x804b20c, size = 2, 1400
+[02]         --fence(145)--
+[02]         data: output, ptr = 0x804b20e, size = 5, "TC101"
+[02]         --fence(146)--
+[02]         data: output, ptr = 0x804b213, size = 1, 00
+[02]         --fence(147)--
+[02]         data: output, ptr = 0x804b217, size = 1, 08
+[02]         --fence(148)--
+[02]         data: output, ptr = 0x804b208, size = 4, "yF\xebF"
+[02]         --fence(149)--
+[02]         data: non-det output, ptr = 0x804b218, size = 4, 0072045c
+[02]         --fence(150)--
+[02]         data: output, ptr = 0x804b220, size = 2, 1c00
+[02]         --fence(151)--
+[02]         data: output, ptr = 0x804b222, size = 13, "ps|grep X.log"
+[02]         --fence(152)--
+[02]         data: output, ptr = 0x804b22f, size = 1, 00
+[02]         --fence(153)--
+[02]         data: output, ptr = 0x804b233, size = 1, 08
+[02]         --fence(154)--
+[02]         data: output, ptr = 0x804b21c, size = 4, 497083a6
+[02]         --fence(155)--
+[02]         data: non-det output, ptr = 0x804b234, size = 4, 0072045a
+[02]         --fence(156)--
+[02]         data: output, ptr = 0x804b23c, size = 2, 1400
+[02]         --fence(157)--
+[02]         data: output, ptr = 0x804b23e, size = 6, "R3.log"
+[02]         --fence(158)--
+[02]         data: output, ptr = 0x804b244, size = 1, 00
+[02]         --fence(159)--
+[02]         data: output, ptr = 0x804b247, size = 1, 08
+[02]         --fence(160)--
+[02]         data: output, ptr = 0x804b238, size = 4, 49a14181
+[02]         --fence(161)--
+[02]         data: non-det output, ptr = 0x804b248, size = 4, 00720460
+[02]         --fence(162)--
+[02]         data: output, ptr = 0x804b250, size = 2, 1400
+[02]         --fence(163)--
+[02]         data: output, ptr = 0x804b252, size = 8, "bash.log"
+[02]         --fence(164)--
+[02]         data: output, ptr = 0x804b25a, size = 1, 00
+[02]         --fence(165)--
+[02]         data: output, ptr = 0x804b25b, size = 1, 08
+[02]         --fence(166)--
+[02]         data: output, ptr = 0x804b24c, size = 4, "-g\xccP"
+[02]         --fence(167)--
+[02]         data: non-det output, ptr = 0x804b25c, size = 4, 00720452
+[02]         --fence(168)--
+[02]         data: output, ptr = 0x804b264, size = 2, 1000
+[02]         --fence(169)--
+[02]         data: output, ptr = 0x804b266, size = 2, "R2"
+[02]         --fence(170)--
+[02]         data: output, ptr = 0x804b268, size = 1, 00
+[02]         --fence(171)--
+[02]         data: output, ptr = 0x804b26b, size = 1, 08
+[02]         --fence(172)--
+[02]         data: output, ptr = 0x804b260, size = 4, 53a3c4c1
+[02]         --fence(173)--
+[02]         data: non-det output, ptr = 0x804b26c, size = 4, 00720467
+[02]         --fence(174)--
+[02]         data: output, ptr = 0x804b274, size = 2, 1400
+[02]         --fence(175)--
+[02]         data: output, ptr = 0x804b276, size = 6, "R2.txt"
+[02]         --fence(176)--
+[02]         data: output, ptr = 0x804b27c, size = 1, 00
+[02]         --fence(177)--
+[02]         data: output, ptr = 0x804b27f, size = 1, 08
+[02]         --fence(178)--
+[02]         data: output, ptr = 0x804b270, size = 4, 53f13b8a
+[02]         --fence(179)--
+[02]         data: non-det output, ptr = 0x804b280, size = 4, 0072043b
+[02]         --fence(180)--
+[02]         data: output, ptr = 0x804b288, size = 2, 1400
+[02]         --fence(181)--
+[02]         data: output, ptr = 0x804b28a, size = 7, "TC107.c"
+[02]         --fence(182)--
+[02]         data: output, ptr = 0x804b291, size = 1, 00
+[02]         --fence(183)--
+[02]         data: output, ptr = 0x804b293, size = 1, 08
+[02]         --fence(184)--
+[02]         data: output, ptr = 0x804b284, size = 4, 5479fe03
+[02]         --fence(185)--
+[02]         data: non-det output, ptr = 0x804b294, size = 4, 00720001
+[02]         --fence(186)--
+[02]         data: output, ptr = 0x804b29c, size = 2, 1000
+[02]         --fence(187)--
+[02]         data: output, ptr = 0x804b29e, size = 2, ".."
+[02]         --fence(188)--
+[02]         data: output, ptr = 0x804b2a0, size = 1, 00
+[02]         --fence(189)--
+[02]         data: output, ptr = 0x804b2a3, size = 1, 04
+[02]         --fence(190)--
+[02]         data: output, ptr = 0x804b298, size = 4, "g?^V"
+[02]         --fence(191)--
+[02]         data: non-det output, ptr = 0x804b2a4, size = 4, 00720455
+[02]         --fence(192)--
+[02]         data: output, ptr = 0x804b2ac, size = 2, 1400
+[02]         --fence(193)--
+[02]         data: output, ptr = 0x804b2ae, size = 5, "d.txt"
+[02]         --fence(194)--
+[02]         data: output, ptr = 0x804b2b3, size = 1, 00
+[02]         --fence(195)--
+[02]         data: output, ptr = 0x804b2b7, size = 1, 08
+[02]         --fence(196)--
+[02]         data: output, ptr = 0x804b2a8, size = 4, 5a120df8
+[02]         --fence(197)--
+[02]         data: non-det output, ptr = 0x804b2b8, size = 4, 00720469
+[02]         --fence(198)--
+[02]         data: output, ptr = 0x804b2c0, size = 2, 1800
+[02]         --fence(199)--
+[02]         data: output, ptr = 0x804b2c2, size = 9, "TC104.txt"
+[02]         --fence(200)--
+[02]         data: output, ptr = 0x804b2cb, size = 1, 00
+[02]         --fence(201)--
+[02]         data: output, ptr = 0x804b2cf, size = 1, 08
+[02]         --fence(202)--
+[02]         data: output, ptr = 0x804b2bc, size = 4, 5be2dced
+[02]         --fence(203)--
+[02]         data: non-det output, ptr = 0x804b2d0, size = 4, 00720436
+[02]         --fence(204)--
+[02]         data: output, ptr = 0x804b2d8, size = 2, 1400
+[02]         --fence(205)--
+[02]         data: output, ptr = 0x804b2da, size = 7, "TC102.c"
+[02]         --fence(206)--
+[02]         data: output, ptr = 0x804b2e1, size = 1, 00
+[02]         --fence(207)--
+[02]         data: output, ptr = 0x804b2e3, size = 1, 08
+[02]         --fence(208)--
+[02]         data: output, ptr = 0x804b2d4, size = 4, 5bfd6fd7
+[02]         --fence(209)--
+[02]         data: non-det output, ptr = 0x804b2e4, size = 4, 00720466
+[02]         --fence(210)--
+[02]         data: output, ptr = 0x804b2ec, size = 2, 1400
+[02]         --fence(211)--
+[02]         data: output, ptr = 0x804b2ee, size = 6, "R1.txt"
+[02]         --fence(212)--
+[02]         data: output, ptr = 0x804b2f4, size = 1, 00
+[02]         --fence(213)--
+[02]         data: output, ptr = 0x804b2f7, size = 1, 08
+[02]         --fence(214)--
+[02]         data: output, ptr = 0x804b2e8, size = 4, 5eae09db
+[02]         --fence(215)--
+[02]         data: non-det output, ptr = 0x804b2f8, size = 4, 00720437
+[02]         --fence(216)--
+[02]         data: output, ptr = 0x804b300, size = 2, 1400
+[02]         --fence(217)--
+[02]         data: output, ptr = 0x804b302, size = 7, "TC103.c"
+[02]         --fence(218)--
+[02]         data: output, ptr = 0x804b309, size = 1, 00
+[02]         --fence(219)--
+[02]         data: output, ptr = 0x804b30b, size = 1, 08
+[02]         --fence(220)--
+[02]         data: output, ptr = 0x804b2fc, size = 4, 660752b4
+[02]         --fence(221)--
+[02]         data: non-det output, ptr = 0x804b30c, size = 4, 00720468
+[02]         --fence(222)--
+[02]         data: output, ptr = 0x804b314, size = 2, 1800
+[02]         --fence(223)--
+[02]         data: output, ptr = 0x804b316, size = 9, "TC102.txt"
+[02]         --fence(224)--
+[02]         data: output, ptr = 0x804b31f, size = 1, 00
+[02]         --fence(225)--
+[02]         data: output, ptr = 0x804b323, size = 1, 08
+[02]         --fence(226)--
+[02]         data: output, ptr = 0x804b310, size = 4, 66559a12
+[02]         --fence(227)--
+[02]         data: non-det output, ptr = 0x804b324, size = 4, 00720454
+[02]         --fence(228)--
+[02]         data: output, ptr = 0x804b32c, size = 2, 1400
+[02]         --fence(229)--
+[02]         data: output, ptr = 0x804b32e, size = 5, "c.txt"
+[02]         --fence(230)--
+[02]         data: output, ptr = 0x804b333, size = 1, 00
+[02]         --fence(231)--
+[02]         data: output, ptr = 0x804b337, size = 1, 08
+[02]         --fence(232)--
+[02]         data: output, ptr = 0x804b328, size = 4, 66da6b13
+[02]         --fence(233)--
+[02]         data: non-det output, ptr = 0x804b338, size = 4, 0072044a
+[02]         --fence(234)--
+[02]         data: output, ptr = 0x804b340, size = 2, 1800
+[02]         --fence(235)--
+[02]         data: output, ptr = 0x804b342, size = 9, "TC103.txt"
+[02]         --fence(236)--
+[02]         data: output, ptr = 0x804b34b, size = 1, 00
+[02]         --fence(237)--
+[02]         data: output, ptr = 0x804b34f, size = 1, 08
+[02]         --fence(238)--
+[02]         data: output, ptr = 0x804b33c, size = 4, 673091a1
+[02]         --fence(239)--
+[02]         data: non-det output, ptr = 0x804b350, size = 4, 00720458
+[02]         --fence(240)--
+[02]         data: output, ptr = 0x804b358, size = 2, 1400
+[02]         --fence(241)--
+[02]         data: output, ptr = 0x804b35a, size = 6, "ps.log"
+[02]         --fence(242)--
+[02]         data: output, ptr = 0x804b360, size = 1, 00
+[02]         --fence(243)--
+[02]         data: output, ptr = 0x804b363, size = 1, 08
+[02]         --fence(244)--
+[02]         data: output, ptr = 0x804b354, size = 4, 688438fb
+[02]         --fence(245)--
+[02]         data: non-det output, ptr = 0x804b364, size = 4, 00720456
+[02]         --fence(246)--
+[02]         data: output, ptr = 0x804b36c, size = 2, 1400
+[02]         --fence(247)--
+[02]         data: output, ptr = 0x804b36e, size = 5, "e.txt"
+[02]         --fence(248)--
+[02]         data: output, ptr = 0x804b373, size = 1, 00
+[02]         --fence(249)--
+[02]         data: output, ptr = 0x804b377, size = 1, 08
+[02]         --fence(250)--
+[02]         data: output, ptr = 0x804b368, size = 4, 6d208819
+[02]         --fence(251)--
+[02]         data: non-det output, ptr = 0x804b378, size = 4, 00720435
+[02]         --fence(252)--
+[02]         data: output, ptr = 0x804b380, size = 2, 1000
+[02]         --fence(253)--
+[02]         data: output, ptr = 0x804b382, size = 2, "R3"
+[02]         --fence(254)--
+[02]         data: output, ptr = 0x804b384, size = 1, 00
+[02]         --fence(255)--
+[02]         data: output, ptr = 0x804b387, size = 1, 08
+[02]         --fence(256)--
+[02]         data: output, ptr = 0x804b37c, size = 4, 6f08a95c
+[02]         --fence(257)--
+[02]         data: non-det output, ptr = 0x804b388, size = 4, 00720450
+[02]         --fence(258)--
+[02]         data: output, ptr = 0x804b390, size = 2, 1400
+[02]         --fence(259)--
+[02]         data: output, ptr = 0x804b392, size = 6, "R1.log"
+[02]         --fence(260)--
+[02]         data: output, ptr = 0x804b398, size = 1, 00
+[02]         --fence(261)--
+[02]         data: output, ptr = 0x804b39b, size = 1, 08
+[02]         --fence(262)--
+[02]         data: output, ptr = 0x804b38c, size = 4, 6fd2defa
+[02]         --fence(263)--
+[02]         data: non-det output, ptr = 0x804b39c, size = 4, 00720444
+[02]         --fence(264)--
+[02]         data: output, ptr = 0x804b3a4, size = 2, 1400
+[02]         --fence(265)--
+[02]         data: output, ptr = 0x804b3a6, size = 5, "TC103"
+[02]         --fence(266)--
+[02]         data: output, ptr = 0x804b3ab, size = 1, 00
+[02]         --fence(267)--
+[02]         data: output, ptr = 0x804b3af, size = 1, 08
+[02]         --fence(268)--
+[02]         data: output, ptr = 0x804b3a0, size = 4, "1p<p"
+[02]         --fence(269)--
+[02]         data: non-det output, ptr = 0x804b3b0, size = 4, 0072043a
+[02]         --fence(270)--
+[02]         data: output, ptr = 0x804b3b8, size = 2, 1400
+[02]         --fence(271)--
+[02]         data: output, ptr = 0x804b3ba, size = 7, "TC106.c"
+[02]         --fence(272)--
+[02]         data: output, ptr = 0x804b3c1, size = 1, 00
+[02]         --fence(273)--
+[02]         data: output, ptr = 0x804b3c3, size = 1, 08
+[02]         --fence(274)--
+[02]         data: output, ptr = 0x804b3b4, size = 4, "\x83\txs"
+[02]         --fence(275)--
+[02]         data: non-det output, ptr = 0x804b3c4, size = 4, 00720438
+[02]         --fence(276)--
+[02]         data: output, ptr = 0x804b3cc, size = 2, 1400
+[02]         --fence(277)--
+[02]         data: output, ptr = 0x804b3ce, size = 7, "TC104.c"
+[02]         --fence(278)--
+[02]         data: output, ptr = 0x804b3d5, size = 1, 00
+[02]         --fence(279)--
+[02]         data: output, ptr = 0x804b3d7, size = 1, 08
+[02]         --fence(280)--
+[02]         data: output, ptr = 0x804b3c8, size = 4, 76ffc4ec
+[02]         --fence(281)--
+[02]         data: non-det output, ptr = 0x804b3d8, size = 4, 00720443
+[02]         --fence(282)--
+[02]         data: output, ptr = 0x804b3e0, size = 2, 1800
+[02]         --fence(283)--
+[02]         data: output, ptr = 0x804b3e2, size = 9, "TC101.txt"
+[02]         --fence(284)--
+[02]         data: output, ptr = 0x804b3eb, size = 1, 00
+[02]         --fence(285)--
+[02]         data: output, ptr = 0x804b3ef, size = 1, 08
+[02]         --fence(286)--
+[02]         data: output, ptr = 0x804b3dc, size = 4, 771de366
+[02]         --fence(287)--
+[02]         data: non-det output, ptr = 0x804b3f0, size = 4, 0072045d
+[02]         --fence(288)--
+[02]         data: output, ptr = 0x804b3f8, size = 2, 1000
+[02]         --fence(289)--
+[02]         data: output, ptr = 0x804b3fa, size = 4, "R3.c"
+[02]         --fence(290)--
+[02]         data: output, ptr = 0x804b3fe, size = 1, 00
+[02]         --fence(291)--
+[02]         data: output, ptr = 0x804b3ff, size = 1, 08
+[02]         --fence(292)--
+[02]         data: output, ptr = 0x804b3f4, size = 4, ";\t1y"
+[02]         --fence(293)--
+[02]         data: non-det output, ptr = 0x804b400, size = 4, 00720440
+[02]         --fence(294)--
+[02]         data: output, ptr = 0x804b408, size = 2, 1400
+[02]         --fence(295)--
+[02]         data: output, ptr = 0x804b40a, size = 5, "a.txt"
+[02]         --fence(296)--
+[02]         data: output, ptr = 0x804b40f, size = 1, 00
+[02]         --fence(297)--
+[02]         data: output, ptr = 0x804b413, size = 1, 08
+[02]         --fence(298)--
+[02]         data: output, ptr = 0x804b404, size = 4, "\xf3S!z"
+[02]         --fence(299)--
+[02]         data: non-det output, ptr = 0x804b414, size = 4, 00720464
+[02]         --fence(300)--
+[02]         data: output, ptr = 0x804b41c, size = 2, 1400
+[02]         --fence(301)--
+[02]         data: output, ptr = 0x804b41e, size = 5, "TC104"
+[02]         --fence(302)--
+[02]         data: output, ptr = 0x804b423, size = 1, 00
+[02]         --fence(303)--
+[02]         data: output, ptr = 0x804b427, size = 1, 08
+[02]         --fence(304)--
+[02]         data: output, ptr = 0x804b418, size = 4, ",\xf3b{"
+[02]         --fence(305)--
+[02]         data: non-det output, ptr = 0x804b428, size = 4, 0072045f
+[02]         --fence(306)--
+[02]         data: output, ptr = 0x804b430, size = 2, 1400
+[02]         --fence(307)--
+[02]         data: output, ptr = 0x804b432, size = 6, "ps.txt"
+[02]         --fence(308)--
+[02]         data: output, ptr = 0x804b438, size = 1, 00
+[02]         --fence(309)--
+[02]         data: output, ptr = 0x804b43b, size = 1, 08
+[02]         --fence(310)--
+[02]         data: output, ptr = 0x804b42c, size = 4, 7baafe3c
+[02]         --fence(311)--
+[02]         data: non-det output, ptr = 0x804b43c, size = 4, 00720448
+[02]         --fence(312)--
+[02]         data: output, ptr = 0x804b444, size = 2, 1400
+[02]         --fence(313)--
+[02]         data: output, ptr = 0x804b446, size = 5, "0.txt"
+[02]         --fence(314)--
+[02]         data: output, ptr = 0x804b44b, size = 1, 00
+[02]         --fence(315)--
+[02]         data: output, ptr = 0x804b44f, size = 1, 08
+[02]         --fence(316)--
+[02]         data: output, ptr = 0x804b440, size = 4, 7baf381e
+[02]         --fence(317)--
+[02]         data: non-det output, ptr = 0x804b450, size = 4, 0072044e
+[02]         --fence(318)--
+[02]         data: output, ptr = 0x804b458, size = 2, 1000
+[02]         --fence(319)--
+[02]         data: output, ptr = 0x804b45a, size = 2, "R1"
+[02]         --fence(320)--
+[02]         data: output, ptr = 0x804b45c, size = 1, 00
+[02]         --fence(321)--
+[02]         data: output, ptr = 0x804b45f, size = 1, 08
+[02]         --fence(322)--
+[02]         data: output, ptr = 0x804b454, size = 4, 7fffffff
+[02]         --fence(323)--
+[02] fstat64(1, 0xbffadab0) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 000000c5, ebx: 00000001, ecx: bffadab0, edx: b774c000 esi: b774ca20, edi: 00002000, ebp: 00002000, esp: bffada58 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 19, serial = 0, desc = /dev/pts/0
+[02]       resource lock, type = inode, access = read, id = 20, serial = 0, desc = none
+[02]     data: non-det output, ptr = 0xbffadab0, size = 96, 0000000a 00000000 00000000 00000003 00002190 00000001 00000000 00000005 00008800 00000000 000000...
+[02]     --fence(0)--
+[02] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb7783000
+[02]     regs: eip: 0073:ffffe424, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffada6c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 13, desc = none
+[02] fstat64(0, 0xbffade40) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 000000c5, ebx: 00000000, ecx: bffade40, edx: b774c000 esi: b774cac0, edi: 00002000, ebp: 00002000, esp: bffadde8 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 19, serial = 1, desc = /dev/pts/0
+[02]       resource lock, type = inode, access = read, id = 20, serial = 0, desc = none
+[02]     data: non-det output, ptr = 0xbffade40, size = 96, 0000000a 00000000 00000000 00000003 00002190 00000001 00000000 00000005 00008800 00000000 000000...
+[02]     --fence(0)--
+[02] mmap_pgoff(0, 1000, 3, 34, -1, 0) = 0xb7782000
+[02]     regs: eip: 0073:ffffe424, eflags: 00000256, eax: 000000c0, ebx: 00000000, ecx: 00001000, edx: 00000003 esi: 00000022, edi: ffffffff, ebp: 00000000, esp: bffaddfc ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 14, desc = none
+[02] write(1, 0xb7783000, 21) = 21
+[02]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 00000004, ebx: 00000001, ecx: b7783000, edx: 00000015 esi: b7783000, edi: 00000015, ebp: b774ca20, esp: bffade28 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 19, serial = 2, desc = /dev/pts/0
+[02]       resource lock, type = inode, access = write, id = 20, serial = 2, desc = none
+[02]         data: input, ptr = 0xb7783000, size = 21, "Zap aa.txt ?(Y/N/A): "
+[02]         --fence(0)--
+[02] read(0, 0xb7782000, 1024) = 2
+[02]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 00000003, ebx: 00000000, ecx: b7782000, edx: 00000400 esi: b774cac0, edi: b774ca20, ebp: b75a86c0, esp: bffadec8 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 19, serial = 3, desc = /dev/pts/0
+[02]       resource lock, type = inode, access = read, id = 20, serial = 3, desc = none
+[02]         data: non-det output, ptr = 0xb7782000, size = 1, "y"
+[02]         data: non-det output, ptr = 0xb7782001, size = 1, "\n"
+[02]         --fence(0)--
+[01] waitpid(-1, 0xbffff5fc, 0x40000000) = 2
+[01]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 00000007, ebx: ffffffff, ecx: bffff5fc, edx: 40000000 esi: 00000001, edi: bffff6b4, ebp: bffff618, esp: bffff5c8 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: internal, ptr = (nil), size = 4, 00000002
+[01]     resource lock, type = pid, access = write, id = 10, serial = 4, desc = none
+[01]       data: output, ptr = 0xbffff5fc, size = 4, 00000000
+[01]       --fence(0)--
+[01] waitpid(-1, 0xbffff5fc, 0x40000000) = -10 ECHILD (No child processes)
+[01]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 00000007, ebx: ffffffff, ecx: bffff5fc, edx: 40000000 esi: 00000001, edi: bffff6b4, ebp: bffff618, esp: bffff5c8 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     data: internal, ptr = (nil), size = 4, 00000000
+[01]     data: internal, ptr = (nil), size = 4, fffffff6
+[01] exit_group(0) = 0
+[01]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 000000fc, ebx: 00000000, ecx: 00000000, edx: b7e016c0 esi: b7fa3244, edi: 00000000, ebp: b7fa3244, esp: bffff5ac ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[01]     resource lock, type = pid, access = write, id = 21, serial = 0, desc = none
+[01]     data: internal, ptr = (nil), size = 4, 00000000
+[01]     data: internal, ptr = (nil), size = 4, fffffff6
+[01]     resource lock, type = pid, access = write, id = 21, serial = 1, desc = none
+[01] queue EOF
+[02] unlink(0xbffae1b2) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000292, eax: 0000000a, ebx: bffae1b2, ecx: 742e6161, edx: 08048a46 esi: 00000000, edi: bffae1b4, ebp: bffae228, esp: bffae17c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     data: input string, ptr = 0xbffae1b2, size = 8, "./aa.txt"
+[02]     --fence(0)--
+[02]     resource lock, type = inode, access = write, id = 11, serial = 2, desc = none
+[02] getdents(3, 0x804b020, 8000) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000008d, ebx: 00000003, ecx: 0804b020, edx: 00008000 esi: 0804b020, edi: b774c000, ebp: bffae228, esp: bffae110 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = read, id = 15, serial = 11, desc = none
+[02]     resource lock, type = file, access = write, id = 18, serial = 1, desc = /root/Tests
+[02]       resource lock, type = inode, access = read, id = 11, serial = 3, desc = none
+[02] brk(0x806c000) = 0x806c000
+[02]     regs: eip: 0073:ffffe424, eflags: 00000296, eax: 0000002d, ebx: 0806c000, ecx: b774c000, edx: 0806c000 esi: 08074000, edi: 0806c000, ebp: b774de30, esp: bffae054 ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = mmap, access = write, id = 14, serial = 15, desc = none
+[02] close(3) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000282, eax: 00000006, ebx: 00000003, ecx: 00000000, edx: 08048a46 esi: 00000000, edi: bffae1b4, ebp: bffae228, esp: bffae17c ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = files_struct, access = write, id = 15, serial = 18, desc = none
+[02] exit_group(0) = 0
+[02]     regs: eip: 0073:ffffe424, eflags: 00000246, eax: 000000fc, ebx: 00000000, ecx: 00000001, edx: b774d898 esi: b774a244, edi: 00000000, ebp: b774a244, esp: bffae1bc ds: 007b, es: 007b, fs: 0000, gs: 0000, ss: 007b
+[02]     resource lock, type = pid, access = write, id = 10, serial = 2, desc = none
+[02]     resource lock, type = pid, access = write, id = 10, serial = 3, desc = none
+[02] queue EOF
