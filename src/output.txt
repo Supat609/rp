@@ -1,0 +1,2739 @@
+[2] close(255)==-9 EBADF (Bad file descriptor)
+[2] ioctl(16, 5401, 0xbfb06708)==0
+[2] ioctl(17, 5401, 0xbfb06708)==0
+[2] ioctl(18, 5401, 0xbfb06708)==0
+[2] ioctl(17, 5401, 0xbfb06708)==0
+[2] getpgrp()==0
+[2] rt_sigaction(3, 0xbfb06534, 0xbfb065c0, 8)==0
+[2] rt_sigaction(2, 0xbfb06544, 0, 8)==0
+[2] rt_sigprocmask(1, 0xbfb06710, 0, 8)==0
+[2] rt_sigaction(15, 0xbfb06534, 0xbfb065c0, 8)==0
+[2] rt_sigaction(1, 0, 0xbfb06700, 8)==0
+[2] rt_sigaction(1, 0xbfb06544, 0, 8)==0
+[2] rt_sigprocmask(1, 0xbfb06710, 0, 8)==0
+[2] rt_sigaction(24, 0, 0xbfb06700, 8)==0
+[2] rt_sigaction(24, 0xbfb06544, 0, 8)==0
+[2] rt_sigprocmask(1, 0xbfb06710, 0, 8)==0
+[2] rt_sigaction(25, 0, 0xbfb06700, 8)==0
+[2] rt_sigaction(20, 0xbfb06534, 0xbfb065c0, 8)==0
+[2] rt_sigaction(21, 0xbfb06534, 0xbfb065c0, 8)==0
+[2] rt_sigaction(22, 0xbfb06534, 0xbfb065c0, 8)==0
+[2] ioctl(18, 5401, 0xbfb06708)==0
+[2] ioctl(18, 540f, 0xbfb066cc)==0
+[2] ioctl(18, 5410, 0xbfb067a4)==0
+[2] getpgrp()==0
+[2] setpgid(0, 2)==0
+[2] dup2(18, 15)==15
+[2] fcntl64(15, 2, 1)==0
+[2] rt_sigaction(17, 0xbfb06544, 0, 8)==0
+[2] rt_sigprocmask(1, 0xbfb06710, 0, 8)==0
+[2] brk(0x80d0000)==0x80d0000
+[2] brk(0x80d0800)==0x80d0800
+[2] ioctl(16, 5401, 0xbfb06698)==0
+[2] ioctl(16, 5403, 0xbfb06670)==0
+[2] rt_sigaction(28, 0xbfb06484, 0xbfb06510, 8)==0
+[2] rt_sigprocmask(1, 0xbfb06700, 0, 8)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] open(0x808f21e, 8000)==3
+[2] dup(3)==4
+[2] dup(4)==5
+[2] dup(5)==6
+[2] close(5)==0
+[2] close(4)==0
+[2] close(3)==0
+[2] fcntl64(6, 2, 1)==0
+[2] ioctl(6, 5401, 0xbfb05548)==-25 ENOTTY (Inappropriate ioctl for device)
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80d8800)==0x80d8800
+[2] read(6, 0xbfb042cf, 1000)==3108
+[2] llseek(6, 0, 0, 0xbfb04270, 1)==0
+[2] brk(0x80d9000)==0x80d9000
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80d9800)==0x80d9800
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80da000)==0x80da000
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] access(0x80b7008, 4)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] brk(0x80da800)==0x80da800
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] pipe(0xbfb04e08)==0
+[2] dup(3)==5
+[2] dup(5)==7
+[2] close(5)==0
+[2] close(3)==0
+[2] fcntl64(7, 2, 1)==0
+[2] dup(4)==3
+[2] dup(3)==5
+[2] dup(5)==8
+[2] close(5)==0
+[2] close(3)==0
+[2] close(4)==0
+[2] fcntl64(8, 2, 1)==0
+[2] clone()==4
+[2] gettimeofday(0x80da32c, 0)==0
+[2] close(8)==0
+[2] read(7, 0xbfb03d4c, 1000)==11
+[2] read(7, 0xbfb03d4c, 1000)==0
+[2] close(7)==0
+[2] rt_sigprocmask(0, 0xbfaffb94, 0xbfaffc14, 8)==0
+[2] SingleOperator==signal: SIGCHLD, deferred = false, info = 00000011 00000000 00040001 00000004 00000000 00000000 00000000 00000001 d8f700b4 00005454 000000...
+[2] rt_sigsuspend(0xbfaffb14, 8)==-514 ERESTARTNOHAND
+[2] resource lock, type==pid, access
+[2] signal handled, signal==SIGCHLD
+[2] SingleOperator==data: output, ptr = 0xbfaff840, size = 108, ffff037f ffff0000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfaff8ac, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfaff8ae, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfaff8b0, size = 512, 0000037f 00000000 00000000 00000000 00000000 00000000 00001f80 0000ffff 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfaff560, size = 4, 00000011
+[2] SingleOperator==data: output, ptr = 0xbfaff564, size = 4, 00000033
+[2] SingleOperator==data: output, ptr = 0xbfaff568, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff56c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff570, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff574, size = 4, 080da308
+[2] SingleOperator==data: output, ptr = 0xbfaff578, size = 4, 00010101
+[2] SingleOperator==data: output, ptr = 0xbfaff57c, size = 4, bfaffcb8
+[2] SingleOperator==data: output, ptr = 0xbfaff580, size = 4, bfaffab0
+[2] SingleOperator==data: output, ptr = 0xbfaff584, size = 4, bfaffb14
+[2] SingleOperator==data: output, ptr = 0xbfaff588, size = 4, b7685000
+[2] SingleOperator==data: output, ptr = 0xbfaff58c, size = 4, 00000008
+[2] SingleOperator==data: output, ptr = 0xbfaff590, size = 4, fffffffc
+[2] SingleOperator==data: output, ptr = 0xbfaff594, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff598, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff59c, size = 4, ffffe424
+[2] SingleOperator==data: output, ptr = 0xbfaff5a0, size = 4, 00000073
+[2] SingleOperator==data: output, ptr = 0xbfaff5a4, size = 4, 00000246
+[2] SingleOperator==data: output, ptr = 0xbfaff5a8, size = 4, bfaffab0
+[2] SingleOperator==data: output, ptr = 0xbfaff5ac, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff5b0, size = 4, bfaff840
+[2] SingleOperator==data: output, ptr = 0xbfaff5b4, size = 4, 00010002
+[2] SingleOperator==data: output, ptr = 0xbfaff5b8, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff82c, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff55c, size = 4, ffffe400
+[2] SingleOperator==data: output, ptr = 0xbfaff830, size = 8, 0077b858 80cd0000
+[2] sigreturn()==-4 EINTR (Interrupted system call)
+[2] wait4(-1, 0xbfaffaac, 1, 0xbfaffa64)==4
+[2] wait4(-1, 0xbfaffaac, 1, 0xbfaffa64)==-10 ECHILD (No child processes)
+[2] rt_sigprocmask(2, 0xbfaffc14, 0, 8)==0
+[2] ioctl(15, 5410, 0xbfaffae4)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80db000)==0x80db000
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] stat64(0x80b7008, 0xbfb04864)==-2 ENOENT (No such file or directory)
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] stat64(0x80b7008, 0xbfb04864)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] pipe(0xbfb04de8)==0
+[2] dup(3)==5
+[2] dup(5)==7
+[2] close(5)==0
+[2] close(3)==0
+[2] fcntl64(7, 2, 1)==0
+[2] dup(4)==3
+[2] dup(3)==5
+[2] dup(5)==8
+[2] close(5)==0
+[2] close(3)==0
+[2] close(4)==0
+[2] fcntl64(8, 2, 1)==0
+[2] clone()==5
+[2] gettimeofday(0x80da22c, 0)==0
+[2] close(8)==0
+[2] read(7, 0xbfb03d2c, 1000)==1438
+[2] brk(0x80db800)==0x80db800
+[2] brk(0x80dd800)==0x80dd800
+[2] brk(0x80e1800)==0x80e1800
+[2] read(7, 0xbfb03d2c, 1000)==0
+[2] close(7)==0
+[2] rt_sigprocmask(0, 0xbfaffb74, 0xbfaffbf4, 8)==0
+[2] SingleOperator==signal: SIGCHLD, deferred = false, info = 00000011 00000000 00040001 00000005 00000000 00000000 00000000 00000000 00000032 0000002e 000000...
+[2] rt_sigsuspend(0xbfaffaf4, 8)==-514 ERESTARTNOHAND
+[2] resource lock, type==pid, access
+[2] signal handled, signal==SIGCHLD
+[2] SingleOperator==data: output, ptr = 0xbfaff820, size = 108, ffff037f ffff0000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfaff88c, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfaff88e, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfaff890, size = 512, 0000037f 00000000 00000000 00000000 00000000 00000000 00001f80 0000ffff 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfaff540, size = 4, 00000011
+[2] SingleOperator==data: output, ptr = 0xbfaff544, size = 4, 00000033
+[2] SingleOperator==data: output, ptr = 0xbfaff548, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff54c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff550, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff554, size = 4, 080da208
+[2] SingleOperator==data: output, ptr = 0xbfaff558, size = 4, 00010101
+[2] SingleOperator==data: output, ptr = 0xbfaff55c, size = 4, bfaffc98
+[2] SingleOperator==data: output, ptr = 0xbfaff560, size = 4, bfaffa90
+[2] SingleOperator==data: output, ptr = 0xbfaff564, size = 4, bfaffaf4
+[2] SingleOperator==data: output, ptr = 0xbfaff568, size = 4, b7685000
+[2] SingleOperator==data: output, ptr = 0xbfaff56c, size = 4, 00000008
+[2] SingleOperator==data: output, ptr = 0xbfaff570, size = 4, fffffffc
+[2] SingleOperator==data: output, ptr = 0xbfaff574, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff578, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff57c, size = 4, ffffe424
+[2] SingleOperator==data: output, ptr = 0xbfaff580, size = 4, 00000073
+[2] SingleOperator==data: output, ptr = 0xbfaff584, size = 4, 00000246
+[2] SingleOperator==data: output, ptr = 0xbfaff588, size = 4, bfaffa90
+[2] SingleOperator==data: output, ptr = 0xbfaff58c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfaff590, size = 4, bfaff820
+[2] SingleOperator==data: output, ptr = 0xbfaff594, size = 4, 00010002
+[2] SingleOperator==data: output, ptr = 0xbfaff598, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff80c, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfaff53c, size = 4, ffffe400
+[2] SingleOperator==data: output, ptr = 0xbfaff810, size = 8, 0077b858 80cd0000
+[2] sigreturn()==-4 EINTR (Interrupted system call)
+[2] wait4(-1, 0xbfaffa8c, 1, 0xbfaffa44)==5
+[2] wait4(-1, 0xbfaffa8c, 1, 0xbfaffa44)==-10 ECHILD (No child processes)
+[2] rt_sigprocmask(2, 0xbfaffbf4, 0, 8)==0
+[2] ioctl(15, 5410, 0xbfaffac4)==0
+[2] fcntl64(6, 2, 1)==0
+[2] fcntl64(17, 2, 1)==0
+[2] fcntl64(18, 2, 1)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] dup(0)==3
+[2] dup(3)==4
+[2] dup(4)==5
+[2] dup(5)==7
+[2] close(5)==0
+[2] close(4)==0
+[2] close(3)==0
+[2] fcntl64(7, 2, 1)==0
+[2] dup(1)==3
+[2] dup(3)==4
+[2] dup(4)==5
+[2] dup(5)==8
+[2] close(5)==0
+[2] close(4)==0
+[2] close(3)==0
+[2] fcntl64(8, 2, 1)==0
+[2] dup(2)==3
+[2] dup(3)==4
+[2] dup(4)==5
+[2] dup(5)==9
+[2] close(5)==0
+[2] close(4)==0
+[2] close(3)==0
+[2] fcntl64(9, 2, 1)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80e3800)==0x80e3800
+[2] alarm(0)==0
+[2] brk(0x80e5800)==0x80e5800
+[2] brk(0x80e7800)==0x80e7800
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(8)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(9)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] brk(0x80e9800)==0x80e9800
+[2] brk(0x80eb800)==0x80eb800
+[2] brk(0x80ec000)==0x80ec000
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] rt_sigprocmask(2, 0x80a735c, 0, 8)==0
+[2] close(7)==0
+[2] close(8)==0
+[2] close(9)==0
+[2] fcntl64(6, 2, 1)==0
+[2] fcntl64(17, 2, 1)==0
+[2] fcntl64(18, 2, 1)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] brk(0x80ec800)==0x80ec800
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] open(0xbfb04dc0, 0)==-2 ENOENT (No such file or directory)
+[2] open(0xbfb04dc0, 0)==-2 ENOENT (No such file or directory)
+[2] open(0xbfb04dc0, 0)==-2 ENOENT (No such file or directory)
+[2] open(0xbfb04dc0, 0)==-2 ENOENT (No such file or directory)
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] brk(0x80ed000)==0x80ed000
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] brk(0x80ed800)==0x80ed800
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] alarm(0)==0
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] stat64(0x80db008, 0xbfb04864)==-2 ENOENT (No such file or directory)
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] read(6, 0xbfb042cf, 988)==0
+[2] llseek(6, 0, 0, 0xbfb04270, 1)==0
+[2] ioctl(6, 5401, 0xbfb052b8)==-25 ENOTTY (Inappropriate ioctl for device)
+[2] rt_sigprocmask(2, 0x80a735c, 0, 8)==0
+[2] close(6)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] brk(0x80fd800)==0x80fd800
+[2] getdents64(3, 0x80ed820, 8000)==80
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==104
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==15160
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==32768
+[2] getdents64(3, 0x80ed820, 8000)==32768
+[2] getdents64(3, 0x80ed820, 8000)==32760
+[2] getdents64(3, 0x80ed820, 8000)==32768
+[2] getdents64(3, 0x80ed820, 8000)==12312
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==9240
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==3712
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==72
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] openat(-100, 0x80db008, 98800, 0)==3
+[2] getdents64(3, 0x80ed820, 8000)==536
+[2] getdents64(3, 0x80ed820, 8000)==0
+[2] close(3)==0
+[2] open(0x80db008, 8000)==-2 ENOENT (No such file or directory)
+[2] open(0x80db008, 8000)==-2 ENOENT (No such file or directory)
+[2] open(0x80cdb08, 8000)==-2 ENOENT (No such file or directory)
+[2] rt_sigprocmask(0, 0xbfb06654, 0xbfb066d4, 8)==0
+[2] ioctl(1, 5401, 0xbfb05d18)==-25 ENOTTY (Inappropriate ioctl for device)
+[2] stat64(0x80cdb08, 0xbfb04cc0)==-2 ENOENT (No such file or directory)
+[2] stat64(0x80d9848, 0xbfb04cc0)==0
+[2] access(0xbfb04da0, 4)==0
+[2] open(0xbfb04da0, 8000)==3
+[2] fstat64(3, 0xbfb03ba0)==0
+[2] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb770f000
+[2] read(3, 0xbfb03d0f, 1000)==1194
+[2] read(3, 0xb770f000, 1000)==0
+[2] brk(0x80fe000)==0x80fe000
+[2] close(3)==0
+[2] munmap(0xb770f000, 1000)==0
+[2] ioctl(2, 5401, 0xbfb05d18)==-25 ENOTTY (Inappropriate ioctl for device)
+[2] ioctl(2, 5401, 0xbfb05cc8)==-25 ENOTTY (Inappropriate ioctl for device)
+[2] ioctl(16, 5413, 0xbfb05e28)==0
+[2] brk(0x80fe800)==0x80fe800
+[2] brk(0x80ff000)==0x80ff000
+[2] brk(0x80ff800)==0x80ff800
+[2] brk(0x8100000)==0x8100000
+[2] brk(0x8100800)==0x8100800
+[2] brk(0x8101000)==0x8101000
+[2] brk(0x8101800)==0x8101800
+[2] brk(0x8102000)==0x8102000
+[2] brk(0x8102800)==0x8102800
+[2] brk(0x8103000)==0x8103000
+[2] brk(0x8103800)==0x8103800
+[2] brk(0x8104000)==0x8104000
+[2] brk(0x8104800)==0x8104800
+[2] brk(0x8105000)==0x8105000
+[2] brk(0x8105800)==0x8105800
+[2] brk(0x8106000)==0x8106000
+[2] brk(0x8106800)==0x8106800
+[2] brk(0x8107000)==0x8107000
+[2] brk(0x8107800)==0x8107800
+[2] brk(0x8108000)==0x8108000
+[2] brk(0x8108800)==0x8108800
+[2] brk(0x8109000)==0x8109000
+[2] brk(0x8109800)==0x8109800
+[2] brk(0x810a000)==0x810a000
+[2] brk(0x810a800)==0x810a800
+[2] brk(0x810b000)==0x810b000
+[2] brk(0x810b800)==0x810b800
+[2] brk(0x810c000)==0x810c000
+[2] brk(0x810c800)==0x810c800
+[2] brk(0x810d000)==0x810d000
+[2] brk(0x810d800)==0x810d800
+[2] brk(0x810e000)==0x810e000
+[2] brk(0x810e800)==0x810e800
+[2] brk(0x810f000)==0x810f000
+[2] brk(0x810f800)==0x810f800
+[2] brk(0x8110000)==0x8110000
+[2] brk(0x8110800)==0x8110800
+[2] brk(0x8111000)==0x8111000
+[2] brk(0x8111800)==0x8111800
+[2] brk(0x8112000)==0x8112000
+[2] brk(0x8112800)==0x8112800
+[2] brk(0x8113000)==0x8113000
+[2] brk(0x8113800)==0x8113800
+[2] brk(0x8114000)==0x8114000
+[2] brk(0x8114800)==0x8114800
+[2] brk(0x8115000)==0x8115000
+[2] brk(0x8115800)==0x8115800
+[2] brk(0x8116000)==0x8116000
+[2] brk(0x8116800)==0x8116800
+[2] brk(0x8117000)==0x8117000
+[2] brk(0x8117800)==0x8117800
+[2] brk(0x8118000)==0x8118000
+[2] brk(0x8118800)==0x8118800
+[2] brk(0x8119000)==0x8119000
+[2] brk(0x8119800)==0x8119800
+[2] brk(0x811a000)==0x811a000
+[2] brk(0x811a800)==0x811a800
+[2] brk(0x811b000)==0x811b000
+[2] brk(0x811b800)==0x811b800
+[2] brk(0x811c000)==0x811c000
+[2] brk(0x811c800)==0x811c800
+[2] brk(0x811d000)==0x811d000
+[2] brk(0x811d800)==0x811d800
+[2] brk(0x811e000)==0x811e000
+[2] brk(0x811e800)==0x811e800
+[2] brk(0x811f000)==0x811f000
+[2] brk(0x811f800)==0x811f800
+[2] brk(0x8120000)==0x8120000
+[2] brk(0x8120800)==0x8120800
+[2] brk(0x8121000)==0x8121000
+[2] brk(0x8121800)==0x8121800
+[2] brk(0x8122000)==0x8122000
+[2] brk(0x8122800)==0x8122800
+[2] brk(0x8123000)==0x8123000
+[2] brk(0x8123800)==0x8123800
+[2] brk(0x8124000)==0x8124000
+[2] brk(0x8124800)==0x8124800
+[2] brk(0x8125000)==0x8125000
+[2] brk(0x8125800)==0x8125800
+[2] brk(0x8126000)==0x8126000
+[2] brk(0x8126800)==0x8126800
+[2] brk(0x8127000)==0x8127000
+[2] brk(0x8127800)==0x8127800
+[2] brk(0x8128000)==0x8128000
+[2] brk(0x8128800)==0x8128800
+[2] brk(0x8129000)==0x8129000
+[2] brk(0x8129800)==0x8129800
+[2] brk(0x812a000)==0x812a000
+[2] brk(0x812a800)==0x812a800
+[2] brk(0x812b000)==0x812b000
+[2] brk(0x812b800)==0x812b800
+[2] brk(0x812c000)==0x812c000
+[2] brk(0x812c800)==0x812c800
+[2] brk(0x812d000)==0x812d000
+[2] brk(0x812d800)==0x812d800
+[2] brk(0x812e000)==0x812e000
+[2] brk(0x812e800)==0x812e800
+[2] brk(0x812f000)==0x812f000
+[2] brk(0x812f800)==0x812f800
+[2] brk(0x8130000)==0x8130000
+[2] brk(0x8130800)==0x8130800
+[2] brk(0x8131000)==0x8131000
+[2] brk(0x8131800)==0x8131800
+[2] brk(0x8132000)==0x8132000
+[2] brk(0x8132800)==0x8132800
+[2] brk(0x8133000)==0x8133000
+[2] brk(0x8133800)==0x8133800
+[2] brk(0x8134000)==0x8134000
+[2] brk(0x8134800)==0x8134800
+[2] brk(0x8135000)==0x8135000
+[2] brk(0x8135800)==0x8135800
+[2] brk(0x8136000)==0x8136000
+[2] brk(0x8136800)==0x8136800
+[2] brk(0x8137000)==0x8137000
+[2] brk(0x8137800)==0x8137800
+[2] brk(0x8138000)==0x8138000
+[2] brk(0x8138800)==0x8138800
+[2] brk(0x8139000)==0x8139000
+[2] brk(0x8139800)==0x8139800
+[2] brk(0x813a000)==0x813a000
+[2] brk(0x813a800)==0x813a800
+[2] brk(0x813b000)==0x813b000
+[2] brk(0x813b800)==0x813b800
+[2] brk(0x813c000)==0x813c000
+[2] brk(0x813c800)==0x813c800
+[2] brk(0x813d000)==0x813d000
+[2] brk(0x813d800)==0x813d800
+[2] brk(0x813e000)==0x813e000
+[2] brk(0x813e800)==0x813e800
+[2] brk(0x813f000)==0x813f000
+[2] brk(0x813f800)==0x813f800
+[2] brk(0x8140000)==0x8140000
+[2] brk(0x8140800)==0x8140800
+[2] brk(0x8141000)==0x8141000
+[2] brk(0x8141800)==0x8141800
+[2] brk(0x8142000)==0x8142000
+[2] brk(0x8142800)==0x8142800
+[2] brk(0x8143000)==0x8143000
+[2] brk(0x8143800)==0x8143800
+[2] brk(0x8144000)==0x8144000
+[2] brk(0x8144800)==0x8144800
+[2] brk(0x8145000)==0x8145000
+[2] brk(0x8145800)==0x8145800
+[2] brk(0x8146000)==0x8146000
+[2] brk(0x8146800)==0x8146800
+[2] brk(0x8147000)==0x8147000
+[2] brk(0x8147800)==0x8147800
+[2] brk(0x8148000)==0x8148000
+[2] brk(0x8148800)==0x8148800
+[2] brk(0x8149000)==0x8149000
+[2] brk(0x8149800)==0x8149800
+[2] brk(0x814a000)==0x814a000
+[2] brk(0x814a800)==0x814a800
+[2] brk(0x814b000)==0x814b000
+[2] brk(0x814b800)==0x814b800
+[2] brk(0x814c000)==0x814c000
+[2] brk(0x814c800)==0x814c800
+[2] brk(0x814d000)==0x814d000
+[2] brk(0x814d800)==0x814d800
+[2] brk(0x814e000)==0x814e000
+[2] brk(0x814e800)==0x814e800
+[2] brk(0x814f000)==0x814f000
+[2] brk(0x814f800)==0x814f800
+[2] brk(0x8150000)==0x8150000
+[2] brk(0x8150800)==0x8150800
+[2] brk(0x8151000)==0x8151000
+[2] brk(0x8151800)==0x8151800
+[2] brk(0x8152000)==0x8152000
+[2] brk(0x8152800)==0x8152800
+[2] brk(0x8153000)==0x8153000
+[2] brk(0x8153800)==0x8153800
+[2] brk(0x8154000)==0x8154000
+[2] brk(0x8154800)==0x8154800
+[2] brk(0x8155000)==0x8155000
+[2] brk(0x8155800)==0x8155800
+[2] brk(0x8156000)==0x8156000
+[2] brk(0x8156800)==0x8156800
+[2] brk(0x8157000)==0x8157000
+[2] brk(0x8157800)==0x8157800
+[2] brk(0x8158000)==0x8158000
+[2] brk(0x8158800)==0x8158800
+[2] brk(0x8159000)==0x8159000
+[2] brk(0x8159800)==0x8159800
+[2] brk(0x815a000)==0x815a000
+[2] brk(0x815a800)==0x815a800
+[2] brk(0x815b000)==0x815b000
+[2] brk(0x815b800)==0x815b800
+[2] brk(0x815c000)==0x815c000
+[2] brk(0x815c800)==0x815c800
+[2] brk(0x815d000)==0x815d000
+[2] brk(0x815d800)==0x815d800
+[2] brk(0x815e000)==0x815e000
+[2] brk(0x815e800)==0x815e800
+[2] brk(0x815f000)==0x815f000
+[2] brk(0x815f800)==0x815f800
+[2] brk(0x8160000)==0x8160000
+[2] brk(0x8160800)==0x8160800
+[2] brk(0x8161000)==0x8161000
+[2] brk(0x8161800)==0x8161800
+[2] brk(0x8162000)==0x8162000
+[2] brk(0x8162800)==0x8162800
+[2] brk(0x8163000)==0x8163000
+[2] brk(0x8163800)==0x8163800
+[2] brk(0x8164000)==0x8164000
+[2] brk(0x8164800)==0x8164800
+[2] brk(0x8165000)==0x8165000
+[2] brk(0x8165800)==0x8165800
+[2] brk(0x8166000)==0x8166000
+[2] brk(0x8166800)==0x8166800
+[2] brk(0x8167000)==0x8167000
+[2] brk(0x8167800)==0x8167800
+[2] brk(0x8168000)==0x8168000
+[2] brk(0x8168800)==0x8168800
+[2] brk(0x8169000)==0x8169000
+[2] brk(0x8169800)==0x8169800
+[2] brk(0x816a000)==0x816a000
+[2] brk(0x816a800)==0x816a800
+[2] brk(0x816b000)==0x816b000
+[2] brk(0x816b800)==0x816b800
+[2] brk(0x816c000)==0x816c000
+[2] brk(0x816c800)==0x816c800
+[2] brk(0x816d000)==0x816d000
+[2] brk(0x816d800)==0x816d800
+[2] brk(0x816e000)==0x816e000
+[2] brk(0x816e800)==0x816e800
+[2] brk(0x816f000)==0x816f000
+[2] brk(0x816f800)==0x816f800
+[2] brk(0x8170000)==0x8170000
+[2] brk(0x8170800)==0x8170800
+[2] brk(0x8171000)==0x8171000
+[2] brk(0x8171800)==0x8171800
+[2] brk(0x8172000)==0x8172000
+[2] brk(0x8172800)==0x8172800
+[2] brk(0x8173000)==0x8173000
+[2] brk(0x8173800)==0x8173800
+[2] brk(0x8174000)==0x8174000
+[2] brk(0x8174800)==0x8174800
+[2] brk(0x8175000)==0x8175000
+[2] brk(0x8175800)==0x8175800
+[2] brk(0x8176000)==0x8176000
+[2] brk(0x8176800)==0x8176800
+[2] brk(0x8177000)==0x8177000
+[2] brk(0x8177800)==0x8177800
+[2] brk(0x8178000)==0x8178000
+[2] brk(0x8178800)==0x8178800
+[2] brk(0x8179000)==0x8179000
+[2] brk(0x8179800)==0x8179800
+[2] brk(0x817a000)==0x817a000
+[2] brk(0x817a800)==0x817a800
+[2] brk(0x817b000)==0x817b000
+[2] brk(0x817b800)==0x817b800
+[2] brk(0x817c000)==0x817c000
+[2] brk(0x817c800)==0x817c800
+[2] brk(0x817d000)==0x817d000
+[2] brk(0x817d800)==0x817d800
+[2] brk(0x817e000)==0x817e000
+[2] brk(0x817e800)==0x817e800
+[2] brk(0x817f000)==0x817f000
+[2] brk(0x817f800)==0x817f800
+[2] rt_sigprocmask(2, 0xbfb066d4, 0, 8)==0
+[2] ioctl(16, 5413, 0xbfb06758)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] time(0)==0x52271798
+[2] time(0)==0x52271798
+[2] open(0xb7645a09, 80000)==3
+[2] fstat64(3, 0xbfb0638c)==0
+[2] fstat64(3, 0xbfb06220)==0
+[2] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb770f000
+[2] read(3, 0xb770f000, 1000)==118
+[2] llseek(3, -1, -6, 0xbfb061d0, 1)==0
+[2] read(3, 0xb770f000, 1000)==6
+[2] close(3)==0
+[2] munmap(0xb770f000, 1000)==0
+[2] brk(0x8180000)==0x8180000
+[2] stat64(0xb7645a09, 0xbfb0638c)==0
+[2] alarm(3600)==0
+[2] ioctl(16, 541b, 0xbfb06484)==0
+[2] ioctl(16, 5401, 0xbfb06388)==0
+[2] ioctl(16, 5403, 0xbfb06360)==0
+[2] write(17, 0x80af800, 137)==137
+===================================================
+[3] SingleOperator==data: output, ptr = 0xb74db728, size = 4, 00000003
+[3] rdtsc==0013dfd4d93e6957
+[3] close(6)==0
+[3] rt_sigaction(14, 0xbfb05354, 0xbfb053e0, 8)==0
+[3] rt_sigprocmask(1, 0xbfb06680, 0, 8)==0
+[3] alarm(2)==0
+[3] getpeername(16, 0xbfb055f4, 0xbfb06778)==-88 ENOTSOCK (Socket operation on non-socket)
+[3] time(0)==0x52271798
+[3] stat64(0x8096f51, 0xbfb054fc)==0
+[3] access(0xb76473a6, 0)==-2 ENOENT (No such file or directory)
+[3] open(0xb76473b5, 88000)==3
+[3] llseek(3, 0, 0, 0xbfb052b0, 0)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==384
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] alarm(0)==2
+[3] rt_sigaction(14, 0xbfb05054, 0xbfb050e0, 8)==0
+[3] alarm(10)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] read(3, 0xb76884c0, 384)==0
+[3] fcntl64(3, 7, 0xbfb052b0)==0
+[3] alarm(0)==10
+[3] rt_sigaction(14, 0xbfb05054, 0, 8)==0
+[3] alarm(2)==0
+[3] close(3)==0
+[3] exit_group(0)==0
+===================================================
+[4] SingleOperator==data: output, ptr = 0xb74db728, size = 4, 00000004
+[4] rdtsc==0013dfd4d9d1d80f
+[4] gettimeofday(0x80af544, 0)==0
+[4] getrusage(0, 0x809f080)==0
+[4] getrusage(-1, 0xbfaffc48)==0
+[4] close(7)==0
+[4] dup2(8, 1)==1
+[4] close(8)==0
+[4] dup2(18, 2)==2
+[4] close(18)==0
+[4] dup2(0, 16)==16
+[4] fcntl64(16, 2, 1)==0
+[4] dup2(1, 17)==17
+[4] fcntl64(17, 2, 1)==0
+[4] dup2(2, 18)==18
+[4] fcntl64(18, 2, 1)==0
+[4] dup2(16, 19)==19
+[4] fcntl64(19, 2, 1)==0
+[4] ioctl(18, 5401, 0xbfaffc28)==0
+[4] ioctl(17, 5401, 0xbfaffc28)==-22 EINVAL (Invalid argument)
+[4] close(0)==0
+[4] open(0x808f139, 8000)==0
+[4] close(1)==0
+[4] open(0x808f139, 8000)==1
+[4] close(2)==0
+[4] open(0x808f139, 8000)==2
+[4] close(3)==-9 EBADF (Bad file descriptor)
+[4] close(4)==-9 EBADF (Bad file descriptor)
+[4] close(5)==-9 EBADF (Bad file descriptor)
+[4] close(6)==0
+[4] close(7)==-9 EBADF (Bad file descriptor)
+[4] close(8)==-9 EBADF (Bad file descriptor)
+[4] close(9)==-9 EBADF (Bad file descriptor)
+[4] close(10)==-9 EBADF (Bad file descriptor)
+[4] close(11)==-9 EBADF (Bad file descriptor)
+[4] close(12)==-9 EBADF (Bad file descriptor)
+[4] close(13)==-9 EBADF (Bad file descriptor)
+[4] close(14)==-9 EBADF (Bad file descriptor)
+[4] close(20)==-9 EBADF (Bad file descriptor)
+[4] close(21)==-9 EBADF (Bad file descriptor)
+[4] close(22)==-9 EBADF (Bad file descriptor)
+[4] close(23)==-9 EBADF (Bad file descriptor)
+[4] close(24)==-9 EBADF (Bad file descriptor)
+[4] close(25)==-9 EBADF (Bad file descriptor)
+[4] close(26)==-9 EBADF (Bad file descriptor)
+[4] close(27)==-9 EBADF (Bad file descriptor)
+[4] close(28)==-9 EBADF (Bad file descriptor)
+[4] close(29)==-9 EBADF (Bad file descriptor)
+[4] close(30)==-9 EBADF (Bad file descriptor)
+[4] close(31)==-9 EBADF (Bad file descriptor)
+[4] close(32)==-9 EBADF (Bad file descriptor)
+[4] close(33)==-9 EBADF (Bad file descriptor)
+[4] close(34)==-9 EBADF (Bad file descriptor)
+[4] close(35)==-9 EBADF (Bad file descriptor)
+[4] close(36)==-9 EBADF (Bad file descriptor)
+[4] close(37)==-9 EBADF (Bad file descriptor)
+[4] close(38)==-9 EBADF (Bad file descriptor)
+[4] close(39)==-9 EBADF (Bad file descriptor)
+[4] close(40)==-9 EBADF (Bad file descriptor)
+[4] close(41)==-9 EBADF (Bad file descriptor)
+[4] close(42)==-9 EBADF (Bad file descriptor)
+[4] close(43)==-9 EBADF (Bad file descriptor)
+[4] close(44)==-9 EBADF (Bad file descriptor)
+[4] close(45)==-9 EBADF (Bad file descriptor)
+[4] close(46)==-9 EBADF (Bad file descriptor)
+[4] close(47)==-9 EBADF (Bad file descriptor)
+[4] close(48)==-9 EBADF (Bad file descriptor)
+[4] close(49)==-9 EBADF (Bad file descriptor)
+[4] close(50)==-9 EBADF (Bad file descriptor)
+[4] close(51)==-9 EBADF (Bad file descriptor)
+[4] close(52)==-9 EBADF (Bad file descriptor)
+[4] close(53)==-9 EBADF (Bad file descriptor)
+[4] close(54)==-9 EBADF (Bad file descriptor)
+[4] close(55)==-9 EBADF (Bad file descriptor)
+[4] close(56)==-9 EBADF (Bad file descriptor)
+[4] close(57)==-9 EBADF (Bad file descriptor)
+[4] close(58)==-9 EBADF (Bad file descriptor)
+[4] close(59)==-9 EBADF (Bad file descriptor)
+[4] close(60)==-9 EBADF (Bad file descriptor)
+[4] close(61)==-9 EBADF (Bad file descriptor)
+[4] close(62)==-9 EBADF (Bad file descriptor)
+[4] close(63)==-9 EBADF (Bad file descriptor)
+[4] close(64)==-9 EBADF (Bad file descriptor)
+[4] close(65)==-9 EBADF (Bad file descriptor)
+[4] close(66)==-9 EBADF (Bad file descriptor)
+[4] close(67)==-9 EBADF (Bad file descriptor)
+[4] close(68)==-9 EBADF (Bad file descriptor)
+[4] close(69)==-9 EBADF (Bad file descriptor)
+[4] close(70)==-9 EBADF (Bad file descriptor)
+[4] close(71)==-9 EBADF (Bad file descriptor)
+[4] close(72)==-9 EBADF (Bad file descriptor)
+[4] close(73)==-9 EBADF (Bad file descriptor)
+[4] close(74)==-9 EBADF (Bad file descriptor)
+[4] close(75)==-9 EBADF (Bad file descriptor)
+[4] close(76)==-9 EBADF (Bad file descriptor)
+[4] close(77)==-9 EBADF (Bad file descriptor)
+[4] close(78)==-9 EBADF (Bad file descriptor)
+[4] close(79)==-9 EBADF (Bad file descriptor)
+[4] close(80)==-9 EBADF (Bad file descriptor)
+[4] close(81)==-9 EBADF (Bad file descriptor)
+[4] close(82)==-9 EBADF (Bad file descriptor)
+[4] close(83)==-9 EBADF (Bad file descriptor)
+[4] close(84)==-9 EBADF (Bad file descriptor)
+[4] close(85)==-9 EBADF (Bad file descriptor)
+[4] close(86)==-9 EBADF (Bad file descriptor)
+[4] close(87)==-9 EBADF (Bad file descriptor)
+[4] close(88)==-9 EBADF (Bad file descriptor)
+[4] close(89)==-9 EBADF (Bad file descriptor)
+[4] close(90)==-9 EBADF (Bad file descriptor)
+[4] close(91)==-9 EBADF (Bad file descriptor)
+[4] close(92)==-9 EBADF (Bad file descriptor)
+[4] close(93)==-9 EBADF (Bad file descriptor)
+[4] close(94)==-9 EBADF (Bad file descriptor)
+[4] close(95)==-9 EBADF (Bad file descriptor)
+[4] close(96)==-9 EBADF (Bad file descriptor)
+[4] close(97)==-9 EBADF (Bad file descriptor)
+[4] close(98)==-9 EBADF (Bad file descriptor)
+[4] close(99)==-9 EBADF (Bad file descriptor)
+[4] close(100)==-9 EBADF (Bad file descriptor)
+[4] close(101)==-9 EBADF (Bad file descriptor)
+[4] close(102)==-9 EBADF (Bad file descriptor)
+[4] close(103)==-9 EBADF (Bad file descriptor)
+[4] close(104)==-9 EBADF (Bad file descriptor)
+[4] close(105)==-9 EBADF (Bad file descriptor)
+[4] close(106)==-9 EBADF (Bad file descriptor)
+[4] close(107)==-9 EBADF (Bad file descriptor)
+[4] close(108)==-9 EBADF (Bad file descriptor)
+[4] close(109)==-9 EBADF (Bad file descriptor)
+[4] close(110)==-9 EBADF (Bad file descriptor)
+[4] close(111)==-9 EBADF (Bad file descriptor)
+[4] close(112)==-9 EBADF (Bad file descriptor)
+[4] close(113)==-9 EBADF (Bad file descriptor)
+[4] close(114)==-9 EBADF (Bad file descriptor)
+[4] close(115)==-9 EBADF (Bad file descriptor)
+[4] close(116)==-9 EBADF (Bad file descriptor)
+[4] close(117)==-9 EBADF (Bad file descriptor)
+[4] close(118)==-9 EBADF (Bad file descriptor)
+[4] close(119)==-9 EBADF (Bad file descriptor)
+[4] close(120)==-9 EBADF (Bad file descriptor)
+[4] close(121)==-9 EBADF (Bad file descriptor)
+[4] close(122)==-9 EBADF (Bad file descriptor)
+[4] close(123)==-9 EBADF (Bad file descriptor)
+[4] close(124)==-9 EBADF (Bad file descriptor)
+[4] close(125)==-9 EBADF (Bad file descriptor)
+[4] close(126)==-9 EBADF (Bad file descriptor)
+[4] close(127)==-9 EBADF (Bad file descriptor)
+[4] close(128)==-9 EBADF (Bad file descriptor)
+[4] close(129)==-9 EBADF (Bad file descriptor)
+[4] close(130)==-9 EBADF (Bad file descriptor)
+[4] close(131)==-9 EBADF (Bad file descriptor)
+[4] close(132)==-9 EBADF (Bad file descriptor)
+[4] close(133)==-9 EBADF (Bad file descriptor)
+[4] close(134)==-9 EBADF (Bad file descriptor)
+[4] close(135)==-9 EBADF (Bad file descriptor)
+[4] close(136)==-9 EBADF (Bad file descriptor)
+[4] close(137)==-9 EBADF (Bad file descriptor)
+[4] close(138)==-9 EBADF (Bad file descriptor)
+[4] close(139)==-9 EBADF (Bad file descriptor)
+[4] close(140)==-9 EBADF (Bad file descriptor)
+[4] close(141)==-9 EBADF (Bad file descriptor)
+[4] close(142)==-9 EBADF (Bad file descriptor)
+[4] close(143)==-9 EBADF (Bad file descriptor)
+[4] close(144)==-9 EBADF (Bad file descriptor)
+[4] close(145)==-9 EBADF (Bad file descriptor)
+[4] close(146)==-9 EBADF (Bad file descriptor)
+[4] close(147)==-9 EBADF (Bad file descriptor)
+[4] close(148)==-9 EBADF (Bad file descriptor)
+[4] close(149)==-9 EBADF (Bad file descriptor)
+[4] close(150)==-9 EBADF (Bad file descriptor)
+[4] close(151)==-9 EBADF (Bad file descriptor)
+[4] close(152)==-9 EBADF (Bad file descriptor)
+[4] close(153)==-9 EBADF (Bad file descriptor)
+[4] close(154)==-9 EBADF (Bad file descriptor)
+[4] close(155)==-9 EBADF (Bad file descriptor)
+[4] close(156)==-9 EBADF (Bad file descriptor)
+[4] close(157)==-9 EBADF (Bad file descriptor)
+[4] close(158)==-9 EBADF (Bad file descriptor)
+[4] close(159)==-9 EBADF (Bad file descriptor)
+[4] close(160)==-9 EBADF (Bad file descriptor)
+[4] close(161)==-9 EBADF (Bad file descriptor)
+[4] close(162)==-9 EBADF (Bad file descriptor)
+[4] close(163)==-9 EBADF (Bad file descriptor)
+[4] close(164)==-9 EBADF (Bad file descriptor)
+[4] close(165)==-9 EBADF (Bad file descriptor)
+[4] close(166)==-9 EBADF (Bad file descriptor)
+[4] close(167)==-9 EBADF (Bad file descriptor)
+[4] close(168)==-9 EBADF (Bad file descriptor)
+[4] close(169)==-9 EBADF (Bad file descriptor)
+[4] close(170)==-9 EBADF (Bad file descriptor)
+[4] close(171)==-9 EBADF (Bad file descriptor)
+[4] close(172)==-9 EBADF (Bad file descriptor)
+[4] close(173)==-9 EBADF (Bad file descriptor)
+[4] close(174)==-9 EBADF (Bad file descriptor)
+[4] close(175)==-9 EBADF (Bad file descriptor)
+[4] close(176)==-9 EBADF (Bad file descriptor)
+[4] close(177)==-9 EBADF (Bad file descriptor)
+[4] close(178)==-9 EBADF (Bad file descriptor)
+[4] close(179)==-9 EBADF (Bad file descriptor)
+[4] close(180)==-9 EBADF (Bad file descriptor)
+[4] close(181)==-9 EBADF (Bad file descriptor)
+[4] close(182)==-9 EBADF (Bad file descriptor)
+[4] close(183)==-9 EBADF (Bad file descriptor)
+[4] close(184)==-9 EBADF (Bad file descriptor)
+[4] close(185)==-9 EBADF (Bad file descriptor)
+[4] close(186)==-9 EBADF (Bad file descriptor)
+[4] close(187)==-9 EBADF (Bad file descriptor)
+[4] close(188)==-9 EBADF (Bad file descriptor)
+[4] close(189)==-9 EBADF (Bad file descriptor)
+[4] close(190)==-9 EBADF (Bad file descriptor)
+[4] close(191)==-9 EBADF (Bad file descriptor)
+[4] close(192)==-9 EBADF (Bad file descriptor)
+[4] close(193)==-9 EBADF (Bad file descriptor)
+[4] close(194)==-9 EBADF (Bad file descriptor)
+[4] close(195)==-9 EBADF (Bad file descriptor)
+[4] close(196)==-9 EBADF (Bad file descriptor)
+[4] close(197)==-9 EBADF (Bad file descriptor)
+[4] close(198)==-9 EBADF (Bad file descriptor)
+[4] close(199)==-9 EBADF (Bad file descriptor)
+[4] close(200)==-9 EBADF (Bad file descriptor)
+[4] close(201)==-9 EBADF (Bad file descriptor)
+[4] close(202)==-9 EBADF (Bad file descriptor)
+[4] close(203)==-9 EBADF (Bad file descriptor)
+[4] close(204)==-9 EBADF (Bad file descriptor)
+[4] close(205)==-9 EBADF (Bad file descriptor)
+[4] close(206)==-9 EBADF (Bad file descriptor)
+[4] close(207)==-9 EBADF (Bad file descriptor)
+[4] close(208)==-9 EBADF (Bad file descriptor)
+[4] close(209)==-9 EBADF (Bad file descriptor)
+[4] close(210)==-9 EBADF (Bad file descriptor)
+[4] close(211)==-9 EBADF (Bad file descriptor)
+[4] close(212)==-9 EBADF (Bad file descriptor)
+[4] close(213)==-9 EBADF (Bad file descriptor)
+[4] close(214)==-9 EBADF (Bad file descriptor)
+[4] close(215)==-9 EBADF (Bad file descriptor)
+[4] close(216)==-9 EBADF (Bad file descriptor)
+[4] close(217)==-9 EBADF (Bad file descriptor)
+[4] close(218)==-9 EBADF (Bad file descriptor)
+[4] close(219)==-9 EBADF (Bad file descriptor)
+[4] close(220)==-9 EBADF (Bad file descriptor)
+[4] close(221)==-9 EBADF (Bad file descriptor)
+[4] close(222)==-9 EBADF (Bad file descriptor)
+[4] close(223)==-9 EBADF (Bad file descriptor)
+[4] close(224)==-9 EBADF (Bad file descriptor)
+[4] close(225)==-9 EBADF (Bad file descriptor)
+[4] close(226)==-9 EBADF (Bad file descriptor)
+[4] close(227)==-9 EBADF (Bad file descriptor)
+[4] close(228)==-9 EBADF (Bad file descriptor)
+[4] close(229)==-9 EBADF (Bad file descriptor)
+[4] close(230)==-9 EBADF (Bad file descriptor)
+[4] close(231)==-9 EBADF (Bad file descriptor)
+[4] close(232)==-9 EBADF (Bad file descriptor)
+[4] close(233)==-9 EBADF (Bad file descriptor)
+[4] close(234)==-9 EBADF (Bad file descriptor)
+[4] close(235)==-9 EBADF (Bad file descriptor)
+[4] close(236)==-9 EBADF (Bad file descriptor)
+[4] close(237)==-9 EBADF (Bad file descriptor)
+[4] close(238)==-9 EBADF (Bad file descriptor)
+[4] close(239)==-9 EBADF (Bad file descriptor)
+[4] close(240)==-9 EBADF (Bad file descriptor)
+[4] close(241)==-9 EBADF (Bad file descriptor)
+[4] close(242)==-9 EBADF (Bad file descriptor)
+[4] close(243)==-9 EBADF (Bad file descriptor)
+[4] close(244)==-9 EBADF (Bad file descriptor)
+[4] close(245)==-9 EBADF (Bad file descriptor)
+[4] close(246)==-9 EBADF (Bad file descriptor)
+[4] close(247)==-9 EBADF (Bad file descriptor)
+[4] close(248)==-9 EBADF (Bad file descriptor)
+[4] close(249)==-9 EBADF (Bad file descriptor)
+[4] close(250)==-9 EBADF (Bad file descriptor)
+[4] close(251)==-9 EBADF (Bad file descriptor)
+[4] close(252)==-9 EBADF (Bad file descriptor)
+[4] close(253)==-9 EBADF (Bad file descriptor)
+[4] close(254)==-9 EBADF (Bad file descriptor)
+[4] close(255)==-9 EBADF (Bad file descriptor)
+[4] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[4] rt_sigaction(20, 0xbfaffa74, 0xbfaffb00, 8)==0
+[4] rt_sigaction(21, 0xbfaffa74, 0xbfaffb00, 8)==0
+[4] rt_sigaction(22, 0xbfaffa74, 0xbfaffb00, 8)==0
+[4] brk(0x80db000)==0x80db000
+[4] close(0)==0
+[4] dup(19)==0
+[4] fcntl64(0, 2, 0)==0
+[4] close(1)==0
+[4] dup(17)==1
+[4] fcntl64(1, 2, 0)==0
+[4] close(2)==0
+[4] dup(18)==2
+[4] fcntl64(2, 2, 0)==0
+[4] ioctl(1, 5401, 0xbfaff748)==-22 EINVAL (Invalid argument)
+[4] ioctl(2, 5401, 0xbfaff748)==0
+[4] rt_sigprocmask(1, 0xbfaff818, 0, 8)==0
+[4] execve()==0
+[4] rdtsc==0013dfd4dd9c7ed9
+[4] rdtsc==0013dfd4dd9cdcab
+[4] rdtsc==0013dfd4dd9ce137
+[4] rdtsc==0013dfd4dd9ce5d0
+[4] rdtsc==0013dfd4dd9cea20
+[4] rdtsc==0013dfd4dd9cee75
+[4] rdtsc==0013dfd4dd9cf2c3
+[4] rdtsc==0013dfd4dd9cf71f
+[4] rdtsc==0013dfd4dd9cfb6f
+[4] rdtsc==0013dfd4dd9cffc0
+[4] rdtsc==0013dfd4dd9d040e
+[4] rdtsc==0013dfd4dd9d19f4
+[4] brk(0)==0x806b000
+[4] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb7849000
+[4] access(0xb7863d4f, 4)==-2 ENOENT (No such file or directory)
+[4] rdtsc==0013dfd4dd9f45f0
+[4] open(0xb786402f, 80000)==3
+[4] fstat64(3, 0xbfd7e360)==0
+[4] mmap_pgoff(0, 335ab, 1, 2, 3, 0)==0xb7815000
+[4] close(3)==0
+[4] open(0xb7843fcc, 80000)==3
+[4] read(3, 0xbfd7e4a4, 512)==512
+[4] fstat64(3, 0xbfd7e3c0)==0
+[4] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0)==0xb766e000
+[4] mmap_pgoff(0xb780f000, 3000, 3, 2066, 3, 417)==0xb780f000
+[4] mmap_pgoff(0xb7812000, 2b1c, 3, 50, -1, 0)==0xb7812000
+[4] close(3)==0
+[4] rdtsc==0013dfd4dda5565d
+[4] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb766d000
+[4] set_thread_area()==0
+[4] rdtsc==0013dfd4dda6457e
+[4] mprotect(0xb780f000, 2000, 1)==0
+[4] mprotect(0x8068000, 1000, 1)==0
+[4] rdtsc==0013dfd4ddaae505
+[4] rdtsc==0013dfd4ddaaf903
+[4] mprotect(0xb786a000, 1000, 1)==0
+[4] rdtsc==0013dfd4ddab5078
+[4] munmap(0xb7815000, 335ab)==0
+[4] rdtsc==0013dfd4ddabe0c6
+[4] brk(0)==0x806b000
+[4] brk(0x808c000)==0x808c000
+[4] open(0xb77d420c, 88000)==3
+[4] fstat64(3, 0xb7812040)==0
+[4] mmap_pgoff(0, 0x200000, 1, 2, 3, 0)==0xb746d000
+[4] close(3)==0
+[4] fstat64(1, 0xbfd7e91c)==0
+[4] open(0xb77d3e34, 0)==3
+[4] fstat64(3, 0xbfd7e4b0)==0
+[4] mmap_pgoff(0, 6682, 1, 1, 3, 0)==0xb7466000
+[4] close(3)==0
+[4] ioctl(1, 5401, 0xbfd7e828)==-22 EINVAL (Invalid argument)
+[4] openat(-100, 0xbfd7f867, 8000, 0)==3
+[4] fstat64(3, 0xbfd7e7b8)==0
+[4] ioctl(3, 5401, 0xbfd7e6c8)==-25 ENOTTY (Inappropriate ioctl for device)
+[4] read(3, 0x806e000, 8000)==4695
+[4] llseek(3, 0, 1257, 0xbfd7e740, 4)==-22 EINVAL (Invalid argument)
+[4] fstat64(1, 0xbfd7e510)==0
+[4] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb7848000
+[4] read(3, 0x806f257, 7000)==0
+[4] close(3)==0
+[4] write(1, 0xb7848000, 11)==11
+[4] close(1)==0
+[4] munmap(0xb7848000, 1000)==0
+[4] close(2)==0
+[4] exit_group(0)==0
+===================================================
+[5] SingleOperator==data: output, ptr = 0xb74db728, size = 4, 00000005
+[5] rdtsc==0013dfd4de04f206
+[5] gettimeofday(0x80af544, 0)==0
+[5] getrusage(0, 0x809f080)==0
+[5] getrusage(-1, 0xbfaffc28)==0
+[5] close(7)==0
+[5] dup2(8, 1)==1
+[5] close(8)==0
+[5] dup2(18, 2)==2
+[5] close(18)==0
+[5] dup2(0, 16)==16
+[5] fcntl64(16, 2, 1)==0
+[5] dup2(1, 17)==17
+[5] fcntl64(17, 2, 1)==0
+[5] dup2(2, 18)==18
+[5] fcntl64(18, 2, 1)==0
+[5] dup2(16, 19)==19
+[5] fcntl64(19, 2, 1)==0
+[5] ioctl(18, 5401, 0xbfaffc08)==0
+[5] ioctl(17, 5401, 0xbfaffc08)==-22 EINVAL (Invalid argument)
+[5] close(0)==0
+[5] open(0x808f139, 8000)==0
+[5] close(1)==0
+[5] open(0x808f139, 8000)==1
+[5] close(2)==0
+[5] open(0x808f139, 8000)==2
+[5] close(3)==-9 EBADF (Bad file descriptor)
+[5] close(4)==-9 EBADF (Bad file descriptor)
+[5] close(5)==-9 EBADF (Bad file descriptor)
+[5] close(6)==0
+[5] close(7)==-9 EBADF (Bad file descriptor)
+[5] close(8)==-9 EBADF (Bad file descriptor)
+[5] close(9)==-9 EBADF (Bad file descriptor)
+[5] close(10)==-9 EBADF (Bad file descriptor)
+[5] close(11)==-9 EBADF (Bad file descriptor)
+[5] close(12)==-9 EBADF (Bad file descriptor)
+[5] close(13)==-9 EBADF (Bad file descriptor)
+[5] close(14)==-9 EBADF (Bad file descriptor)
+[5] close(20)==-9 EBADF (Bad file descriptor)
+[5] close(21)==-9 EBADF (Bad file descriptor)
+[5] close(22)==-9 EBADF (Bad file descriptor)
+[5] close(23)==-9 EBADF (Bad file descriptor)
+[5] close(24)==-9 EBADF (Bad file descriptor)
+[5] close(25)==-9 EBADF (Bad file descriptor)
+[5] close(26)==-9 EBADF (Bad file descriptor)
+[5] close(27)==-9 EBADF (Bad file descriptor)
+[5] close(28)==-9 EBADF (Bad file descriptor)
+[5] close(29)==-9 EBADF (Bad file descriptor)
+[5] close(30)==-9 EBADF (Bad file descriptor)
+[5] close(31)==-9 EBADF (Bad file descriptor)
+[5] close(32)==-9 EBADF (Bad file descriptor)
+[5] close(33)==-9 EBADF (Bad file descriptor)
+[5] close(34)==-9 EBADF (Bad file descriptor)
+[5] close(35)==-9 EBADF (Bad file descriptor)
+[5] close(36)==-9 EBADF (Bad file descriptor)
+[5] close(37)==-9 EBADF (Bad file descriptor)
+[5] close(38)==-9 EBADF (Bad file descriptor)
+[5] close(39)==-9 EBADF (Bad file descriptor)
+[5] close(40)==-9 EBADF (Bad file descriptor)
+[5] close(41)==-9 EBADF (Bad file descriptor)
+[5] close(42)==-9 EBADF (Bad file descriptor)
+[5] close(43)==-9 EBADF (Bad file descriptor)
+[5] close(44)==-9 EBADF (Bad file descriptor)
+[5] close(45)==-9 EBADF (Bad file descriptor)
+[5] close(46)==-9 EBADF (Bad file descriptor)
+[5] close(47)==-9 EBADF (Bad file descriptor)
+[5] close(48)==-9 EBADF (Bad file descriptor)
+[5] close(49)==-9 EBADF (Bad file descriptor)
+[5] close(50)==-9 EBADF (Bad file descriptor)
+[5] close(51)==-9 EBADF (Bad file descriptor)
+[5] close(52)==-9 EBADF (Bad file descriptor)
+[5] close(53)==-9 EBADF (Bad file descriptor)
+[5] close(54)==-9 EBADF (Bad file descriptor)
+[5] close(55)==-9 EBADF (Bad file descriptor)
+[5] close(56)==-9 EBADF (Bad file descriptor)
+[5] close(57)==-9 EBADF (Bad file descriptor)
+[5] close(58)==-9 EBADF (Bad file descriptor)
+[5] close(59)==-9 EBADF (Bad file descriptor)
+[5] close(60)==-9 EBADF (Bad file descriptor)
+[5] close(61)==-9 EBADF (Bad file descriptor)
+[5] close(62)==-9 EBADF (Bad file descriptor)
+[5] close(63)==-9 EBADF (Bad file descriptor)
+[5] close(64)==-9 EBADF (Bad file descriptor)
+[5] close(65)==-9 EBADF (Bad file descriptor)
+[5] close(66)==-9 EBADF (Bad file descriptor)
+[5] close(67)==-9 EBADF (Bad file descriptor)
+[5] close(68)==-9 EBADF (Bad file descriptor)
+[5] close(69)==-9 EBADF (Bad file descriptor)
+[5] close(70)==-9 EBADF (Bad file descriptor)
+[5] close(71)==-9 EBADF (Bad file descriptor)
+[5] close(72)==-9 EBADF (Bad file descriptor)
+[5] close(73)==-9 EBADF (Bad file descriptor)
+[5] close(74)==-9 EBADF (Bad file descriptor)
+[5] close(75)==-9 EBADF (Bad file descriptor)
+[5] close(76)==-9 EBADF (Bad file descriptor)
+[5] close(77)==-9 EBADF (Bad file descriptor)
+[5] close(78)==-9 EBADF (Bad file descriptor)
+[5] close(79)==-9 EBADF (Bad file descriptor)
+[5] close(80)==-9 EBADF (Bad file descriptor)
+[5] close(81)==-9 EBADF (Bad file descriptor)
+[5] close(82)==-9 EBADF (Bad file descriptor)
+[5] close(83)==-9 EBADF (Bad file descriptor)
+[5] close(84)==-9 EBADF (Bad file descriptor)
+[5] close(85)==-9 EBADF (Bad file descriptor)
+[5] close(86)==-9 EBADF (Bad file descriptor)
+[5] close(87)==-9 EBADF (Bad file descriptor)
+[5] close(88)==-9 EBADF (Bad file descriptor)
+[5] close(89)==-9 EBADF (Bad file descriptor)
+[5] close(90)==-9 EBADF (Bad file descriptor)
+[5] close(91)==-9 EBADF (Bad file descriptor)
+[5] close(92)==-9 EBADF (Bad file descriptor)
+[5] close(93)==-9 EBADF (Bad file descriptor)
+[5] close(94)==-9 EBADF (Bad file descriptor)
+[5] close(95)==-9 EBADF (Bad file descriptor)
+[5] close(96)==-9 EBADF (Bad file descriptor)
+[5] close(97)==-9 EBADF (Bad file descriptor)
+[5] close(98)==-9 EBADF (Bad file descriptor)
+[5] close(99)==-9 EBADF (Bad file descriptor)
+[5] close(100)==-9 EBADF (Bad file descriptor)
+[5] close(101)==-9 EBADF (Bad file descriptor)
+[5] close(102)==-9 EBADF (Bad file descriptor)
+[5] close(103)==-9 EBADF (Bad file descriptor)
+[5] close(104)==-9 EBADF (Bad file descriptor)
+[5] close(105)==-9 EBADF (Bad file descriptor)
+[5] close(106)==-9 EBADF (Bad file descriptor)
+[5] close(107)==-9 EBADF (Bad file descriptor)
+[5] close(108)==-9 EBADF (Bad file descriptor)
+[5] close(109)==-9 EBADF (Bad file descriptor)
+[5] close(110)==-9 EBADF (Bad file descriptor)
+[5] close(111)==-9 EBADF (Bad file descriptor)
+[5] close(112)==-9 EBADF (Bad file descriptor)
+[5] close(113)==-9 EBADF (Bad file descriptor)
+[5] close(114)==-9 EBADF (Bad file descriptor)
+[5] close(115)==-9 EBADF (Bad file descriptor)
+[5] close(116)==-9 EBADF (Bad file descriptor)
+[5] close(117)==-9 EBADF (Bad file descriptor)
+[5] close(118)==-9 EBADF (Bad file descriptor)
+[5] close(119)==-9 EBADF (Bad file descriptor)
+[5] close(120)==-9 EBADF (Bad file descriptor)
+[5] close(121)==-9 EBADF (Bad file descriptor)
+[5] close(122)==-9 EBADF (Bad file descriptor)
+[5] close(123)==-9 EBADF (Bad file descriptor)
+[5] close(124)==-9 EBADF (Bad file descriptor)
+[5] close(125)==-9 EBADF (Bad file descriptor)
+[5] close(126)==-9 EBADF (Bad file descriptor)
+[5] close(127)==-9 EBADF (Bad file descriptor)
+[5] close(128)==-9 EBADF (Bad file descriptor)
+[5] close(129)==-9 EBADF (Bad file descriptor)
+[5] close(130)==-9 EBADF (Bad file descriptor)
+[5] close(131)==-9 EBADF (Bad file descriptor)
+[5] close(132)==-9 EBADF (Bad file descriptor)
+[5] close(133)==-9 EBADF (Bad file descriptor)
+[5] close(134)==-9 EBADF (Bad file descriptor)
+[5] close(135)==-9 EBADF (Bad file descriptor)
+[5] close(136)==-9 EBADF (Bad file descriptor)
+[5] close(137)==-9 EBADF (Bad file descriptor)
+[5] close(138)==-9 EBADF (Bad file descriptor)
+[5] close(139)==-9 EBADF (Bad file descriptor)
+[5] close(140)==-9 EBADF (Bad file descriptor)
+[5] close(141)==-9 EBADF (Bad file descriptor)
+[5] close(142)==-9 EBADF (Bad file descriptor)
+[5] close(143)==-9 EBADF (Bad file descriptor)
+[5] close(144)==-9 EBADF (Bad file descriptor)
+[5] close(145)==-9 EBADF (Bad file descriptor)
+[5] close(146)==-9 EBADF (Bad file descriptor)
+[5] close(147)==-9 EBADF (Bad file descriptor)
+[5] close(148)==-9 EBADF (Bad file descriptor)
+[5] close(149)==-9 EBADF (Bad file descriptor)
+[5] close(150)==-9 EBADF (Bad file descriptor)
+[5] close(151)==-9 EBADF (Bad file descriptor)
+[5] close(152)==-9 EBADF (Bad file descriptor)
+[5] close(153)==-9 EBADF (Bad file descriptor)
+[5] close(154)==-9 EBADF (Bad file descriptor)
+[5] close(155)==-9 EBADF (Bad file descriptor)
+[5] close(156)==-9 EBADF (Bad file descriptor)
+[5] close(157)==-9 EBADF (Bad file descriptor)
+[5] close(158)==-9 EBADF (Bad file descriptor)
+[5] close(159)==-9 EBADF (Bad file descriptor)
+[5] close(160)==-9 EBADF (Bad file descriptor)
+[5] close(161)==-9 EBADF (Bad file descriptor)
+[5] close(162)==-9 EBADF (Bad file descriptor)
+[5] close(163)==-9 EBADF (Bad file descriptor)
+[5] close(164)==-9 EBADF (Bad file descriptor)
+[5] close(165)==-9 EBADF (Bad file descriptor)
+[5] close(166)==-9 EBADF (Bad file descriptor)
+[5] close(167)==-9 EBADF (Bad file descriptor)
+[5] close(168)==-9 EBADF (Bad file descriptor)
+[5] close(169)==-9 EBADF (Bad file descriptor)
+[5] close(170)==-9 EBADF (Bad file descriptor)
+[5] close(171)==-9 EBADF (Bad file descriptor)
+[5] close(172)==-9 EBADF (Bad file descriptor)
+[5] close(173)==-9 EBADF (Bad file descriptor)
+[5] close(174)==-9 EBADF (Bad file descriptor)
+[5] close(175)==-9 EBADF (Bad file descriptor)
+[5] close(176)==-9 EBADF (Bad file descriptor)
+[5] close(177)==-9 EBADF (Bad file descriptor)
+[5] close(178)==-9 EBADF (Bad file descriptor)
+[5] close(179)==-9 EBADF (Bad file descriptor)
+[5] close(180)==-9 EBADF (Bad file descriptor)
+[5] close(181)==-9 EBADF (Bad file descriptor)
+[5] close(182)==-9 EBADF (Bad file descriptor)
+[5] close(183)==-9 EBADF (Bad file descriptor)
+[5] close(184)==-9 EBADF (Bad file descriptor)
+[5] close(185)==-9 EBADF (Bad file descriptor)
+[5] close(186)==-9 EBADF (Bad file descriptor)
+[5] close(187)==-9 EBADF (Bad file descriptor)
+[5] close(188)==-9 EBADF (Bad file descriptor)
+[5] close(189)==-9 EBADF (Bad file descriptor)
+[5] close(190)==-9 EBADF (Bad file descriptor)
+[5] close(191)==-9 EBADF (Bad file descriptor)
+[5] close(192)==-9 EBADF (Bad file descriptor)
+[5] close(193)==-9 EBADF (Bad file descriptor)
+[5] close(194)==-9 EBADF (Bad file descriptor)
+[5] close(195)==-9 EBADF (Bad file descriptor)
+[5] close(196)==-9 EBADF (Bad file descriptor)
+[5] close(197)==-9 EBADF (Bad file descriptor)
+[5] close(198)==-9 EBADF (Bad file descriptor)
+[5] close(199)==-9 EBADF (Bad file descriptor)
+[5] close(200)==-9 EBADF (Bad file descriptor)
+[5] close(201)==-9 EBADF (Bad file descriptor)
+[5] close(202)==-9 EBADF (Bad file descriptor)
+[5] close(203)==-9 EBADF (Bad file descriptor)
+[5] close(204)==-9 EBADF (Bad file descriptor)
+[5] close(205)==-9 EBADF (Bad file descriptor)
+[5] close(206)==-9 EBADF (Bad file descriptor)
+[5] close(207)==-9 EBADF (Bad file descriptor)
+[5] close(208)==-9 EBADF (Bad file descriptor)
+[5] close(209)==-9 EBADF (Bad file descriptor)
+[5] close(210)==-9 EBADF (Bad file descriptor)
+[5] close(211)==-9 EBADF (Bad file descriptor)
+[5] close(212)==-9 EBADF (Bad file descriptor)
+[5] close(213)==-9 EBADF (Bad file descriptor)
+[5] close(214)==-9 EBADF (Bad file descriptor)
+[5] close(215)==-9 EBADF (Bad file descriptor)
+[5] close(216)==-9 EBADF (Bad file descriptor)
+[5] close(217)==-9 EBADF (Bad file descriptor)
+[5] close(218)==-9 EBADF (Bad file descriptor)
+[5] close(219)==-9 EBADF (Bad file descriptor)
+[5] close(220)==-9 EBADF (Bad file descriptor)
+[5] close(221)==-9 EBADF (Bad file descriptor)
+[5] close(222)==-9 EBADF (Bad file descriptor)
+[5] close(223)==-9 EBADF (Bad file descriptor)
+[5] close(224)==-9 EBADF (Bad file descriptor)
+[5] close(225)==-9 EBADF (Bad file descriptor)
+[5] close(226)==-9 EBADF (Bad file descriptor)
+[5] close(227)==-9 EBADF (Bad file descriptor)
+[5] close(228)==-9 EBADF (Bad file descriptor)
+[5] close(229)==-9 EBADF (Bad file descriptor)
+[5] close(230)==-9 EBADF (Bad file descriptor)
+[5] close(231)==-9 EBADF (Bad file descriptor)
+[5] close(232)==-9 EBADF (Bad file descriptor)
+[5] close(233)==-9 EBADF (Bad file descriptor)
+[5] close(234)==-9 EBADF (Bad file descriptor)
+[5] close(235)==-9 EBADF (Bad file descriptor)
+[5] close(236)==-9 EBADF (Bad file descriptor)
+[5] close(237)==-9 EBADF (Bad file descriptor)
+[5] close(238)==-9 EBADF (Bad file descriptor)
+[5] close(239)==-9 EBADF (Bad file descriptor)
+[5] close(240)==-9 EBADF (Bad file descriptor)
+[5] close(241)==-9 EBADF (Bad file descriptor)
+[5] close(242)==-9 EBADF (Bad file descriptor)
+[5] close(243)==-9 EBADF (Bad file descriptor)
+[5] close(244)==-9 EBADF (Bad file descriptor)
+[5] close(245)==-9 EBADF (Bad file descriptor)
+[5] close(246)==-9 EBADF (Bad file descriptor)
+[5] close(247)==-9 EBADF (Bad file descriptor)
+[5] close(248)==-9 EBADF (Bad file descriptor)
+[5] close(249)==-9 EBADF (Bad file descriptor)
+[5] close(250)==-9 EBADF (Bad file descriptor)
+[5] close(251)==-9 EBADF (Bad file descriptor)
+[5] close(252)==-9 EBADF (Bad file descriptor)
+[5] close(253)==-9 EBADF (Bad file descriptor)
+[5] close(254)==-9 EBADF (Bad file descriptor)
+[5] close(255)==-9 EBADF (Bad file descriptor)
+[5] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[5] rt_sigaction(20, 0xbfaffa54, 0xbfaffae0, 8)==0
+[5] rt_sigaction(21, 0xbfaffa54, 0xbfaffae0, 8)==0
+[5] rt_sigaction(22, 0xbfaffa54, 0xbfaffae0, 8)==0
+[5] brk(0x80db800)==0x80db800
+[5] close(0)==0
+[5] dup(19)==0
+[5] fcntl64(0, 2, 0)==0
+[5] close(1)==0
+[5] dup(17)==1
+[5] fcntl64(1, 2, 0)==0
+[5] close(2)==0
+[5] dup(18)==2
+[5] fcntl64(2, 2, 0)==0
+[5] ioctl(1, 5401, 0xbfaff728)==-22 EINVAL (Invalid argument)
+[5] ioctl(2, 5401, 0xbfaff728)==0
+[5] rt_sigprocmask(1, 0xbfaff7f8, 0, 8)==0
+[5] execve()==0
+[5] rdtsc==0013dfd4daca1782
+[5] rdtsc==0013dfd4daca6bfe
+[5] rdtsc==0013dfd4daca7025
+[5] rdtsc==0013dfd4daca73f0
+[5] rdtsc==0013dfd4daca775b
+[5] rdtsc==0013dfd4daca7bc8
+[5] rdtsc==0013dfd4daca7f34
+[5] rdtsc==0013dfd4daca837a
+[5] rdtsc==0013dfd4daca86e5
+[5] rdtsc==0013dfd4daca8b1c
+[5] rdtsc==0013dfd4daca8e87
+[5] rdtsc==0013dfd4dacaa1e7
+[5] brk(0)==0x8052000
+[5] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb781a000
+[5] access(0xb7834d4f, 4)==-2 ENOENT (No such file or directory)
+[5] rdtsc==0013dfd4daccbdfc
+[5] open(0xb783502f, 80000)==3
+[5] fstat64(3, 0xbf951ee0)==0
+[5] mmap_pgoff(0, 335ab, 1, 2, 3, 0)==0xb77e6000
+[5] close(3)==0
+[5] open(0xb7814fcc, 80000)==3
+[5] read(3, 0xbf952024, 512)==512
+[5] fstat64(3, 0xbf951f40)==0
+[5] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0)==0xb763f000
+[5] mmap_pgoff(0xb77e0000, 3000, 3, 2066, 3, 417)==0xb77e0000
+[5] mmap_pgoff(0xb77e3000, 2b1c, 3, 50, -1, 0)==0xb77e3000
+[5] close(3)==0
+[5] rdtsc==0013dfd4dad25231
+[5] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb763e000
+[5] set_thread_area()==0
+[5] rdtsc==0013dfd4dad32914
+[5] mprotect(0xb77e0000, 2000, 1)==0
+[5] mprotect(0x8050000, 1000, 1)==0
+[5] rdtsc==0013dfd4dad78b0a
+[5] rdtsc==0013dfd4dad79cf2
+[5] mprotect(0xb783b000, 1000, 1)==0
+[5] rdtsc==0013dfd4dad7ee2f
+[5] munmap(0xb77e6000, 335ab)==0
+[5] rdtsc==0013dfd4dad86cb3
+[5] brk(0)==0x8052000
+[5] brk(0x8073000)==0x8073000
+[5] open(0xb77a520c, 88000)==3
+[5] fstat64(3, 0xb77e3040)==0
+[5] mmap_pgoff(0, 0x200000, 1, 2, 3, 0)==0xb743e000
+[5] close(3)==0
+[5] open(0xbf95285f, 8000)==3
+[5] dup3(3, 0, 0)==0
+[5] close(3)==0
+[5] fstat64(0, 0xbf952350)==0
+[5] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb7819000
+[5] read(0, 0xb7819000, 1000)==4096
+[5] read(0, 0xb7819000, 1000)==599
+[5] read(0, 0xb7819000, 1000)==0
+[5] llseek(0, 0, 0, 0xbf9524b0, 1)==0
+[5] close(0)==0
+[5] munmap(0xb7819000, 1000)==0
+[5] fstat64(1, 0xbf9523a0)==0
+[5] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb7819000
+[5] write(1, 0xb7819000, 1438)==1438
+[5] close(1)==0
+[5] munmap(0xb7819000, 1000)==0
+[5] close(2)==0
+[5] exit_group(0)==0
+===================================================
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 2)==2
+[2] time(0)==0x5227179d
+[2] stat64(0xb7645a09, 0xbfb061ec)==0
+[2] rt_sigprocmask(0, 0xbfb06390, 0xbfb06310, 8)==0
+[2] ioctl(16, 5403, 0xbfb06280)==0
+[2] rt_sigprocmask(2, 0xbfb06310, 0, 8)==0
+[2] alarm(0)==3595
+[2] brk(0x8181000)==0x8181000
+[2] time(0)==0x5227179d
+[2] pipe(0xbfb06384)==0
+[2] dup(3)==5
+[2] dup(5)==6
+[2] close(5)==0
+[2] close(3)==0
+[2] fcntl64(6, 2, 1)==0
+[2] dup(4)==3
+[2] dup(3)==5
+[2] dup(5)==7
+[2] close(5)==0
+[2] close(3)==0
+[2] close(4)==0
+[2] fcntl64(7, 2, 1)==0
+[2] rt_sigprocmask(0, 0xbfb06080, 0x809c740, 8)==0
+[2] clone()==6
+[2] setpgid(6, 6)==0
+[2] gettimeofday(0x80da12c, 0)==0
+[2] clone()==7
+[2] setpgid(7, 6)==0
+[2] gettimeofday(0x80da32c, 0)==0
+[2] close(6)==0
+[2] close(7)==0
+[2] rt_sigprocmask(2, 0x809c740, 0, 8)==0
+[2] rt_sigprocmask(0, 0xbfb05e44, 0xbfb05ec4, 8)==0
+[2] SingleOperator==signal: SIGCHLD, deferred = false, info = 00000011 00000000 00040001 00000006 00000000 00000000 00000000 00000001 00000000 00000000 000000...
+[2] rt_sigsuspend(0xbfb05dc4, 8)==-514 ERESTARTNOHAND
+[2] resource lock, type==pid, access
+[2] signal handled, signal==SIGCHLD
+[2] SingleOperator==data: output, ptr = 0xbfb05af0, size = 108, ffff037f ffff0000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfb05b5c, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfb05b5e, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfb05b60, size = 512, 0000037f 00000000 00000000 00000000 00000000 00000000 00001f80 0000ffff 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfb05810, size = 4, 00000011
+[2] SingleOperator==data: output, ptr = 0xbfb05814, size = 4, 00000033
+[2] SingleOperator==data: output, ptr = 0xbfb05818, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0581c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb05820, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb05824, size = 4, 080da108
+[2] SingleOperator==data: output, ptr = 0xbfb05828, size = 4, 00000901
+[2] SingleOperator==data: output, ptr = 0xbfb0582c, size = 4, bfb05f68
+[2] SingleOperator==data: output, ptr = 0xbfb05830, size = 4, bfb05d60
+[2] SingleOperator==data: output, ptr = 0xbfb05834, size = 4, bfb05dc4
+[2] SingleOperator==data: output, ptr = 0xbfb05838, size = 4, b7685000
+[2] SingleOperator==data: output, ptr = 0xbfb0583c, size = 4, 00000008
+[2] SingleOperator==data: output, ptr = 0xbfb05840, size = 4, fffffffc
+[2] SingleOperator==data: output, ptr = 0xbfb05844, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb05848, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0584c, size = 4, ffffe424
+[2] SingleOperator==data: output, ptr = 0xbfb05850, size = 4, 00000073
+[2] SingleOperator==data: output, ptr = 0xbfb05854, size = 4, 00000246
+[2] SingleOperator==data: output, ptr = 0xbfb05858, size = 4, bfb05d60
+[2] SingleOperator==data: output, ptr = 0xbfb0585c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb05860, size = 4, bfb05af0
+[2] SingleOperator==data: output, ptr = 0xbfb05864, size = 4, 00010002
+[2] SingleOperator==data: output, ptr = 0xbfb05868, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb05adc, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0580c, size = 4, ffffe400
+[2] SingleOperator==data: output, ptr = 0xbfb05ae0, size = 8, 0077b858 80cd0000
+[2] SingleOperator==signal: SIGCHLD, deferred = false, info = 00000011 00000000 00040001 00000007 00000000 00000001 00000000 00000000 00000000 00000000 000000...
+[2] sigreturn()==-4 EINTR (Interrupted system call)
+[2] wait4(-1, 0xbfb05d5c, 3, 0xbfb05d14)==6
+[2] wait4(-1, 0xbfb05d5c, 3, 0xbfb05d14)==7
+[2] wait4(-1, 0xbfb05d5c, 3, 0xbfb05d14)==-10 ECHILD (No child processes)
+[2] rt_sigprocmask(2, 0xbfb05ec4, 0, 8)==0
+[2] resource lock, type==pid, access
+[2] signal handled, signal==SIGCHLD
+[2] SingleOperator==data: output, ptr = 0xbfb05a40, size = 108, ffff037f ffff0000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfb05aac, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfb05aae, size = 2, 0000
+[2] SingleOperator==data: output, ptr = 0xbfb05ab0, size = 512, 0000037f 00000000 00000000 00000000 00000000 00000000 00001f80 0000ffff 00000000 00000000 000000...
+[2] SingleOperator==data: output, ptr = 0xbfb05760, size = 4, 00000011
+[2] SingleOperator==data: output, ptr = 0xbfb05764, size = 4, 00000033
+[2] SingleOperator==data: output, ptr = 0xbfb05768, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0576c, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb05770, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb05774, size = 4, b7685000
+[2] SingleOperator==data: output, ptr = 0xbfb05778, size = 4, 00000008
+[2] SingleOperator==data: output, ptr = 0xbfb0577c, size = 4, bfb05d68
+[2] SingleOperator==data: output, ptr = 0xbfb05780, size = 4, bfb05cb0
+[2] SingleOperator==data: output, ptr = 0xbfb05784, size = 4, 00000002
+[2] SingleOperator==data: output, ptr = 0xbfb05788, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0578c, size = 4, bfb05ec4
+[2] SingleOperator==data: output, ptr = 0xbfb05790, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb05794, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb05798, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0579c, size = 4, ffffe424
+[2] SingleOperator==data: output, ptr = 0xbfb057a0, size = 4, 00000073
+[2] SingleOperator==data: output, ptr = 0xbfb057a4, size = 4, 00000246
+[2] SingleOperator==data: output, ptr = 0xbfb057a8, size = 4, bfb05cb0
+[2] SingleOperator==data: output, ptr = 0xbfb057ac, size = 4, 0000007b
+[2] SingleOperator==data: output, ptr = 0xbfb057b0, size = 4, bfb05a40
+[2] SingleOperator==data: output, ptr = 0xbfb057b4, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb057b8, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb05a2c, size = 4, 00000000
+[2] SingleOperator==data: output, ptr = 0xbfb0575c, size = 4, ffffe400
+[2] SingleOperator==data: output, ptr = 0xbfb05a30, size = 8, 0077b858 80cd0000
+[2] sigreturn()==0
+[2] ioctl(15, 5410, 0xbfb05d94)==0
+[2] ioctl(16, 5413, 0xbfb06578)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] time(0)==0x5227179d
+[2] time(0)==0x5227179d
+[2] stat64(0xb7645a09, 0xbfb0638c)==0
+[2] brk(0x8181800)==0x8181800
+[2] stat64(0xb7645a09, 0xbfb0638c)==0
+[2] alarm(3600)==0
+[2] wait4(-1, 0xbfb0658c, 3, 0xbfb06544)==-10 ECHILD (No child processes)
+[2] ioctl(16, 541b, 0xbfb06484)==0
+[2] ioctl(16, 5401, 0xbfb06388)==0
+[2] ioctl(16, 5403, 0xbfb06360)==0
+[2] write(17, 0x80af800, 137)==137
+===================================================
+[6] SingleOperator==data: output, ptr = 0xb74db728, size = 4, 00000006
+[6] rdtsc==0013dfd7954d9154
+[6] gettimeofday(0x80af544, 0)==0
+[6] getrusage(0, 0x809f080)==0
+[6] getrusage(-1, 0xbfb05ef8)==0
+[6] rt_sigaction(2, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[6] rt_sigaction(3, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[6] rt_sigaction(20, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[6] rt_sigaction(21, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[6] rt_sigaction(22, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[6] rt_sigaction(15, 0xbfb05e24, 0, 8)==0
+[6] rt_sigprocmask(0, 0xbfb05e30, 0xbfb05eb0, 8)==0
+[6] setpgid(0, 6)==0
+[6] ioctl(15, 540f, 0xbfb05d6c)==0
+[6] rt_sigaction(22, 0, 0xbfb05ce0, 8)==0
+[6] rt_sigaction(22, 0xbfb05b14, 0xbfb05ba0, 8)==0
+[6] ioctl(15, 5410, 0xbfb05d84)==0
+[6] rt_sigaction(22, 0xbfb05c54, 0, 8)==0
+[6] rt_sigprocmask(2, 0xbfb05eb0, 0, 8)==0
+[6] rt_sigprocmask(2, 0x809c740, 0, 8)==0
+[6] close(0)==0
+[6] dup(19)==0
+[6] fcntl64(0, 2, 0)==0
+[6] close(1)==0
+[6] dup(7)==1
+[6] close(2)==0
+[6] dup(18)==2
+[6] fcntl64(2, 2, 0)==0
+[6] close(6)==0
+[6] close(7)==0
+[6] ioctl(1, 5401, 0xbfb05e18)==-22 EINVAL (Invalid argument)
+[6] ioctl(2, 5401, 0xbfb05e18)==0
+[6] rt_sigprocmask(1, 0xbfb05ee8, 0, 8)==0
+[6] execve()==-2 ENOENT (No such file or directory)
+[6] execve()==-2 ENOENT (No such file or directory)
+[6] execve()==0
+[6] rdtsc==0013dfd7957be9eb
+[6] rdtsc==0013dfd7957c31c2
+[6] rdtsc==0013dfd7957c36d5
+[6] rdtsc==0013dfd7957c3b45
+[6] rdtsc==0013dfd7957c3f42
+[6] rdtsc==0013dfd7957c4432
+[6] rdtsc==0013dfd7957c4832
+[6] rdtsc==0013dfd7957c4c45
+[6] rdtsc==0013dfd7957c5055
+[6] rdtsc==0013dfd7957c545c
+[6] rdtsc==0013dfd7957c5862
+[6] rdtsc==0013dfd7957c6c27
+[6] brk(0)==0x807f000
+[6] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb77c0000
+[6] access(0xb77dad4f, 4)==-2 ENOENT (No such file or directory)
+[6] rdtsc==0013dfd7957ecc78
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==-2 ENOENT (No such file or directory)
+[6] stat64(0xbfcd79f0, 0xbfcd7a70)==-2 ENOENT (No such file or directory)
+[6] open(0xbfcd79f0, 80000)==3
+[6] read(3, 0xbfcd7b44, 512)==512
+[6] fstat64(3, 0xbfcd7a60)==0
+[6] mmap_pgoff(0, 24d38, 5, 2050, 3, 0)==0xb779b000
+[6] mmap_pgoff(0xb77aa000, 2000, 3, 2066, 3, 14)==0xb77aa000
+[6] mmap_pgoff(0xb77ac000, 13d38, 3, 50, -1, 0)==0xb77ac000
+[6] close(3)==0
+[6] open(0xbfcd79e0, 80000)==3
+[6] read(3, 0xbfcd7b24, 512)==512
+[6] fstat64(3, 0xbfcd7a40)==0
+[6] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0)==0xb75f4000
+[6] mmap_pgoff(0xb7795000, 3000, 3, 2066, 3, 417)==0xb7795000
+[6] mmap_pgoff(0xb7798000, 2b1c, 3, 50, -1, 0)==0xb7798000
+[6] close(3)==0
+[6] rdtsc==0013dfd7958a6e19
+[6] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb75f3000
+[6] set_thread_area()==0
+[6] rdtsc==0013dfd7958b809b
+[6] mprotect(0xb7795000, 2000, 1)==0
+[6] mprotect(0xb77aa000, 1000, 1)==0
+[6] mprotect(0x805d000, 1000, 1)==0
+[6] rdtsc==0013dfd7959111fd
+[6] rdtsc==0013dfd795912789
+[6] mprotect(0xb77e1000, 1000, 1)==0
+[6] rdtsc==0013dfd795918b93
+[6] rdtsc==0013dfd795919cf2
+[6] newuname(0xb77bfa20)==0
+[6] time(0)==0x5227179d
+[6] open(0xb775d678, 80000)==3
+[6] read(3, 0xbfcd5eb0, 2000)==4
+[6] close(3)==0
+[6] brk(0)==0x807f000
+[6] brk(0x80a0000)==0x80a0000
+[6] open(0xb775a20c, 88000)==3
+[6] fstat64(3, 0xb7798040)==0
+[6] mmap_pgoff(0, 0x200000, 1, 2, 3, 0)==0xb73f3000
+[6] close(3)==0
+[6] rt_sigaction(31, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(30, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(29, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(26, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(25, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(24, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(23, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(21, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(18, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(17, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(16, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(15, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(14, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(13, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(12, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(11, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(10, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(8, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(7, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(6, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(5, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(4, 0xbfcd7e24, 0, 8)==0
+[6] rt_sigaction(1, 0xbfcd7e24, 0, 8)==0
+[6] open(0xb77ad020, 0)==3
+[6] read(3, 0xbfcd7b00, 1023)==181
+[6] close(3)==0
+[6] ioctl(1, 5413, 0xbfcd7f34)==-22 EINVAL (Invalid argument)
+[6] ioctl(2, 5413, 0xbfcd7f34)==0
+[6] ioctl(1, 5401, 0xbfcd7e78)==-22 EINVAL (Invalid argument)
+[6] geteuid()==0
+[6] open(0xb77a784f, 0)==3
+[6] lseek(3, 0, 0)==0
+[6] read(3, 0xb77af180, 2047)==22
+[6] open(0xbfcd7af0, 80000)==4
+[6] fcntl64(4, 1, 80000)==1
+[6] fstat64(4, 0xbfcd7910)==0
+[6] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb73f2000
+[6] read(4, 0xb73f2000, 1000)==2502
+[6] read(4, 0xb73f2000, 1000)==0
+[6] close(4)==0
+[6] munmap(0xb73f2000, 1000)==0
+[6] open(0x807f8f8, 0)==-2 ENOENT (No such file or directory)
+[6] open(0x80805e8, 0)==-2 ENOENT (No such file or directory)
+[6] open(0x807f960, 0)==-2 ENOENT (No such file or directory)
+[6] open(0x8080558, 0)==-2 ENOENT (No such file or directory)
+[6] open(0x80805b0, 0)==-2 ENOENT (No such file or directory)
+[6] open(0x807f9b8, 0)==-2 ENOENT (No such file or directory)
+[6] open(0xb77a79ff, 0)==4
+[6] read(4, 0xbfcd7e74, 24)==6
+[6] close(4)==0
+[6] mmap_pgoff(0, 22000, 3, 34, -1, 0)==0xb73d1000
+[6] mprotect(0xb73f2000, 1000, 0)==0
+[6] time(0)==0x5227179d
+[6] open(0xb77a78df, 0)==4
+[6] lseek(4, 0, 0)==0
+[6] read(4, 0xb77af180, 2047)==1220
+[6] stat64(0xb77a7403, 0xbfcd7e60)==0
+[6] openat(-100, 0xb77a7413, 98800, 0)==5
+[6] mmap_pgoff(0, 21000, 3, 34, -1, 0)==0xb73b0000
+[6] mmap_pgoff(0, 21000, 3, 34, -1, 0)==0xb738f000
+[6] getdents(5, 0x8080870, 8000)==1252
+[6] stat64(0x808080c, 0xbfcd7e60)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==198
+[6] close(6)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==715
+[6] close(6)==0
+[6] fstat64(1, 0xbfcd7d60)==0
+[6] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb738e000
+[6] open(0xb77a654a, 0)==6
+[6] read(6, 0xbfcd56f0, 270f)==465
+[6] close(6)==0
+[6] stat64(0xb77ab200, 0xbfcd7db0)==0
+[6] open(0xb7759e34, 0)==6
+[6] fstat64(6, 0xbfcd7ad0)==0
+[6] mmap_pgoff(0, 6682, 1, 1, 6, 0)==0xb7387000
+[6] close(6)==0
+[6] stat64(0x808080c, 0xbfcd7e60)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==200
+[6] close(6)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==709
+[6] close(6)==0
+[6] stat64(0xb77ab200, 0xbfcd7db0)==0
+[6] stat64(0x808080c, 0xbfcd7e60)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==181
+[6] close(6)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==705
+[6] close(6)==0
+[6] stat64(0xb77ab200, 0xbfcd7db0)==0
+[6] stat64(0x808080c, 0xbfcd7e60)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==190
+[6] close(6)==0
+[6] open(0xb77ad020, 0)==6
+[6] read(6, 0xb77ac020, 4095)==708
+[6] close(6)==0
+[6] stat64(0xb77ab200, 0xbfcd7db0)==0
+[6] getdents(5, 0x8080870, 8000)==0
+[6] close(5)==0
+[6] write(1, 0xb738e000, 149)==149
+[6] close(1)==0
+[6] munmap(0xb738e000, 1000)==0
+[6] close(2)==0
+[6] exit_group(0)==0
+===================================================
+[7] SingleOperator==data: output, ptr = 0xb74db728, size = 4, 00000007
+[7] rdtsc==0013dfd798dc34dd
+[7] gettimeofday(0x80af544, 0)==0
+[7] getrusage(0, 0x809f080)==0
+[7] getrusage(-1, 0xbfb05ef8)==0
+[7] rt_sigaction(2, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[7] rt_sigaction(3, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[7] rt_sigaction(20, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[7] rt_sigaction(21, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[7] rt_sigaction(22, 0xbfb05ce4, 0xbfb05d70, 8)==0
+[7] rt_sigaction(15, 0xbfb05e24, 0, 8)==0
+[7] rt_sigprocmask(0, 0xbfb05e30, 0xbfb05eb0, 8)==0
+[7] setpgid(0, 6)==0
+[7] ioctl(15, 540f, 0xbfb05d6c)==0
+[7] rt_sigprocmask(2, 0xbfb05eb0, 0, 8)==0
+[7] rt_sigprocmask(2, 0x809c740, 0, 8)==0
+[7] close(0)==0
+[7] dup(6)==0
+[7] close(6)==0
+[7] close(7)==0
+[7] close(1)==0
+[7] dup(17)==1
+[7] fcntl64(1, 2, 0)==0
+[7] close(2)==0
+[7] dup(18)==2
+[7] fcntl64(2, 2, 0)==0
+[7] ioctl(1, 5401, 0xbfb05e18)==0
+[7] ioctl(2, 5401, 0xbfb05e18)==0
+[7] rt_sigprocmask(1, 0xbfb05ee8, 0, 8)==0
+[7] execve()==-2 ENOENT (No such file or directory)
+[7] execve()==-2 ENOENT (No such file or directory)
+[7] execve()==-2 ENOENT (No such file or directory)
+[7] execve()==0
+[7] rdtsc==0013dfd7990ccefd
+[7] rdtsc==0013dfd7990d3376
+[7] rdtsc==0013dfd7990d3916
+[7] rdtsc==0013dfd7990d3ea5
+[7] rdtsc==0013dfd7990d43bb
+[7] rdtsc==0013dfd7990d4869
+[7] rdtsc==0013dfd7990d4da9
+[7] rdtsc==0013dfd7990d531b
+[7] rdtsc==0013dfd7990d5792
+[7] rdtsc==0013dfd7990d5c35
+[7] rdtsc==0013dfd7990d60aa
+[7] rdtsc==0013dfd7990d75ab
+[7] brk(0)==0x806c000
+[7] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb770d000
+[7] access(0xb7727d4f, 4)==-2 ENOENT (No such file or directory)
+[7] rdtsc==0013dfd7990fde44
+[7] open(0xb772802f, 80000)==3
+[7] fstat64(3, 0xbfa5e4a0)==0
+[7] mmap_pgoff(0, 335ab, 1, 2, 3, 0)==0xb76d9000
+[7] close(3)==0
+[7] open(0xb76f72cd, 80000)==3
+[7] read(3, 0xbfa5e5e4, 512)==512
+[7] fstat64(3, 0xbfa5e500)==0
+[7] mmap_pgoff(0, 64154, 5, 2050, 3, 0)==0xb7674000
+[7] mmap_pgoff(0xb76d7000, 2000, 3, 2066, 3, 98)==0xb76d7000
+[7] close(3)==0
+[7] open(0xb7707fcc, 80000)==3
+[7] read(3, 0xbfa5e5c4, 512)==512
+[7] fstat64(3, 0xbfa5e4e0)==0
+[7] mmap_pgoff(0, 0x1a6b1c, 5, 2050, 3, 0)==0xb74cd000
+[7] mmap_pgoff(0xb766e000, 3000, 3, 2066, 3, 417)==0xb766e000
+[7] mmap_pgoff(0xb7671000, 2b1c, 3, 50, -1, 0)==0xb7671000
+[7] close(3)==0
+[7] open(0xb76f5d4d, 80000)==3
+[7] read(3, 0xbfa5e524, 512)==512
+[7] fstat64(3, 0xbfa5e440)==0
+[7] mmap_pgoff(0, 1a208, 5, 2050, 3, 0)==0xb74b2000
+[7] mmap_pgoff(0xb74c9000, 2000, 3, 2066, 3, 22)==0xb74c9000
+[7] mmap_pgoff(0xb74cb000, 1208, 3, 50, -1, 0)==0xb74cb000
+[7] close(3)==0
+[7] rdtsc==0013dfd7991d446f
+[7] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb74b1000
+[7] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb74b0000
+[7] set_thread_area()==0
+[7] rdtsc==0013dfd7991e931b
+[7] mprotect(0xb766e000, 2000, 1)==0
+[7] mprotect(0xb74c9000, 1000, 1)==0
+[7] mprotect(0xb76d7000, 1000, 1)==0
+[7] mprotect(0x8069000, 1000, 1)==0
+[7] rdtsc==0013dfd799245a2e
+[7] rdtsc==0013dfd79924703d
+[7] mprotect(0xb772e000, 1000, 1)==0
+[7] rdtsc==0013dfd79924d0fe
+[7] munmap(0xb76d9000, 335ab)==0
+[7] rdtsc==0013dfd7992592b4
+[7] set_tid_address(0xb74b1b68)==7
+[7] set_robust_list(0xb74b1b70, 12)==0
+[7] futex_wake(0xbfa5eab4, 129, 1, 3, 0xb74ca000, 0xb74b1b00)==0
+[7] futex_wait_bitset(0xbfa5eab4, 393, 1, 0, 0, 0xb74b1b00)==-11 EAGAIN (Resource temporarily unavailable)
+[7] rt_sigaction(32, 0xbfa5e6d4, 0, 8)==0
+[7] rt_sigaction(33, 0xbfa5e6d4, 0, 8)==0
+[7] rt_sigprocmask(1, 0xbfa5ea24, 0, 8)==0
+[7] getrlimit(3, 0xbfa5eaac)==0
+[7] newuname(0xbfa5e820)==0
+[7] brk(0)==0x806c000
+[7] brk(0x808d000)==0x808d000
+[7] open(0xb763320c, 88000)==3
+[7] fstat64(3, 0xb7671040)==0
+[7] mmap_pgoff(0, 0x200000, 1, 2, 3, 0)==0xb72b0000
+[7] close(3)==0
+[7] ioctl(1, 5401, 0xbfa5e968)==0
+[7] fstat64(1, 0xbfa5ea5c)==0
+[7] open(0xb7632e34, 0)==3
+[7] fstat64(3, 0xbfa5e5b0)==0
+[7] mmap_pgoff(0, 6682, 1, 1, 3, 0)==0xb7706000
+[7] close(3)==0
+[7] futex_wake(0xb7670fc8, 129, 0x7fffffff, 0, 0xb762ed03, 0xbfa5e74c)==0
+[7] ioctl(1, 5401, 0xbfa5e968)==0
+[7] open(0xbfa5e5c0, 80000)==3
+[7] fcntl64(3, 1, 80000)==1
+[7] fstat64(3, 0xbfa5e3e0)==0
+[7] mmap_pgoff(0, 1000, 3, 34, -1, 0)==0xb7705000
+[7] read(3, 0xb7705000, 1000)==2502
+[7] read(3, 0xb7705000, 1000)==0
+[7] close(3)==0
+[7] munmap(0xb7705000, 1000)==0
+[7] open(0x806cbe8, 0)==-2 ENOENT (No such file or directory)
+[7] open(0x806e4a8, 0)==-2 ENOENT (No such file or directory)
+[7] open(0x806cba0, 0)==-2 ENOENT (No such file or directory)
+[7] open(0x806cdc8, 0)==-2 ENOENT (No such file or directory)
+[7] open(0x806e508, 0)==-2 ENOENT (No such file or directory)
+[7] open(0x806cd78, 0)==-2 ENOENT (No such file or directory)
+[7] fstat64(0, 0xbfa5e918)==0
+[7] ioctl(0, 5401, 0xbfa5e828)==-22 EINVAL (Invalid argument)
+[7] read(0, 0x8070000, 8000)==149
+[7] read(0, 0x8070095, 8000)==0
+[7] close(1)==0
+[7] close(2)==0
+[7] exit_group(1)==256
+===================================================
+[2] read(16, 0xbfb063f0, 1)==1
+===================================================
+[1] waitpid(-1, 0xbffff68c, 0x40000000)==2
+[1] waitpid(-1, 0xbffff68c, 0x40000000)==-10 ECHILD (No child processes)
+[1] exit_group(0)==0
+===================================================
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 1)==1
+[2] read(16, 0xbfb063f0, 1)==1
+[2] write(17, 0x80af800, 2)==2
+[2] time(0)==0x5227179f
+[2] stat64(0xb7645a09, 0xbfb061ec)==0
+[2] rt_sigprocmask(0, 0xbfb06390, 0xbfb06310, 8)==0
+[2] ioctl(16, 5403, 0xbfb06280)==0
+[2] rt_sigprocmask(2, 0xbfb06310, 0, 8)==0
+[2] alarm(0)==3598
+[2] time(0)==0x5227179f
+[2] close(0)==0
+[2] dup(19)==0
+[2] fcntl64(0, 2, 0)==0
+[2] close(1)==0
+[2] dup(17)==1
+[2] fcntl64(1, 2, 0)==0
+[2] close(2)==0
+[2] dup(18)==2
+[2] fcntl64(2, 2, 0)==0
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] llseek(16, 0, 0, 0xbfb06140, 2)==-29 ESPIPE (Illegal seek)
+[2] close(16)==0
+[2] close(0)==0
+[2] close(1)==0
+[2] close(2)==0
+[2] open(0x808f139, 8000)==0
+[2] dup2(0, 1)==1
+[2] dup2(0, 2)==2
+[2] ioctl(16, 5413, 0xbfb06578)==-9 EBADF (Bad file descriptor)
+[2] rt_sigprocmask(0, 0, 0x80a735c, 8)==0
+[2] time(0)==0x5227179f
+[2] time(0)==0x5227179f
+[2] stat64(0xb7645a09, 0xbfb0638c)==0
+[2] stat64(0xb7645a09, 0xbfb0638c)==0
+[2] alarm(3600)==0
+[2] ioctl(16, 541b, 0xbfb06484)==-9 EBADF (Bad file descriptor)
+[2] ioctl(16, 5401, 0xbfb06388)==-9 EBADF (Bad file descriptor)
+[2] ioctl(16, 5401, 0xbfb06478)==-9 EBADF (Bad file descriptor)
+[2] rt_sigprocmask(2, 0x80a735c, 0, 8)==0
+[2] write(17, 0x80af800, 5)==5
+[2] setpgid(0, 0)==0
+[2] ioctl(15, 5410, 0xbfb06734)==-3 ESRCH (No such process)
+[2] exit_group(0)==0
+::7::6

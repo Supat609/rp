@@ -1,8 +1,8 @@
 package src;
 
-public class microOp {
+public class MicroOp {
 	String fullLine;
-	enum microOpType {REGS, DATA_INPUT, DATA_INPUTSTRING, DATA_OUTPUT, DATA_NONDET, DATA_INTERNAL, RL_MMAP, RL_FILESTRUCT, RL_FILE, RL_INODE, RL_PID, RL_FUTEX, FENCE, SIGNAL, SIGNAL_HANDLED  };
+	enum microOpType {INIT, REGS, DATA_INPUT, DATA_INPUTSTRING, DATA_OUTPUT, DATA_NONDET, DATA_INTERNAL, RL_MMAP, RL_FILESTRUCT, RL_FILE, RL_INODE, RL_PID, RL_FUTEX, FENCE, SIGNAL, SIGNAL_HANDLED  };
 	enum accessType {READ, WRITE};
 	microOpType type;
 	String ptr;
@@ -14,7 +14,7 @@ public class microOp {
 	String desc;
 	int fenceNo;
 	
-	microOp(String s) {
+	MicroOp(String s) {
 		fullLine = s;
 		defineType();
 		switch (type) {
@@ -46,7 +46,7 @@ public class microOp {
 		}
 	}
 	
-	microOp() {
+	MicroOp() {
 	}
 	
 	void defineType() {
@@ -54,6 +54,9 @@ public class microOp {
 		String[] pArray;
 		String tempStr;
 		
+		if (fullLine.contains("init")) {
+			type = microOpType.INIT;
+		} else
 		if (fullLine.contains("regs")) {	
 			type = microOpType.REGS;
 		} else

@@ -1,139 +1,150 @@
 package src;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Stack;
-import java.io.*;
 
-public class racepro {
+import src.SysCall.scTypes;
+
+public class RacePro {
 	
-	static ArrayList<Pair<String,String>> init = new ArrayList<Pair<String,String>>();		// initialization information
-	static ArrayList<token> sTokens = new ArrayList<token>();	// scribe tokens
-	static ArrayList<token> tokens = new ArrayList<token>();
-
-	static ArrayList<microOp> mOps = new ArrayList<microOp>();
-	static Map<Integer,ArrayList<microOp>> envVars = new HashMap<Integer,ArrayList<microOp>>();
-	static Map<Integer,ArrayList<token>> threads = new HashMap<Integer,ArrayList<token>>();
-
-	static Integer threadNo = 0;
-	static Integer threadOld;
+	static ArrayList<SysCall> scList = null;
+	static ArrayList<MicroOp> moList = null;
+	static Map<Integer,ArrayList<SysCall>> threads = new HashMap<Integer,ArrayList<SysCall>>();
+	static Integer maxThread = new Integer(0);
 	
 	public static void main(String[] args) {
 		scribeParser(args);
-		System.out.println("::"+threadNo+"::"+threads.size());
-		createVTS(--threadNo);
-		constructHappenedBeforeGraph();
+		constructVTS();
+		LamportAlgorithm();
+		System.out.println("Done!");
 	}
 
-	private static void constructHappenedBeforeGraph() {
-		Stack<Pair<Integer,Integer>> s = new Stack<Pair<Integer,Integer>>();
-		Pair<Integer,Integer> stackToken;
-		Integer tokenNo;
-		
-		final Integer startThreadNo = new Integer(2);	// 0 is for Environment and 1 is for Scribe Main Thread
-		final Integer endThreadNo = threads.size()+1;	// Thread Number is always +1
-		Integer beginSysCall = new Integer(0);			// Position always Starting at 0
-		Integer endSysCall = new Integer(0); 			// Position Finishing at threads.get(startThreadNo).size()-1
-		
-		ArrayList<Integer> current = new ArrayList<Integer>();		// reset the Current Vector Time Stamp(VTS)
-		for (int j=startThreadNo; j<=endThreadNo; j++)				// Create an ArrayList for Current VTS
-			current.add(new Integer(0));
-		
-		stackToken = new Pair<Integer,Integer>(startThreadNo,new Integer(0));
-		s.push(stackToken);
-
-		PrintVTC(startThreadNo, endThreadNo);
-		
-		if (! s.empty()) {
-			stackToken = s.pop();
-			tokenNo = (Integer)stackToken.first;
-			tokens = threads.get(tokenNo);
-			beginSysCall = (Integer)stackToken.second;
-			endSysCall = tokens.size()-1;			
-			for (int j=beginSysCall; j<=endSysCall; j++) {
-				System.out.print(current+"::"+tokens.get(j).getVTS());
-				tokens.get(j).setVTS(TakeTheGreater(current,tokens.get(j).getVTS()));
-				System.out.println(">>"+tokens.get(j).getVTS());
-			}
-			threads.put(tokenNo, tokens);
-		}
-		
-		PrintVTC(startThreadNo, endThreadNo);
-		System.out.println(startThreadNo+":"+endThreadNo+":"+beginSysCall+":"+endSysCall);
-	}
-
-	private static void PrintVTC(int s, int e) {
-		System.out.println("~~~~~~~~~~~~~~~~~~~~");
-		for (int i=s; i<=e; i++) {
-			tokens = threads.get(new Integer(i));
-			for(token t: tokens)
-				System.out.println(t.getVTS());
-			System.out.println("~~~~~~~~~~~~~~~~~~~~");
-		}
-	}
-	
-	private static ArrayList<Integer> TakeTheGreater(ArrayList<Integer> current, ArrayList<Integer> vts) {
-		ArrayList<Integer> r = current;
-		for (int i=0; i<r.size(); i++) {
-			if (r.get(i) < vts.get(i)) 
-				r.set(i, vts.get(i));
-		}
-		return r;
-	}
-
-	private static void createVTS(Integer threadNo) {
-		int cnt = 0;
-		for(int i = 1; i<=threadNo.intValue(); i++) {
-/**/			System.out.println(i);
-			ArrayList<token> tokens = threads.get(new Integer(i+1));
-/**/			System.out.println(tokens);
-			for (token t: tokens) {
-				t.initVTS(threadNo,i,++cnt);
-			}
-			token tt = tokens.get(0);
-			tt.updateVTS(i-1,1);
-			tokens.set(0, tt);
-			threads.put(i+1, tokens);
-			cnt = 0;
-		}
-	}
-
-	private static void scribeParser(String[] inArgs) {
-		Integer maxThread = new Integer(0);
-		try {
-			BufferedReader in = new BufferedReader(new FileReader(inArgs[0]));
-			while (in.ready()) {
-				  String s = in.readLine();
-				  threadOld = threadNo; 
-				  threadNo = Integer.parseInt(s.substring(1, s.indexOf("]")));
-				  if (threadOld.intValue() != threadNo.intValue()) {
-					  if (threadOld.intValue() > 1) {
-						  threads.put(threadOld, tokens);
-						  envVars.put(threadOld, mOps);
-					  }
-					  System.out.println("===================================================");
-					  tokens = new ArrayList<token>();
-					  mOps = new ArrayList<microOp>();
-					  if (threadNo > maxThread)
-						  maxThread = threadNo;
-				  }
-				  s = s.substring(s.indexOf("]")+2, s.length());
-				  if (threadNo.intValue() == 0) {
-					  extract_init(s);							// isolating initialization information
-				  } else if (threadNo.intValue() == 1) {
-					  
-					  sTokens = extract_rest(threadNo,s);		// isolating scribe thread
-				  } else {
-					  tokens = extract_rest(threadNo, s);
-				  }
+	private static void LamportAlgorithm() {
+		Queue<Pair<Integer,SysCall>> q = new Queue<Pair<Integer,SysCall>>();
+		int thCnt = 1;
+		for (ArrayList<SysCall> scList : threads.values()) {
+			for (SysCall sc : scList) {
+				if (sc.SysCallName.equals("clone")) {
+					System.out.println(scList.indexOf(sc)+">>"+thCnt+"::"+sc.SysCallName+":"+sc.SysCallVal);
+					q.enQ(new Pair(new Integer(thCnt),sc));
 				}
-			threads.put(threadOld, tokens);
-			envVars.put(threadOld, mOps);
-			threadNo = maxThread;
+			}
+			thCnt++;
+		}
+		
+//		System.out.println(q.element.size());
+//		for(Pair<Integer,Integer> p : q.element) {
+//			System.out.println(p.first+"::"+p.second);
+//		}
+
+		while (q.notEmpty()) {
+			Pair<Integer,SysCall> p = q.deQ();
+//			System.out.println(threads.get(new Integer(p.first)).size()+":"+p.second);
+			thCnt = p.first;
+			SysCall sc = p.second;
+			if (sc.type == scTypes.clone) {
+				System.out.println(sc.vts.length);
+				for(int j=0; j<maxThread; j++)
+					System.out.print(sc.vts[j]+" ");
+				System.out.println();
+//				updateVTSinThread(sc.SysCallVal,0,sc.vts);
+			} else {
+				System.out.println("Not Clone :: "+sc.SysCallName);
+			}
+		}
+	}
+
+	private static void updateVTSinThread(String threadNoStr, int start, int[] vts) {
+		int threadNo = Integer.parseInt(threadNoStr);
+		scList = threads.get(threadNo);
+		for (int i=start; i<scList.size(); i++) {
+			for(int j=0; j<maxThread; j++)
+				System.out.print(scList.get(i).vts[j]+" ");
+			System.out.println("::"+scList.get(i).SysCallName);
+		}
+	}
+
+	private static void constructVTS() {
+		int thCnt = 0;
+		for (ArrayList<SysCall> scList : threads.values()) {
+			for (SysCall sc : scList) {
+				sc.newVTS(maxThread);
+			}
+			int cnt = 1;
+			for (SysCall sc : scList) {
+				sc.setVTS(thCnt,cnt);
+//				for(int i=0; i<maxThread; i++) 
+//					System.out.print(sc.vts[i]+" ");
+//				System.out.println();
+				cnt++;
+			}
+			thCnt++;
+		}
+		
+	}
+
+	private static void scribeParser(String[] args) {
+		String s = "";
+		int tNo;
+		Integer tNoObj;
+		boolean flag;
+		SysCall sc = null;			// Always hung available! At least one.
+
+		try {
+			BufferedReader in = new BufferedReader(new FileReader(args[0]));
+			while (s != null) {			
+				flag = true;
+				while (flag) {
+					s = in.readLine();
+					if (s != null) {
+						if ((! (s.contains("   "))) && (!(s.contains("queue EOF")))) {
+							flag = false;
+
+							tNo = getNumber(s);
+							if (tNo > maxThread)
+								maxThread = new Integer(tNo);
+							if (sc != null) {				// Existing previous "sc"
+								tNoObj = new Integer(tNo);
+								scList = threads.get(tNoObj);
+								threads.remove(tNoObj);
+								if (scList == null) {
+									scList = new ArrayList<SysCall>();
+//									System.out.println("#"+tNo);
+								}
+								scList.add(sc);
+//								System.out.println(tNoObj.toString()+"$$"+scList.size());
+								threads.put(tNoObj, scList);
+//								System.out.println("###"+threads.size()+"::"+tNoObj+":"+scList.size());
+							}								
+							sc = new SysCall(getLine(s));	// Creating a new "sc" anyway
+							
+							if (sc.SysCallName.equals("SingleOperator")) {
+								sc.add_microOperation(sc.SysCallVal);
+							}
+							
+//							System.out.print(threads.size()+":");
+//							System.out.println(tNo+":"+maxThread+">"+s);
+
+//							System.out.println(tNo+":"+s);
+
+						} else if (s.contains("    ")) {
+							s = s.substring(7,s.length());
+							sc.add_microOperation(s);
+//							System.out.println("-"+sc.mOp.size()+"-"+sc.SysCallName+"-"+s);
+						}
+					} else {
+						flag = false;
+					}
+				}
+			}
 			
-//			System.out.println("::"+threads);
-//			System.out.println("::"+envVars);
+//			int k = 1;
+//			for (ArrayList<SysCall> scList : threads.values()) {
+//				System.out.println(threads.get(new Integer(k++)).size());
+//				System.out.println(scList.size());
+//			}
 			
 			in.close();
 		} catch (Exception e) {
@@ -141,47 +152,11 @@ public class racepro {
 		}		
 	}
 
-	private static ArrayList<token> extract_rest(Integer threadNo, String s) {
-		token t;
-		microOp m;
-		if (! s.contains("queue EOF")) {								// *** SKIPPING the end of each QUEUE
-			if (s.contains("   ")) {										// All Micro Operator in each System Call
-//				System.out.println(">>>>"+s+"::"+tokens.size());
-				if (tokens.size() > 0) {
-					t = tokens.get(tokens.size()-1);
-//					System.out.println("<<<<");
-					tokens.remove(tokens.size()-1);
-				} else {
-					t = new token();
-				}
-				t.add_microOperation(s);
-				tokens.add(t);
-			} else {
-				if (s.contains(":")) {
-					System.out.println("["+threadNo+"] "+"SingleOperator"+"=="+s);
-					t = new token("SingelOperator",s);
-					t.add_microOperation(s);
-					tokens.add(t);
-				} else {												// Main System Calls
-					String[] tokenPair = s.split(" = ");
-					System.out.println("["+threadNo+"] "+tokenPair[0]+"=="+tokenPair[1]);
-					tokens.add(new token(tokenPair[0],tokenPair[1]));
-				}
-			}
-		}
-		return tokens;
+	private static String getLine(String s) {
+		return s.substring(s.indexOf("]")+2, s.length());
 	}
 
-	private static void extract_init(String s) {
-		Pair<String,String> p;
-		String params = s.substring(6, s.length());
-		System.out.println(">>"+params);
-		String[] subInitString = params.split(", ");
-		for(String initString : subInitString) {
-			String[] initPair = initString.split(" = ");
-			p = new Pair<String,String>(initPair[0],initPair[1]);
-			init.add(p);
-		}
+	private static int getNumber(String s) {
+		return Integer.parseInt(s.substring(1, s.indexOf("]")));
 	}
-
 }
