@@ -9,7 +9,8 @@ public class SysCall {
 	String SysCallVal;
 	ArrayList<MicroOp> mOp;
 	int[] vts;
-	enum scTypes {singleoperator,clone,others};
+	int vtsSize;
+	enum scTypes {singleoperator,clone,wait,others};
 	scTypes type;
 	
 	SysCall(String t) {
@@ -29,14 +30,16 @@ public class SysCall {
 				SysCallName = tArray[0];
 			SysCallVal = tArray[1];
 		}
-//		setSCType();
+		setSCType();
 	}
 	
 	private void setSCType() {
 		if (SysCallName.equals("SingleOperator")) 
 			type = scTypes.singleoperator;
-		else if (SysCallName.equals("clone"))
+		else if (SysCallName.contains("clone"))
 			type = scTypes.clone;
+		else if (SysCallName.contains("wait"))
+			type = scTypes.wait;
 		else
 			type = scTypes.others;
 	}
@@ -44,19 +47,6 @@ public class SysCall {
 	SysCall() {
 	}
 	
-//	void initVTS(int vtsNo, int pos, int val) {
-//		vts = new ArrayList<Integer>();
-//		for (int i=1; i <= vtsNo; i++) {
-//			vts.add(new Integer(0));		
-//		}
-//		vts.set(pos-1, new Integer(val));
-//		System.out.println(vts);
-//	}
-//	
-//	void updateVTS(int pos, int val) {
-//		vts.set(pos, val);
-//	}
-//	
 	void add_microOperation(String inStr) {
 		if (mOp == null) {
 			mOp = new ArrayList<MicroOp>();
@@ -65,23 +55,18 @@ public class SysCall {
 	}
 
 	void newVTS(Integer maxThread) {
-		vts = new int[maxThread];
+		vtsSize = maxThread+1;
+		vts = new int[vtsSize];
 	}
 
 	void setVTS(int thCnt, int cnt) {
 		vts[thCnt] = cnt;
 	}
 
-//	ArrayList<Integer> getVTS() {
-//		return vts;
-//	}
-//	
-//	void setVTS(ArrayList<Integer> inVTS) {
-//		vts = inVTS;
-//	}
-//	
-//	ArrayList<MicroOp> getMOP() {
-//		return mOp;
-//	}
+	public int[] findMaxVTS(int[] maxVTS) {
+		for(int i=0; i<vtsSize; i++)
+			vts[i] = (vts[i]>=maxVTS[i])?vts[i]:maxVTS[i];
+		return vts;
+	}
 	
 }

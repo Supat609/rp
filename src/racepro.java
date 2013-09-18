@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 import src.SysCall.scTypes;
 
@@ -18,71 +19,180 @@ public class RacePro {
 		scribeParser(args);
 		constructVTS();
 		LamportAlgorithm();
+
+//		System.out.println(maxThread);		
+//		int thCnt = 0;
+//		for (ArrayList<SysCall> scList : threads.values()) {
+//			System.out.println(thCnt+":"+scList.size());
+//			thCnt++;
+//		}
+		
+//		int i = 1;
+//		scList = threads.get(new Integer(2));
+//		for (SysCall sc : scList) {
+//			System.out.println(i+" : "+sc.SysCallName+"="+sc.SysCallVal);
+//			i++;
+//		}
+		
 		System.out.println("Done!");
 	}
 
 	private static void LamportAlgorithm() {
-		Queue<Pair<Integer,SysCall>> q = new Queue<Pair<Integer,SysCall>>();
-		int thCnt = 1;
+		Queue<Pair<Integer,Integer>> q = new Queue<Pair<Integer,Integer>>();
+		int thCnt = 0;
+		int scCnt;
+		int[] maxVTS;
+		
 		for (ArrayList<SysCall> scList : threads.values()) {
+			scCnt = 0;
 			for (SysCall sc : scList) {
 				if (sc.SysCallName.equals("clone")) {
-					System.out.println(scList.indexOf(sc)+">>"+thCnt+"::"+sc.SysCallName+":"+sc.SysCallVal);
-					q.enQ(new Pair(new Integer(thCnt),sc));
+//					System.out.println(scList.indexOf(sc)+">>"+thCnt+"::"+sc.SysCallName+":"+sc.SysCallVal);
+					q.enQ(new Pair(new Integer(thCnt),new Integer(scCnt)));
 				}
+				scCnt++;
 			}
 			thCnt++;
 		}
 		
 //		System.out.println(q.element.size());
 //		for(Pair<Integer,Integer> p : q.element) {
-//			System.out.println(p.first+"::"+p.second);
+//			ArrayList<SysCall> scList = threads.get(p.first);
+//			System.out.println(p.first+"::"+scList.get(p.second).SysCallName+"="+scList.get(p.second).SysCallVal);
 //		}
 
+//		int i = 1;
+//		scList = threads.get(new Integer(0));
+//		for (SysCall sc : scList) {
+//			System.out.println(i+" : "+sc.SysCallName+"="+sc.SysCallVal);
+//			i++;
+//		}
+		
 		while (q.notEmpty()) {
-			Pair<Integer,SysCall> p = q.deQ();
-//			System.out.println(threads.get(new Integer(p.first)).size()+":"+p.second);
+			Pair<Integer,Integer> p = q.deQ();
 			thCnt = p.first;
-			SysCall sc = p.second;
+			scCnt = p.second;
+			SysCall sc = threads.get(thCnt).get(scCnt);
 			if (sc.type == scTypes.clone) {
-				System.out.println(sc.vts.length);
-				for(int j=0; j<maxThread; j++)
-					System.out.print(sc.vts[j]+" ");
-				System.out.println();
-//				updateVTSinThread(sc.SysCallVal,0,sc.vts);
+//				System.out.print("~~~ ");
+//				for(int j=0; j<=maxThread; j++)
+//					System.out.format(" %4d",sc.vts[j]);
+//				System.out.println(" >> l = "+sc.vts.length+" >> ");
+				maxVTS = updateVTSinAThread(sc.SysCallVal,0,sc.vts);
+				maxVTS = updateVTSAfterClone(p,maxVTS,sc.SysCallVal);
+				LoopBackToFirst(p);
 			} else {
-				System.out.println("Not Clone :: "+sc.SysCallName);
+				System.out.println("Error: Impossible Alert: Not Clone ::"+sc.SysCallName);
 			}
+//			System.out.println("---------------------------------------------------");			
 		}
+
+		int j = 0;
+		for (ArrayList<SysCall> scList : threads.values()) {
+			int i = 1;
+//			scList = threads.get(new Integer(1));
+			for (SysCall sc : scList) {
+//				System.out.format("%d: %4d: ",j,i);
+				printArray(sc.vts);
+				System.out.println();
+//				System.out.println(" : "+sc.SysCallName+"="+sc.SysCallVal);
+				i++;
+			}
+			j++;
+		}
+		
 	}
 
-	private static void updateVTSinThread(String threadNoStr, int start, int[] vts) {
-		int threadNo = Integer.parseInt(threadNoStr);
-		scList = threads.get(threadNo);
-		for (int i=start; i<scList.size(); i++) {
-			for(int j=0; j<maxThread; j++)
-				System.out.print(scList.get(i).vts[j]+" ");
-			System.out.println("::"+scList.get(i).SysCallName);
+	private static void LoopBackToFirst(Pair<Integer, Integer> p) {
+		int current = p.first;
+		int previous = current - 1;
+		boolean flag = false;
+		int[] maxVTS;
+		while (current >= 2) {
+			ArrayList<SysCall> scList = threads.get(previous);
+			ArrayList<SysCall> scPrev = threads.get(current);
+			maxVTS = scPrev.get(scPrev.size()-1).vts;
+			for (SysCall sc : scList) {
+				if (sc.type == scTypes.wait) {
+					if (isInteger(sc.SysCallVal)) {
+						if (Integer.parseInt(sc.SysCallVal)==current) {
+							flag = true;
+						}
+					}
+				}
+				if (flag) {
+					maxVTS = sc.findMaxVTS(maxVTS);					
+				}
+			}
+//			System.out.println(previous+","+current);
+			previous = current--;
 		}
+	}
+	
+	public static boolean isInteger(String s) {
+	    try { 
+	        Integer.parseInt(s); 
+	    } catch(NumberFormatException e) { 
+	        return false; 
+	    }
+	    return true;
+	}
+
+	private static int[] updateVTSAfterClone(Pair<Integer,Integer> p, int[] maxVTS, String caller) {
+		int thNo = p.first;
+		int scNo = p.second;
+		
+		ArrayList<SysCall> scList = threads.get(thNo);
+		boolean flag = false;
+		for (int i=scNo; i<scList.size(); i++) {
+			SysCall sc = scList.get(i);
+			if ((sc.type == scTypes.wait) && (sc.SysCallVal.equals(caller))) 
+				flag = true;
+			if (flag) {
+				maxVTS = threads.get(thNo).get(i).findMaxVTS(maxVTS);
+			}
+		}
+		return maxVTS;
+	}
+
+	private static int[] updateVTSinAThread(String threadNoStr, int start, int[] inVTS) {
+		SysCall sc;
+		int threadNo = Integer.parseInt(threadNoStr);
+		int[] maxVTS = inVTS;
+		for (int i=start; i<threads.get(threadNo).size(); i++) {
+//			System.out.print("#");
+//			printArray(threads.get(threadNo).get(i).vts);
+			maxVTS = threads.get(threadNo).get(i).findMaxVTS(maxVTS);
+//			System.out.print(" || ");
+//			printArray(threads.get(threadNo).get(i).vts);
+//			System.out.println();
+		}
+		return maxVTS;
+	}
+
+	private static void printArray(int[] vts) {
+		for(int j=0; j<=maxThread; j++) 
+			System.out.format(" %4d",vts[j]);
+//		System.out.println();
 	}
 
 	private static void constructVTS() {
 		int thCnt = 0;
 		for (ArrayList<SysCall> scList : threads.values()) {
-			for (SysCall sc : scList) {
+			for (SysCall sc : scList)
 				sc.newVTS(maxThread);
-			}
 			int cnt = 1;
+//			System.out.println("*** "+thCnt+"/"+maxThread+" ***");
 			for (SysCall sc : scList) {
-				sc.setVTS(thCnt,cnt);
-//				for(int i=0; i<maxThread; i++) 
-//					System.out.print(sc.vts[i]+" ");
-//				System.out.println();
+				sc.setVTS(thCnt, cnt);
 				cnt++;
+//				for(int k=0; k<sc.vtsSize; k++)
+//					System.out.format(" %4d", sc.vts[k]);
+//				System.out.println(sc.SysCallName+"=="+sc.SysCallVal);
 			}
 			thCnt++;
 		}
-		
+
 	}
 
 	private static void scribeParser(String[] args) {
@@ -99,52 +209,37 @@ public class RacePro {
 				while (flag) {
 					s = in.readLine();
 					if (s != null) {
-						if ((! (s.contains("   "))) && (!(s.contains("queue EOF")))) {
+						if ((!(s.contains("   "))) && (!(s.contains("queue EOF")))) {
 							flag = false;
 
-							tNo = getNumber(s);
-							if (tNo > maxThread)
-								maxThread = new Integer(tNo);
-							if (sc != null) {				// Existing previous "sc"
-								tNoObj = new Integer(tNo);
-								scList = threads.get(tNoObj);
-								threads.remove(tNoObj);
-								if (scList == null) {
-									scList = new ArrayList<SysCall>();
-//									System.out.println("#"+tNo);
-								}
-								scList.add(sc);
-//								System.out.println(tNoObj.toString()+"$$"+scList.size());
-								threads.put(tNoObj, scList);
-//								System.out.println("###"+threads.size()+"::"+tNoObj+":"+scList.size());
-							}								
 							sc = new SysCall(getLine(s));	// Creating a new "sc" anyway
-							
+								
 							if (sc.SysCallName.equals("SingleOperator")) {
 								sc.add_microOperation(sc.SysCallVal);
 							}
-							
-//							System.out.print(threads.size()+":");
-//							System.out.println(tNo+":"+maxThread+">"+s);
 
-//							System.out.println(tNo+":"+s);
+							tNo = getNumber(s);					// Creating tNoObj for sc
+							if (tNo > maxThread)
+								maxThread = new Integer(tNo);
+							tNoObj = new Integer(tNo);
+
+							scList = threads.get(tNoObj);		// Getting scList from threads
+							threads.remove(tNoObj);
+							if (scList == null) {
+								scList = new ArrayList<SysCall>();
+							}
+							scList.add(sc);
+							threads.put(tNoObj, scList);
 
 						} else if (s.contains("    ")) {
 							s = s.substring(7,s.length());
 							sc.add_microOperation(s);
-//							System.out.println("-"+sc.mOp.size()+"-"+sc.SysCallName+"-"+s);
 						}
 					} else {
 						flag = false;
 					}
 				}
 			}
-			
-//			int k = 1;
-//			for (ArrayList<SysCall> scList : threads.values()) {
-//				System.out.println(threads.get(new Integer(k++)).size());
-//				System.out.println(scList.size());
-//			}
 			
 			in.close();
 		} catch (Exception e) {
